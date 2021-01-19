@@ -3,7 +3,7 @@ title: The myth of German order
 emoji: 🤦‍♂️
 ---
 
-One of the most suprising things I found after moving to Germany was that it’s not nearly as orderly as its international reputation suggests. [Maurice Frank digs into the myth of German order][link]:
+One of the most suprising things I found after moving to Germany was that it’s not nearly as orderly as its international reputation suggests. [Maurice Frank digs into the myth of German order at Berliner Zeitung][link]:
 
 > In reality, the country is marked by far more lawlessness, sloppiness, inefficiency and incompetence than its self-image suggests. Daily life is bureaucratic, pointlessly complex or involves outdated systems and technologies. Interactions with institutions great and small are often difficult.
 
