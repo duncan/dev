@@ -14,7 +14,13 @@
     "postcss": "^8.2.4",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "tailwindcss": "^2.0.2"
+    "remark-extract-frontmatter": "^3.1.0",
+    "remark-frontmatter": "^3.0.0",
+    "remark-html": "^13.0.1",
+    "remark-parse": "^9.0.0",
+    "tailwindcss": "^2.0.2",
+    "unified": "^9.2.0",
+    "yaml": "^1.10.0"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",
