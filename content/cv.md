@@ -30,7 +30,7 @@ I’ve had two different roles at Microsoft for Startups:
 
 ### Wunderlist @ 6Wunderkinder
 
-**January 2014 - July 2015:** I ensured the successful and smooth launch of Wunderlist 3 by working on the sync implementation on both the server and client-side as well as with the creation of a massively parallel simulated user cluster that could simulate production workloads on our services. I also led the technical due diligence efforts for 6Wunderkinder in its acquisition by Microsoft. 
+**January 2014 - July 2015:** I ensured the successful and smooth launch of Wunderlist 3 by working on the sync implementation on both the server and client-side as well as with the creation of a massively parallel simulated user cluster that could simulate production workloads on our services. I also led the technical due diligence efforts for 6Wunderkinder in its acquisition by Microsoft.
 
 ### Luma Labs, LLC
 
@@ -66,19 +66,18 @@ The highlight of my professional photography career is certainly being the main 
 
 ### Agile Web Development with Rails
 
-This definitive book about Ruby on Rails by [Dave Thomas][dave] and [David Heinemeier Hansson][dhh] was first published by [Pragmatic Bookshelf][prag] in 2005, but Rails moved so fast that a slew of editions followed and Dave Thomas enlisted a group of co-authors, myself included, to complete them. 
+This definitive book about Ruby on Rails by [Dave Thomas][dave] and [David Heinemeier Hansson][dhh] was first published by [Pragmatic Bookshelf][prag] in 2005, but Rails moved so fast that a slew of editions followed and Dave Thomas enlisted a group of co-authors, myself included, to complete them.
 
-**2nd Edition: December 2006** was the first edition that my material focusing on deploying Rails applications appeared, along with contributions from Leon Breedt, Mike Clark, [Justin Gehtland][geht], and Andreas Schwarz. 
+**2nd Edition: December 2006** was the first edition that my material focusing on deploying Rails applications appeared, along with contributions from Leon Breedt, Mike Clark, [Justin Gehtland][geht], and Andreas Schwarz.
 <br><span class="text-xs">ISBN: 978-0977616633</span>
 
-**3rd Edition: April 2009** was updated for Rails version 2 with [Sam Ruby][samr] taking over as the lead author of the book. 
+**3rd Edition: April 2009** was updated for Rails version 2 with [Sam Ruby][samr] taking over as the lead author of the book.
 <br><span class="text-xs">ISBN: 978-1934356166</span>
 
 **4th Edition: March 2011** was updated for Rails version 3.
 <br><span class="text-xs">ISBN: 978-1934356548</span>
 
 After the 4th edition, the state of the art for Rails deployment had evolved enough that an entire re-write of my contributed material was necessary, and I dropped off the author roster for the future revisions covering later versions of Rails.
-
 
 ### Mac OS X Panther Hacks
 
@@ -94,7 +93,7 @@ O’Reilly’s _X in a Nutshell_ series served as the best API documentation the
 
 Running Mac OS X was designed to help give power uses the knowledge they needed to work better and faster with their operating system.
 
-**Running Mac OS X Panther, published 2003** focused on Mac OS X Panther, the second major update to Mac OS X — arguably the release where Mac OS X finished the transition from Mac OS 9. 
+**Running Mac OS X Panther, published 2003** focused on Mac OS X Panther, the second major update to Mac OS X — arguably the release where Mac OS X finished the transition from Mac OS 9.
 <br><span class="text-xs">ISBN: 978-0596005009</span>
 
 **Running Mac OS X Tiger, published 2005** added [Jason Deraleau][deraleau] to the author roster for the book and updated the material for a new release of Mac OS X.
@@ -131,7 +130,7 @@ The first versions of the Java Servlet API were created by [Pavni Diwanji][pavni
 
 ## Education
 
-I studied architecture at [Oklahoma State University][okstate], the [University of Houston][uh], and the [University of Texas at Arlington][uta]. I did not, however, complete my studies thanks an opportunity to work on the early web. I thought the detour might be temporary and that I’d return to finish my degree work when the web was done. 
+I studied architecture at [Oklahoma State University][okstate], the [University of Houston][uh], and the [University of Texas at Arlington][uta]. I did not, however, complete my studies thanks an opportunity to work on the early web. I thought the detour might be temporary and that I’d return to finish my degree work when the web was done.
 
 The web, of course, is still very much a thing. I never returned back to school to finish a degree.
 

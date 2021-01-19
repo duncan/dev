@@ -13,4 +13,3 @@ title: Resume
 ### Wunderlist & To-Do @ Microsoft
 
 ### Wunderlist @ 6Wunderkinder
-

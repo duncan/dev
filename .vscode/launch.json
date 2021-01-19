@@ -8,14 +8,9 @@
       "type": "node",
       "name": "Test",
       "request": "launch",
-      "runtimeArgs": [
-        "run-script",
-        "test"
-      ],
+      "runtimeArgs": ["run-script", "test"],
       "runtimeExecutable": "npm",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
+      "skipFiles": ["<node_internals>/**"]
     }
   ]
 }

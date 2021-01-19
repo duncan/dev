@@ -9,15 +9,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>
-          Oh hai
-        </h1>
-
+        <h1>Oh hai</h1>
       </main>
 
-      <footer>
-        footer
-      </footer>
+      <footer>footer</footer>
     </div>
   )
 }
