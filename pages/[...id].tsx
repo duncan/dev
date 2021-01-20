@@ -1,3 +1,5 @@
+import glob from 'glob'
+
 import { GetStaticPathsResult, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
 import { Content, ContentProps } from '../lib/content'
@@ -7,7 +9,7 @@ export default function ContentPage(props: ContentProps) {
     <div>
       <Head>
         <title>{props.title}</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon-32.ico" />
       </Head>
 
       <div
@@ -36,7 +38,7 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 export async function getStaticProps(): Promise<
   GetStaticPropsResult<ContentProps>
 > {
-  let content = new Content('content/cv.md')
+  let content = new Content('pages/cv.md')
   return {
     props: content.props,
   }
