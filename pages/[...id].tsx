@@ -2,23 +2,23 @@ import { pageStaticPaths, contentFromStaticPath } from '../lib/pages'
 import { GetStaticPathsResult, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
 import { Content, ContentProps } from '../lib/content'
-import { Site } from '../lib/site'
+import Layout from '../components/layout'
 
 export default function ContentPage(props: ContentProps) {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>{props.title}</title>
         <link rel="shortcut icon" href="/favicon-32.ico" />
       </Head>
 
       <div
-        className="container mx-auto px-4 py-4 prose max-w-lg"
+        className="container mx-auto px-4 py-4 prose max-w-xl"
         dangerouslySetInnerHTML={{ __html: props.html }}
       />
 
       <footer>footer</footer>
-    </div>
+    </Layout>
   )
 }
 
