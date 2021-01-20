@@ -1,6 +1,8 @@
 ---
 date: 2021-01-20T08:00
 title: The complete list of Trump’s insults on Twitter
+type: link
+emoji: 🤬
 ---
 
 The shear toxic brutality of the way Trump used Twitter is on display in the [New York Time’s compilation of Trump’s insults on Twitter][link] from when he declared his candidacy until he was banned. Kevin Quealy writes:
