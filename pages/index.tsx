@@ -17,14 +17,14 @@ export default function Home() {
         <p>
           My{' '}
           <Link href="/cv">
-            <a>Curriculum Vitae</a>
+            <a>curriculum vitae</a>
           </Link>{' '}
           tells the story of my professional career, so far. The short version
           is in my{' '}
           <Link href="/resume">
-            <a>Resume</a>
+            <a>resume</a>
           </Link>
-          . And, of course, my professional info is on my{' '}
+          . And, of course, there’s also my{' '}
           <a href="http://linkedin.com/in/duncandavidson ">LinkedIn profile</a>.
           I probably spend too much time on{' '}
           <a href="https://twitter.com/duncan">Twitter</a> and I try not to
