@@ -1,0 +1,31 @@
+desc 'Subset fonts'
+task default: %i[pyftsubset]
+
+ITALIC = 'SourceSans3VF-Italic.otf.woff2'
+ROMAN = 'SourceSans3VF-Roman.otf.woff2'
+
+task :pyftsubset do
+  unless File.exist? '/opt/homebrew/bin/pyftsubset'
+    fail 'FAIL: pyftsubset missing! Need to install fonttools'
+  end
+end
+
+%w[SourceSans3VF-Italic.otf.woff2 SourceSans3VF-Roman.otf.woff2].each do |font|
+  puts font
+  {
+    'latin' => 'U+0000-00FF',
+    'latin-ext-a' => 'U+0100-017F,',
+    'latin-ext-b' => 'U+0180-024F',
+    'latin-rest' => 'U+0259-03C0,U+1E00-1EFF,U+2000-FB02',
+    'greek' => 'U+0370-03FF',
+    'greek-ext' => 'U+1F00-1FFF'
+  }.each do |name, range|
+    output = font.sub('.woff2', ".#{name}.woff2")
+    file output => font do
+      sh "pyftsubset #{font} --output-file=#{output} --unicodes=\"#{
+           range
+         }\" --flavor=woff"
+    end
+    task default: output
+  end
+end

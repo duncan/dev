@@ -34,6 +34,20 @@ export default function Layout({
           type="image/png"
           sizes="16x16"
         ></link>
+        <link
+          rel="preload"
+          href="/fonts/SourceSans3VF-Roman.otf.latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin
+        ></link>
+        <link
+          rel="preload"
+          href="/fonts/SourceSans3VF-Italic.otf.latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossorigin
+        ></link>
       </Head>
       <header className="container prose mx-auto max-w-xl py-16 px-4">
         <Link href="/">
