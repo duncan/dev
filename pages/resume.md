@@ -6,7 +6,7 @@ title: Resume
 
 <span class="text-xs">This is the short version. See [Duncan’s curriculum vitae][cv] for the long version.</span>
 
-**James Duncan Davidson’s career path is a non-traditional one guided by deep interests in technology, architecture, and art.** He has created and delivered software platforms that millions of developers have used, written books that have helped a generation of Mac developers, and has advised and guided startups at many different phases
+**James Duncan Davidson is a seasoned technology leader with a non-traditional career path guided by deep interests in technology, architecture, and art.** He has created and delivered software platforms that millions of developers have used, written books that have helped a generation of Mac developers, and has advised and guided startups at many different phases
 
 ## Recent Professional History
 
@@ -42,7 +42,7 @@ Starting at Sun Microsystems, Duncan has spoken at hundreds of events worldwide 
 
 ## Other highlights
 
-Throughout his career, Duncan has been, at times, a professional photographer. He was part of the team that defined the visual look for speaker photographs at TED Conferences.
+Throughout his career, Duncan has at times been a professional photographer. He was part of the team that defined the visual look for speaker photographs at TED Conferences.
 
 ## For more information
 
