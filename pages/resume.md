@@ -42,7 +42,7 @@ Starting at Sun Microsystems, Duncan has spoken at hundreds of events around the
 
 ## Other highlights
 
-Throughout his career, Duncan has been an amatuer, as well as occasionally a professional, photographer. He was part of the team that defined the visual look for speaker photographs at TED Conferences.
+Throughout his career, Duncan has been, at times, a professional photographer. He was part of the team that defined the visual look for speaker photographs at TED Conferences.
 
 ## For more information
 
