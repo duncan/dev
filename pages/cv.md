@@ -6,53 +6,49 @@ title: Curriculum Vitae
 
 <span class="text-xs">This is the long version. See [Duncan’s resume](/resume) if you want the short version.</span>
 
-**James Duncan Davidson’s career path is a non-traditional one guided by deep interests in technology, architecture, and art.** He is a generalist at heart who picks up new technologies, languages, and tools for whatever problem is at hand, always with a beginner mindset. His strength is making new insights and connections from a multitude of possibilities and helping others move faster. He has created and delivered software platforms that millions of developers have used, written books that helped a generation of Mac developers, and made photographs that have helped promote and distribute hundreds of TED talks.
+**James Duncan Davidson’s career path has been guided by deep interests in technology, architecture, and art.** He is a generalist at heart who picks up new technologies, languages, and tools for whatever problem is at hand, always with a [beginner’s mindset][bm]. He creates new insights and connections from a multitude of possibilities and helping others move faster. He has developed and delivered software platforms that millions of developers have used, written books that helped a generation of Mac developers, and made iconic photographs that have promoted hundreds of TED speakers’ presentations.
 
-His career started in the mid-1990s when a chance to work on the early World Wide Web interrupted his architectural studies at university. This led to employment at JavaSoft, a division of Sun Microsystems, where he created [Apache Ant][ant] and [Apache Tomcat][tomcat], and then led their development and release to the Apache Software Foundation.
+His career started in the mid-1990s when a chance to work on the early World Wide Web interrupted his university’s architectural studies. He found himself at the right time at the right place. This work led to employment at JavaSoft, a division of Sun Microsystems, where he created [Apache Ant][ant] and [Apache Tomcat][tomcat]. He then led their development and release to the Apache Software Foundation.
 
-After leaving JavaSoft, he dove deep into the Apple ecosystem and helped a generation of developers learn about Objective-C and Mac OS X, through books published by [O’Reilly Media][ora], conference speaking, and consulting.
+After leaving JavaSoft, he dove deep into the Apple ecosystem. He helped a generation of developers learn about Objective-C and Mac OS X through books published by [O’Reilly Media][ora], conference speaking, and consulting.
 
-He also parlayed a lifelong passion as a phorographer into a second career documenting events for [TED Conferences][ted], [O’Reilly Media][ora], [Apple’s WWDC][aapl], and [Salesforce][sfe]. His work is published by the [New York Times][nyt], [BBC][bbc], and other major international news outlets. He also helped found [Luma Labs][luma], a small business based in Portland, Oregon that sells camera straps and accessores to photographers around the world.
+He also parlayed a lifelong passion as a photographer into a second career documenting events for [TED Conferences][ted], [O’Reilly Media][ora], [Apple’s WWDC][aapl], and [Salesforce][sfe]. His work has appeared in the [New York Times][nyt], [BBC][bbc], and other major international news outlets. He also helped found [Luma Labs][luma], a small business based in Portland, Oregon, that sells camera straps and accessories to photographers worldwide.
 
-During the 2010s, Duncan moved to Berlin and helped Wunderlist launch a major rewrite of their application backend. He then assisted the company’s acquisition and integration by [Microsoft][ms]. After the aqusition and integration was complete, he has spent the last few years helping out startups around the world as a CTO in Residence for [Microsoft for Startups][mfs].
+During the 2010s, Duncan moved to Berlin and helped Wunderlist launch a significant rewrite of their application backend. He then assisted the company’s acquisition and integration by [Microsoft][ms]. After the acquisition and integration were complete, he has spent the last few years helping out startups worldwide as a CTO in Residence for [Microsoft for Startups][mfs].
 
 Looking forward to 2021 and beyond, Duncan plans to remain active in technology and software development for at least another decade or two. He will continue making photographs as an amateur for the rest of his life.
 
 ## Professional History
 
-### Microsoft for Startups
+### Microsoft
 
-I’ve had two different roles at Microsoft for Startups:
+**January 2020 - Present: Principal Technical Advisor** at Microsoft for Startups, responsible for charting, identifying, and researching challenges in the startup landscape for Microsoft. Duncan also guided the development of a technical content plan for startup developers and researched opportunities for commercial Open Source startups in the Microsoft for Startups program.
 
-**January 2020 - Present: Principal Technical Advisor**, charting, identifing, and researching challenges in the startup landscape for Microsoft. I also guide the development of a technical content plan for startup developers, and research opportunities for commercial Open Source startups in the Microsoft for Startups program.
+**July 2018 - January 2020: CTO in Residence** at Microsoft for Startups, responsible for advising startups — both in and out of the Microsoft for Startups program. Duncan’s work included advising on technical leadership and architectural choices for the cloud, emphasizing leveraging Microsoft’s technology platforms to connect with enterprise customers that depend on Azure.
 
-**July 2018 - January 2020: CTO in Residence**, advising startups — both in the Microsoft for Startups program as well as outside — on technical matters ranging from the architectures they use to how they use cloud technologies, with a special emphasis on leveraging Microsoft’s technology platforms to connect with enterprise customers that depend on Azure.
+**July 2015 - July 2018: Principal Software Engineering Manager** at Microsoft To-Do, responsible for helping the Wunderlist engineering team transition from a small startup to a small group in a vast established company. Duncan guided the technical direction for integrating Wunderlist’s applications into Office 365 as [Microsoft To Do][todo]. He also oversaw the work needed to ensure GDPR compliance for Wunderlist’s operation through a planned 2020 shutdown.
 
-### Wunderlist / To Do @ Microsoft
+### 6Wunderkinder
 
-**July 2015 - July 2018: Principal Software Engineering Manager**, helpeing the Wunderlist engineering team transition from being in a small startup to being a small group in one of the largest software companies in the world. I guided the technical direction for the integration of Wunderlist’s applications into Office 365 as [Microsoft To Do][todo] and oversaw the work needed to ensure GDPR compliance for Wunderlist’s operation through a planned 2020 shutdown.
-
-### Wunderlist @ 6Wunderkinder
-
-**January 2014 - July 2015:** I ensured the successful and smooth launch of Wunderlist 3 by working on the sync implementation on both the server and client-side as well as with the creation of a massively parallel simulated user cluster that could simulate production workloads on our services. I also led the technical due diligence efforts for 6Wunderkinder in its acquisition by Microsoft.
+**January 2014 - July 2015: Technical Advisor** for Wunderlist, responsible for ensuring the successful and smooth launch of Wunderlist 3 with work on the sync implementation on both the server and client-side. This work included creating a massively parallel simulated user cluster that could reproduce production workloads on our services. Duncan also led the technical due diligence efforts for 6Wunderkinder in its acquisition by Microsoft.
 
 ### Luma Labs, LLC
 
-**2006 - 2014:** Partnered with industrial designer Greg Koenig in Portland Oregon to design, craft, locally manufacture, and sell camera slings for digital SLR cameras. Greg continues to operate an iteration of [Luma Labs][ll] to this day and has continued to manufacture the products in Oregon. I held a minority stake in the company until 2020.
+**2006 - 2014: Founder** partnering with industrial designer Greg Koenig in Portland, Oregon to design, craft, locally manufacture, and sell camera slings for digital SLR cameras. Greg continues to operate an iteration of [Luma Labs][ll] to this day and has continued to manufacture the products in Oregon. Duncan held a minority stake in the company until 2020.
 
-### Freelance Consultant
+### Independent
 
-**January 2002 - April 2014:** For twelve years, I freelanced for large and small companies consulting on technical implementations. Clients included [O’Reilly Media][ora], [VitalSource][vs], [Veritas][vrts], [Pragmatic Bookshelf][prag], [Election Systems & Software][ess], and [Apple][aapl]. Projects ranged from prototyping file system databases, creating hardened credit card processing gateways, and even racking and maintaining physical servers.
+**January 2002 - April 2014: Freelance Consultant** for companies large and small consulting on technical implementations. Clients included [O’Reilly Media][ora], [VitalSource][vs], [Veritas][vrts], [Pragmatic Bookshelf][prag], [Election Systems & Software][ess], and [Apple][aapl]. Projects ranged from prototyping file system databases, creating hardened credit card processing gateways, and even racking and maintaining physical servers.
 
 ### CollabNet
 
-**July 2001-December 2001:** Researched and prototyped source code management systems that integrated Subversion version tracking with issue tracking and documentation software.
+**July 2001-December 2001: Architect** responsible for researching and prototyping source code management systems that integrated the Subversion version tracking software with issue tracking and documentation software.
 
-### JavaSoft @ Sun Microsystems
+### Sun Microsystems
 
-I held three roles at Sun Microsystems:
+I held three titles at Sun Microsystems:
 
-**June 2000 - June 2001: Senior Staff Engineer**, evanglizing Open Source software at Sun Microsystems, assisting the onboarding of the Open Office and NetBeans acquisitions, and helping to lay the foundation to Open Source Java, which occured later in 2006.
+**June 2000 - June 2001: Senior Staff Engineer**, responsible for evangelizing Open Source software at Sun Microsystems, assisting the onboarding of the Open Office and NetBeans acquisitions, and laying the foundation to Open Source Java, which occurred later in 2006.
 
 **June 1999 - June 2000: Staff Engineer**, responsible for the [Java Servlet API][servlet] and the [Java API for XML Processing (JAXP)][jaxp] and their reference implementtions. I also represented Sun Microsystems to the [W3C DOM working group][dom] and worked on the donation of [Tomcat][tomcat] and [Ant][ant] to the [Apache Software Foundation][asf].
 
@@ -60,19 +56,19 @@ I held three roles at Sun Microsystems:
 
 ### Synapse Group
 
-**June 1995 - June 1997: Web Developer**, hired based on my website work while attending architecture school, I helped build a variety of early websites, including the very first versions of the [Hilton][htn] website.
+**June 1995 - June 1997: Web Developer**, responsible for helping to build a variety of early websites, including the first versions of the [Hilton][htn] website, which featured online reservations and frequency program features.
 
 ## Professional History (Photography)
 
-The highlight of my professional photography career is certainly being the main stage photographer for [TED Conferences][ted] from 2009 until 2016. I also photographed for O’Reilly Media’s conferences as well as events for Apple and Salesforce.
+The highlight of Duncan’s professional photography career is undoubtedly serving as the main stage photographer for [TED Conferences][ted] from 2009 until 2016. He also photographed for O’Reilly Media’s conferences as well as events for Apple and Salesforce.
 
 ## Published Works
 
 ### Agile Web Development with Rails
 
-This definitive book about Ruby on Rails by [Dave Thomas][dave] and [David Heinemeier Hansson][dhh] was first published by [Pragmatic Bookshelf][prag] in 2005, but Rails moved so fast that a slew of editions followed and Dave Thomas enlisted a group of co-authors, myself included, to complete them.
+This definitive book about Ruby on Rails by [Dave Thomas][dave] and [David Heinemeier Hansson][dhh] was first published by [Pragmatic Bookshelf][prag] in 2005. After that, Rails moved so fast that a slew of editions followed, and Dave Thomas enlisted a group of co-authors, including Duncan, to contribute.
 
-**2nd Edition: December 2006** was the first edition that my material focusing on deploying Rails applications appeared, along with contributions from Leon Breedt, Mike Clark, [Justin Gehtland][geht], and Andreas Schwarz.
+**2nd Edition: December 2006** was the first edition that Duncan’s material focusing on deploying Rails applications appeared, along with contributions from Leon Breedt, Mike Clark, [Justin Gehtland][geht], and Andreas Schwarz.
 <br><span class="text-xs">ISBN: 978-0977616633</span>
 
 **3rd Edition: April 2009** was updated for Rails version 2 with [Sam Ruby][samr] taking over as the lead author of the book.
@@ -81,21 +77,21 @@ This definitive book about Ruby on Rails by [Dave Thomas][dave] and [David Heine
 **4th Edition: March 2011** was updated for Rails version 3.
 <br><span class="text-xs">ISBN: 978-1934356548</span>
 
-After the 4th edition, the state of the art for Rails deployment had evolved enough that an entire re-write of my contributed material was necessary, and I dropped off the author roster for the future revisions covering later versions of Rails.
+After the 4th edition, state-of-the-art Rails deployment had evolved enough that an entire rewrite of Duncan’s contributed material was necessary, and he dropped off the author roster for future revisions.
 
 ### Mac OS X Panther Hacks
 
-This book, co-authored with [Rael Dornfest][rael] and published by [O’Reilly Media][ora] in 2004, brought together a collection of 100 tips and tricks to help serious Mac OS X users get the most from their operating system.
+Co-authored with [Rael Dornfest][rael] and published by [O’Reilly Media][ora] in 2004, this book brought together a collection of 100 tips and tricks to help Mac OS X users get the most from their operating system.
 <br><span class="text-xs">ISBN: 978-0596007188</span>
 
 ### Cocoa in a Nutshell
 
-O’Reilly’s _X in a Nutshell_ series served as the best API documentation there was for a variety of APIs and platforms in the era before online resources took over. This book, co-authored with [Micheal Beam][mb] and published by [O’Reilly Media][ora], was the Nutshell book for the Cocoa APIs that shipped with Mac OS X Panther.
+Co-authored with [Micheal Beam][mb] and published by [O’Reilly Media][ora], this book was a definitive reference for the Cocoa APIs that shipped with Mac OS X Panther.
 <br><span class="text-xs">ISBN: 978-0596004620</span>
 
 ### Running Mac OS X
 
-Running Mac OS X was designed to help give power uses the knowledge they needed to work better and faster with their operating system.
+Published by [O’Reilly Media][ora], this book series helped give power users the knowledge they needed to work better and faster with their operating system.
 
 **Running Mac OS X Panther, published 2003** focused on Mac OS X Panther, the second major update to Mac OS X — arguably the release where Mac OS X finished the transition from Mac OS 9.
 <br><span class="text-xs">ISBN: 978-0596005009</span>
@@ -103,43 +99,42 @@ Running Mac OS X was designed to help give power uses the knowledge they needed 
 **Running Mac OS X Tiger, published 2005** added [Jason Deraleau][deraleau] to the author roster for the book and updated the material for a new release of Mac OS X.
 <br><span class="text-xs">ISBN: 978-0596009137</span>
 
-Published by [O’Reilly Media][ora].
-
 ### Learning Cocoa with Objective-C, 2nd Ed.
 
-The second edition of Learning Cocoa, edited by [Chuck Toporek][ct] and published in September 2002 by [O’Reilly Media][ora], was my rewrite of Apple’s examples and documentation into a cohesive book that became a staple for developers learning Objective-C on Apple’s platforms for years.
+Published in September 2002 by [O’Reilly Media][ora] and edited by [Chuck Toporek][ct], this was Ducan’s rewrite of Apple’s examples and documentation into a cohesive book that became a staple for developers learning Objective-C on Apple’s platforms for years.
 <br><span class="text-xs">ISBN: 978-0596003012</span>
 
-After a decade of Mac OS X updates and the addition of iOS along with the app stores, a significant rewrite was needed. The 3rd edition headed up by [Paris Buttfield-Addison][parisba] and [Jonathon Manning][jm] was published in 2012. A 4th edition followed in 2014 with [Tim Nugent][tn] joining the author roster.
+After a decade of Mac OS X updates and the introduction of iOS along with the app stores, the book needed a significant rewrite. The 3rd edition, headed up by [Paris Buttfield-Addison][parisba] and [Jonathon Manning][jm], was published in 2012. A 4th edition followed in 2014 with [Tim Nugent][tn] joining the author roster.
 
 ### Java 2 Platform, Enterprise Edition
 
-The Java Servlet API was part of the broader Java 2 Enterprise Edition (J2EE) platform. In May 2000, Pearson Education published a collection of all the relevant platform and compenent specifications for J2EE version 1.0. This included the work of all the J2EE specification leads — [Bill Shannon][bills], [Mark Hapner][markh], [Vlada Matena][vlada], [Eduardo Pelegri-Llopart][epl], [Larry Cable][cable], and myself — to create the authoritative book for platform implementors.
+The Java Servlet API was part of the broader Java 2 Enterprise Edition (J2EE) platform. In May 2000, Pearson Education published a collection of all the relevant platform and component specifications for J2EE version 1.0. This included the work of all the J2EE specification leads — [Bill Shannon][bills], [Mark Hapner][markh], [Vlada Matena][vlada], [Eduardo Pelegri-Llopart][epl], [Larry Cable][cable], and Duncan — to create the authoritative book for platform implementors.
 
 ### Java API for XML Processing
 
-The Java API for XML Processing (JAXP) working group was started by David Brownell as [Java Specification Request 5][jsr5]. I took over the chair of the group in 1999 and shipped [JAXP version 1.0][jaxpdf] in March 2000. [Rajiv Mordani][rajiv] took over work on the specification after Version 1.0.
+David Brownell started the Java API for XML Processing (JAXP) working group as [Java Specification Request 5][jsr5]. Duncan took over as the group’s chair in 1999 and shipped [JAXP version 1.0][jaxpdf] in March 2000. [Rajiv Mordani][rajiv] took over work on the specification after Version 1.0.
 
 ### Java Servlet API
 
-The first versions of the Java Servlet API were created by [Pavni Diwanji][pavni] and [Satish Dharmaraj][satish] and shipped as JavaDoc documentation with the Java Web Server. From that starting point in 1998, I formed a working group of industry representatives and formalized the work into a full specification.
+The first versions of the Java Servlet API were created by [Pavni Diwanji][pavni] and [Satish Dharmaraj][satish] and shipped as JavaDoc documentation with the Java Web Server. From that starting point in 1998, Duncan formed a working group of industry representatives and formalized it into a full specification.
 
-**Version 2.0**, released April 1998, included support for internationalization, cookies, session tracking, and support for HTTP/1.1.
+**Version 2.0**, released April 1998, including support for internationalization, cookies, session tracking, and support for HTTP/1.1.
 
 **Version 2.1**, released November 1998, included support for request dispatching, information sharing through request contexts, and server-side resource management.
 
-**Version 2.2**, released August 1999, included pluggable web applications, enhanced control over HTTP headers, added response buffering, more control over HTTP response headers, and new methods for request handling.
+**Version 2.2**, released August 1999, included pluggable web applications, enhanced control over HTTP headers, added response buffering, more control over HTTP response headers, and new request handling methods.
 
 [Rajiv Mordani][rajiv] took over work on the specification after Version 2.2.
 
 ## Education
 
-I studied architecture at [Oklahoma State University][okstate], the [University of Houston][uh], and the [University of Texas at Arlington][uta]. I did not, however, complete my studies thanks an opportunity to work on the early web. I thought the detour might be temporary and that I’d return to finish my degree work when the web was done.
+Duncan studied architecture at [Oklahoma State University][okstate], the [University of Houston][uh], and [the University of Texas at Arlington][uta]. However, he did not complete his studies thanks to an opportunity to work on the early web. He thought the detour might be temporary and that he’d return to finish his degree work when interest in the World Wide Web waned.
 
-The web, of course, is still very much a thing. I never returned back to school to finish a degree.
+The web, of course, is still very much a thing.
 
-Before university, I attended [Union High School][uhs] in Tulsa Oklahoma, [Anderson High School][ahs] in Austin Texas, and [Newman Smith High School][ns] in Carrollton Texas.
+Before university, Duncan attended [Union High School][uhs] in Tulsa, Oklahoma, [Anderson High School][ahs] in Austin, Texas, and [Newman Smith High School][ns] in Carrollton, Texas.
 
+[bm]: https://hbr.org/2019/05/dont-be-blinded-by-your-own-expertise
 [ant]: http://ant.apache.org
 [tomcat]: http://tomcat.apache.org
 [aw]: https://www.pearson.com/us/higher-education/series/Addison-Wesley-Professional-Computing-Series/334583.html
