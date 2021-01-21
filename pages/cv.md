@@ -2,17 +2,21 @@
 title: Curriculum Vitae
 ---
 
-# CV: Duncan Davidson
+# Curriculum Vitae
 
-I’ve had a non-traditional career path guided by an interest in both technology and art from a young age. I am a generalist at heart that picks up new technologies, languages, and tools for whatever problem is at hand, always with a beginner mindset. I am not necessarily the fastest at any particular task. My strength, however, is making new connections from a multitude of possibilities and helping others move faster.
+<span class="text-xs">This is the long version. See [Duncan’s resume](/resume) if you want the short version.</span>
 
-I studied architecture at University but left in the mid-1990s to work on the early World Wide Web. It was the right time and place and led to my joining JavaSoft and leading the development and release of [Apache Ant][ant] and [Apache Tomcat][tomcat]. After that, I helped a generation of developers learn Objective-C and other technologies for Apple’s platforms through books published by [O’Reilly Media][ora]. Through it all, I have continued working and writing on the web.
+**James Duncan Davidson’s career path is a non-traditional one guided by deep interests in technology, architecture, and art.** He is a generalist at heart who picks up new technologies, languages, and tools for whatever problem is at hand, always with a beginner mindset. His strength is making new insights and connections from a multitude of possibilities and helping others move faster. He has created and delivered software platforms that millions of developers have used, written books that helped a generation of Mac developers, and made photographs that have helped promote and distribute hundreds of TED talks.
 
-A lifelong amateur photographer, I’ve also worked as a professional photographer, covering events for [TED Conferences][ted], [O’Reilly Media][ora], [Apple’s WWDC][aapl], and [Salesforce][sfe] as well as contributing to non-profit environmental organizations. My work is published by the [New York Times][nyt], [BBC][bbc], and other major international news outlets. I even co-owned a small business selling camera straps in Portland, Oregon.
+His career started in the mid-1990s when a chance to work on the early World Wide Web interrupted his architectural studies at university. This led to employment at JavaSoft, a division of Sun Microsystems, where he created [Apache Ant][ant] and [Apache Tomcat][tomcat], and then led their development and release to the Apache Software Foundation.
 
-During the 2010s, I moved to Berlin, helped Wunderlist launch a major rewrite of their application backend, and assisted the company’s acquisition by [Microsoft][ms]. I have spent the last two years helping out startups around the world as a CTO in Residence for [Microsoft for Startups][mfs].
+After leaving JavaSoft, he dove deep into the Apple ecosystem and helped a generation of developers learn about Objective-C and Mac OS X, through books published by [O’Reilly Media][ora], conference speaking, and consulting.
 
-Looking forward to 2021 and beyond, I plan to remain active in technology and software development for at least another decade or two and to continue making photographs as an amateur well after that. There may also be more writing in my future, on both software development, and photography.
+He also parlayed a lifelong passion as a phorographer into a second career documenting events for [TED Conferences][ted], [O’Reilly Media][ora], [Apple’s WWDC][aapl], and [Salesforce][sfe]. His work is published by the [New York Times][nyt], [BBC][bbc], and other major international news outlets. He also helped found [Luma Labs][luma], a small business based in Portland, Oregon that sells camera straps and accessores to photographers around the world.
+
+During the 2010s, Duncan moved to Berlin and helped Wunderlist launch a major rewrite of their application backend. He then assisted the company’s acquisition and integration by [Microsoft][ms]. After the aqusition and integration was complete, he has spent the last few years helping out startups around the world as a CTO in Residence for [Microsoft for Startups][mfs].
+
+Looking forward to 2021 and beyond, Duncan plans to remain active in technology and software development for at least another decade or two. He will continue making photographs as an amateur for the rest of his life.
 
 ## Professional History
 
@@ -147,6 +151,7 @@ Before university, I attended [Union High School][uhs] in Tulsa Oklahoma, [Ander
 [sfe]: https://www.salesforce.com/events/
 [nyt]: https://www.nytimes.com
 [bbc]: https://www.bbc.com
+[luma]: https://luma-labs.com
 [ms]: https://microsoft.com
 [mfs]: https://startups.microsoft.com/en-us/
 [uta]: https://www.uta.edu/academics/schools-colleges/cappa/academics/architecture
