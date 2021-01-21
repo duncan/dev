@@ -12,12 +12,12 @@ export default function ContentPage(props: ContentProps) {
         <link rel="shortcut icon" href="/favicon-32.ico" />
       </Head>
 
-      <div
+      <article
         className="container mx-auto px-4 py-4 prose max-w-xl"
         dangerouslySetInnerHTML={{ __html: props.html }}
       />
 
-      <footer>footer</footer>
+      <footer></footer>
     </Layout>
   )
 }
