@@ -115,3 +115,21 @@
     unicode-range: U+1F00-1FFF;
   }
 }
+@media (prefers-color-scheme: dark) {
+  html,
+  body {
+    background-color: #222;
+  }
+  p,
+  div,
+  a,
+  strong,
+  .prose p,
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose strong,
+  .prose a {
+    @apply text-gray-50;
+  }
+}

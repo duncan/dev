@@ -3,9 +3,12 @@ module.exports = {
     './pages/**/*.{js,tsx,md}',
     './components/**/*.{js,tsx}'
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      // screens: {
+      //   'dark-mode': { raw: '(prefers-color-scheme: dark)' }
+      // },
       typography: {
         DEFAULT: {
           css: {
@@ -35,18 +38,6 @@ module.exports = {
           "Noto Color Emoji"
         ]
       },
-      // fontSize: {
-      //   'tiny': '1em',
-      //   'base': '1.125em',
-      //   'lg': '1.25em',
-      //   'xl': '1.5em',
-      //   '2xl': '1.875em',
-      //   '3xl': '2.25em',
-      //   '4xl': '3rem',
-      //   '5xl': '4rem',
-      //   '6xl': '5rem',
-      //   '7xl': '6rem'
-      // }
     },
   },
   variants: {
