@@ -12,7 +12,7 @@ title: Resume
 
 ### Microsoft for Startups
 
-**January 2020 - Present: Principal Technical Advisor**, responsible for charting, identifying, and researching challenges in the startup landscape for Microsoft.
+**January 2020 - February 2021: Principal Technical Advisor**, responsible for charting, identifying, and researching challenges in the startup landscape for Microsoft.
 
 **July 2018 - January 2020: CTO in Residence**, responsible for advising startups both in and out of the Microsoft for Startups program on technical and technical management matters.
 

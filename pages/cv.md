@@ -22,7 +22,7 @@ Looking forward to 2021 and beyond, Duncan plans to remain active in technology 
 
 ### Microsoft
 
-**January 2020 - Present: Principal Technical Advisor** at Microsoft for Startups, responsible for charting, identifying, and researching challenges in the startup landscape for Microsoft. Duncan also guided the development of a technical content plan for startup developers and researched opportunities for commercial Open Source startups in the Microsoft for Startups program.
+**January 2020 - February 2021: Principal Technical Advisor** at Microsoft for Startups, responsible for charting, identifying, and researching challenges in the startup landscape for Microsoft. Duncan also guided the development of a technical content plan for startup developers and researched opportunities for commercial Open Source startups in the Microsoft for Startups program.
 
 **July 2018 - January 2020: CTO in Residence** at Microsoft for Startups, responsible for advising startups — both in and out of the Microsoft for Startups program. Duncan’s work included advising on technical leadership and architectural choices for the cloud, emphasizing leveraging Microsoft’s technology platforms to connect with enterprise customers that depend on Azure.
 
