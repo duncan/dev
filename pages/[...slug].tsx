@@ -13,7 +13,7 @@ export default function ContentPage(props: ContentProps) {
       </Head>
 
       <article
-        className="container mx-auto px-4 py-4 prose max-w-xl"
+        className="container prose mx-auto max-w-xl py-16 px-4"
         dangerouslySetInnerHTML={{ __html: props.html }}
       />
 
@@ -24,7 +24,7 @@ export default function ContentPage(props: ContentProps) {
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
   let paths = pageStaticPaths().map((value: Array<string>) => {
-    return { params: { id: value } }
+    return { params: { slug: value } }
   })
   return {
     paths: paths,
@@ -35,7 +35,7 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 export async function getStaticProps({
   params,
 }): Promise<GetStaticPropsResult<ContentProps>> {
-  let content = contentFromStaticPath(params.id as Array<string>)
+  let content = contentFromStaticPath(params.slug as Array<string>)
   return {
     props: content.props,
   }
