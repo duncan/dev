@@ -130,6 +130,6 @@
   .prose h3,
   .prose strong,
   .prose a {
-    @apply text-gray-50;
+    @apply text-gray-300;
   }
 }
