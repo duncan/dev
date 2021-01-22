@@ -8,11 +8,11 @@ export default function Home() {
       <Head>
         <title>Duncan Davidson</title>
       </Head>
-      <article className="container mx-auto prose max-w-xl px-4">
+      <article className="container prose mx-auto max-w-xl py-16 px-4">
         <h1>Duncan Davidson</h1>
         <h2>
-          Software developer, photographer, and author. Made in America, living
-          in Berlin, Germany.
+          Software developer, photographer, and author. American immigrant
+          living in Berlin, Germany.
         </h2>
         <p>
           My{' '}

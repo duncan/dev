@@ -47,7 +47,7 @@ export default function Layout({
           type="font/woff2"
         ></link>
       </Head>
-      <header className="container prose mx-auto max-w-xl py-16 px-4">
+      <header className="container prose mx-auto max-w-xl pt-16 px-4">
         <Link href="/">
           <a>
             <Image
@@ -61,7 +61,7 @@ export default function Layout({
         </Link>
       </header>
       {children}
-      <footer className="container prose mx-auto max-w-xl py-32 px-4">
+      <footer className="container prose mx-auto max-w-xl py-16 px-4">
         {/* <Link href="/copyright"><a>copyright</a></Link>
       &bull;
       <Link href="/colophon"><a>colophon</a></Link> */}
