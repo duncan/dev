@@ -6,7 +6,7 @@ title: Curriculum Vitae
 
 <span class="text-xs">This is the long version. See [Duncan’s resume](/resume) if you want the short version.</span>
 
-**James Duncan Davidson is a seasoned technology leader with a non-traditional career path guided by deep interests in technology, architecture, and art.** He is a generalist at heart who picks up new technologies, languages, and tools for whatever problem is at hand, always with a [beginner’s mindset][bm]. He creates new insights and connections from a multitude of possibilities and helping others move faster. He has developed and delivered software platforms that millions of developers have used, written books that helped a generation of Mac developers, and made iconic photographs that have promoted hundreds of TED speakers’ presentations.
+**James Duncan Davidson is a seasoned technology leader with a non-traditional career path guided by deep interests in technology, architecture, and art.** He is a generalist at heart who picks up new technologies, languages, and tools for whatever problem is at hand, always with a [beginner’s mindset][bm]. He has developed and delivered software platforms that millions of developers have used, written books that helped a generation of Mac developers, and made iconic photographs that have promoted hundreds of TED speakers’ presentations.
 
 His career started in the mid-1990s when a chance to work on the early World Wide Web interrupted his university’s architectural studies. He found himself at the right time at the right place. This work led to employment at JavaSoft, a division of Sun Microsystems, where he created [Apache Ant][ant] and [Apache Tomcat][tomcat]. He then led their development and release to the Apache Software Foundation.
 
@@ -99,7 +99,7 @@ Published by [O’Reilly Media][ora], this book series helped give power users t
 **Running Mac OS X Tiger, published 2005** added [Jason Deraleau][deraleau] to the author roster for the book and updated the material for a new release of Mac OS X.
 <br><span class="text-xs">ISBN: 978-0596009137</span>
 
-### Learning Cocoa with Objective-C, 2nd Ed.
+### Learning Cocoa with Objective-C
 
 Published in September 2002 by [O’Reilly Media][ora] and edited by [Chuck Toporek][ct], this was Ducan’s rewrite of Apple’s examples and documentation into a cohesive book that became a staple for developers learning Objective-C on Apple’s platforms for years.
 <br><span class="text-xs">ISBN: 978-0596003012</span>
