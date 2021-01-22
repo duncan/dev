@@ -5,19 +5,19 @@ import { Content, ContentProps } from '../../lib/content'
 import Layout from '../../components/layout'
 
 export default function Blog(props: BlogProps) {
-  let issueTitle = 'foo'
-
   return (
     <Layout>
       <Head>
-        <title>Blog</title>
+        <title>
+          Input/Output {props.issue}: {props.title}
+        </title>
         <link rel="shortcut icon" href="/favicon-32.ico" />
       </Head>
 
       <header className="container prose mx-auto max-w-xl pt-16 pb-8 px-4">
         <h1>Input/Output</h1>
         <p>
-          Issue: {props.issue} • {issueTitle}
+          Issue: {props.issue} — {props.title}
         </p>
 
         <p>
@@ -53,6 +53,7 @@ export async function getStaticProps({
   return {
     props: {
       issue: params.issue,
+      title: titleForIssue(params.issue),
     },
   }
 }

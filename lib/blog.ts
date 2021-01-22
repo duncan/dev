@@ -5,6 +5,7 @@ import { Content } from './content'
 
 export interface BlogProps {
   issue: string
+  title: string
 }
 
 export function blogStaticPaths(dir = 'blog'): Array<Array<string>> {
