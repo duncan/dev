@@ -1,14 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-import unified from 'unified'
-import markdown from 'remark-parse'
-import frontmatter from 'remark-frontmatter'
-import extract from 'remark-extract-frontmatter'
-import html from 'remark-html'
-import yaml from 'yaml'
+import matter from 'gray-matter'
 
 export interface ContentProps {
-  html: string
+  text: string
   meta: {}
   title?: string
   date?: string
@@ -18,7 +13,7 @@ export interface ContentProps {
 export class Content {
   filename: string
   rawText: string
-  html: string
+  text: string
   meta: {}
 
   constructor(filename: string) {
@@ -26,15 +21,9 @@ export class Content {
 
     this.rawText = fs.readFileSync(filename, 'utf8')
 
-    let doc = unified()
-      .use(frontmatter)
-      .use(extract, { yaml: yaml.parse })
-      .use(markdown)
-      .use(html)
-      .processSync(this.rawText)
-
-    this.html = String(doc.contents)
-    this.meta = doc.data
+    let props = matter(this.rawText)
+    this.meta = props.data
+    this.text = props.content
   }
 
   get type(): string {
@@ -63,7 +52,7 @@ export class Content {
 
   get props(): ContentProps {
     let props = {
-      html: this.html,
+      text: this.text,
       meta: this.meta,
     }
 

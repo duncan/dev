@@ -1,4 +1,9 @@
-import { BlogProps, blogStaticPaths, titleForIssue } from '../../lib/blog'
+import {
+  BlogProps,
+  blogStaticPaths,
+  titleForIssue,
+  blogPropsForIssue,
+} from '../../lib/blog'
 import { GetStaticPathsResult, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
 import { Content, ContentProps } from '../../lib/content'
@@ -16,9 +21,9 @@ export default function Blog(props: BlogProps) {
 
       <header className="container prose mx-auto max-w-xl pt-16 pb-8 px-4">
         <h1>Input/Output</h1>
-        <p>
+        <div>
           Issue: {props.issue} — {props.title}
-        </p>
+        </div>
 
         <p>
           Quick thoughts and pointers from Duncan for the week of January
@@ -50,10 +55,5 @@ export async function getStaticProps({
   params,
 }): Promise<GetStaticPropsResult<BlogProps>> {
   //titleForIssue(props.issue)
-  return {
-    props: {
-      issue: params.issue,
-      title: titleForIssue(params.issue),
-    },
-  }
+  return { props: blogPropsForIssue(params.issue) }
 }

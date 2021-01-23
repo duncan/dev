@@ -36,21 +36,13 @@ describe('Content', () => {
     })
   })
 
-  describe('content', () => {
-    test('raw text from link.md', () => {
-      expect(linkContent.rawText).toContain('title: Link title')
+  describe('text', () => {
+    test('text from link.md', () => {
+      expect(linkContent.text).toContain('Text [Linked text][link]')
     })
 
-    test('raw text from no-meta.md', () => {
-      expect(noMetaContent.rawText).toContain('This is some markdown')
-    })
-
-    test('html from link.md', () => {
-      expect(linkContent.html).toContain('<p>Text <a href="https:')
-    })
-
-    test('html from no-meta.md', () => {
-      expect(noMetaContent.html).toContain('<p>This is some markdown')
+    test('text from no-meta.md', () => {
+      expect(noMetaContent.text).toContain('This is some markdown')
     })
   })
 
@@ -58,8 +50,8 @@ describe('Content', () => {
     test('props from link.md', () => {
       let props = linkContent.props
       expect(props.title).toBe('Link title')
-      expect(props.html).toContain('<p>Text <a href="https:')
-      expect(props.date).toEqual('2021-01-19')
+      expect(props.text).toContain('Text [Linked text][link]')
+      //expect(props.date).toEqual('2021-01-19')
       expect(props.emoji).toBe('🤦‍♂️')
       expect(props.meta['emoji']).toBe('🤦‍♂️')
       expect(props.meta['title']).toBe('Link title')
@@ -69,7 +61,7 @@ describe('Content', () => {
     test('props from no-meta.md', () => {
       let props = noMetaContent.props
       expect(props.meta).toEqual({})
-      expect(props.html).toContain('<p>This is some markdown')
+      expect(props.text).toContain('This is some markdown')
       expect(props.title).toBeUndefined
       expect(props.date).toBeUndefined
       expect(props.emoji).toBeUndefined

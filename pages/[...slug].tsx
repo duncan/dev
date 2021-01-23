@@ -4,7 +4,14 @@ import Head from 'next/head'
 import { Content, ContentProps } from '../lib/content'
 import Layout from '../components/layout'
 
+import unified from 'unified'
+import markdown from 'remark-parse'
+import html from 'remark-html'
+
 export default function ContentPage(props: ContentProps) {
+  let content = unified().use(markdown).use(html).processSync(props.text)
+    .contents
+
   return (
     <Layout>
       <Head>
@@ -14,7 +21,7 @@ export default function ContentPage(props: ContentProps) {
 
       <article
         className="container prose mx-auto max-w-xl py-16 px-4"
-        dangerouslySetInnerHTML={{ __html: props.html }}
+        dangerouslySetInnerHTML={{ __html: content }}
       />
 
       <footer></footer>
