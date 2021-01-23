@@ -9,8 +9,11 @@ import markdown from 'remark-parse'
 import html from 'remark-html'
 
 export default function ContentPage(props: ContentProps) {
-  let content = unified().use(markdown).use(html).processSync(props.text)
-    .contents
+  let content = unified()
+    .use(markdown)
+    .use(html)
+    .processSync(props.text)
+    .contents.toString()
 
   return (
     <Layout>
