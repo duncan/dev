@@ -11,6 +11,10 @@ export interface ContentProps {
   emoji?: string
 }
 
+export interface ContentCollectionProps {
+  collection: Array<ContentProps>
+}
+
 export class Content {
   slug: string
   filename: string

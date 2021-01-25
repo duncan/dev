@@ -3,11 +3,12 @@ import Link from 'next/link'
 import Layout from '../components/layout'
 import { GetStaticPropsResult } from 'next'
 import { contentCollectionForStaticPrefix } from '../lib/site'
+import { ContentCollectionProps } from '../lib/content'
 import unified from 'unified'
 import markdown from 'remark-parse'
 import html from 'remark-html'
 
-export default function Blog(props) {
+export default function Blog(props: ContentCollectionProps) {
   return (
     <Layout>
       <Head>
@@ -68,14 +69,13 @@ export default function Blog(props) {
   )
 }
 
-export async function getStaticProps({}): Promise<GetStaticPropsResult<{}>> {
+export async function getStaticProps({}): Promise<
+  GetStaticPropsResult<ContentCollectionProps>
+> {
   let content = contentCollectionForStaticPrefix(['io'])
-  //console.log(content)
-
   let collection = contentCollectionForStaticPrefix(['io']).map((o) => {
     return o.props
   })
-  //console.log(collection)
   return {
     props: { collection: collection },
   }
