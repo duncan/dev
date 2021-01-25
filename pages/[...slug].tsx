@@ -14,15 +14,13 @@ export default function ContentPage(props: ContentProps) {
     .use(html)
     .processSync(props.text)
     .contents.toString()
-    
-    
-    
-    
-    var datestring = ""
 
-    if (props.date) {
-      let date = new Date(props.date)
-      datestring = date.toLocaleString('en-gb', {
+  var datestring = ''
+
+  if (props.date) {
+    let date = new Date(props.date)
+    datestring =
+      date.toLocaleString('en-gb', {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
@@ -32,7 +30,7 @@ export default function ContentPage(props: ContentProps) {
         hour: '2-digit',
         minute: '2-digit',
       })
-    }
+  }
   return (
     <Layout>
       <Head>
@@ -44,10 +42,9 @@ export default function ContentPage(props: ContentProps) {
         <div className="text-5xl pb-2">{props.emoji}</div>
         <h1 className="text-4xl font-extrabold">{props.title}</h1>
         <div className="text-xs">{datestring}</div>
-      </header> 
-      
+      </header>
+
       <div className="container prose mx-auto max-w-xl px-4">
-        
         <article dangerouslySetInnerHTML={{ __html: content }} />
       </div>
       <footer></footer>
