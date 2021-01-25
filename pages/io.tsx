@@ -75,7 +75,7 @@ export async function getStaticProps({}): Promise<GetStaticPropsResult<{}>> {
   let collection = contentCollectionForStaticPrefix(['io']).map((o) => {
     return o.props
   })
-  console.log(collection)
+  //console.log(collection)
   return {
     props: { collection: collection },
   }

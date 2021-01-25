@@ -14,7 +14,25 @@ export default function ContentPage(props: ContentProps) {
     .use(html)
     .processSync(props.text)
     .contents.toString()
+    
+    
+    
+    
+    var datestring = ""
 
+    if (props.date) {
+      let date = new Date(props.date)
+      datestring = date.toLocaleString('en-gb', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      }) +
+      ' • ' +
+      date.toLocaleTimeString('en-gb', {
+        hour: '2-digit',
+        minute: '2-digit',
+      })
+    }
   return (
     <Layout>
       <Head>
@@ -22,8 +40,14 @@ export default function ContentPage(props: ContentProps) {
         <link rel="shortcut icon" href="/favicon-32.ico" />
       </Head>
 
-      <div className="container prose mx-auto max-w-xl py-16 px-4">
-        <h1>{props.title}</h1>
+      <header className="container mx-auto max-w-xl pt-16 px-4">
+        <div className="text-5xl pb-2">{props.emoji}</div>
+        <h1 className="text-4xl font-extrabold">{props.title}</h1>
+        <div className="text-xs">{datestring}</div>
+      </header> 
+      
+      <div className="container prose mx-auto max-w-xl px-4">
+        
         <article dangerouslySetInnerHTML={{ __html: content }} />
       </div>
       <footer></footer>
