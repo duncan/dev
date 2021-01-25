@@ -1,4 +1,4 @@
-import { pageStaticPaths, contentFromStaticPath } from '../lib/pages'
+import { staticPaths, contentForStaticPath } from '../lib/site'
 import { GetStaticPathsResult, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
 import { Content, ContentProps } from '../lib/content'
@@ -22,18 +22,17 @@ export default function ContentPage(props: ContentProps) {
         <link rel="shortcut icon" href="/favicon-32.ico" />
       </Head>
 
-      <article
-        className="container prose mx-auto max-w-xl py-16 px-4"
-        dangerouslySetInnerHTML={{ __html: content }}
-      />
-
+      <div className="container prose mx-auto max-w-xl py-16 px-4">
+        <h1>{props.title}</h1>
+        <article dangerouslySetInnerHTML={{ __html: content }} />
+      </div>
       <footer></footer>
     </Layout>
   )
 }
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
-  let paths = pageStaticPaths().map((value: Array<string>) => {
+  let paths = staticPaths().map((value: Array<string>) => {
     return { params: { slug: value } }
   })
   return {
@@ -45,7 +44,7 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 export async function getStaticProps({
   params,
 }): Promise<GetStaticPropsResult<ContentProps>> {
-  let content = contentFromStaticPath(params.slug as Array<string>)
+  let content = contentForStaticPath(params.slug as Array<string>)
   return {
     props: content.props,
   }

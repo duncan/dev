@@ -2,8 +2,6 @@
 title: Curriculum Vitae
 ---
 
-# Curriculum Vitae
-
 <span class="text-xs">This is the long version. See [Duncan’s resume](/resume) if you want the short version.</span>
 
 **James Duncan Davidson is a seasoned technology leader with a non-traditional career path guided by deep interests in technology, architecture, and art.** He is a generalist at heart who picks up new technologies, languages, and tools for whatever problem is at hand, always with a [beginner’s mindset][bm]. He has developed and delivered software platforms that millions of developers have used, written books that helped a generation of Mac developers, and made iconic photographs that have promoted hundreds of TED speakers’ presentations.

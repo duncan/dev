@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export interface ContentProps {
+  slug: string
   text: string
   meta: {}
   title?: string
@@ -11,17 +12,20 @@ export interface ContentProps {
 }
 
 export class Content {
+  slug: string
   filename: string
-  rawText: string
   text: string
   meta: {}
 
-  constructor(filename: string) {
+  // we need the path to the file _and_ the slug of the content on the website
+
+  constructor(filename: string, slug: string) {
     this.filename = filename
+    this.slug = slug
 
-    this.rawText = fs.readFileSync(filename, 'utf8')
+    let rawText = fs.readFileSync(filename, 'utf8')
 
-    let props = matter(this.rawText)
+    let props = matter(rawText)
     this.meta = props.data
     this.text = props.content
   }
@@ -52,6 +56,7 @@ export class Content {
 
   get props(): ContentProps {
     let props = {
+      slug: this.slug,
       text: this.text,
       meta: this.meta,
     }
