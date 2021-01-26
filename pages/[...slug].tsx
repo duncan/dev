@@ -1,4 +1,4 @@
-import { staticPaths, contentForStaticPath } from '../lib/site'
+import { Site } from '../lib/site'
 import { GetStaticPathsResult, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
 import { Content, ContentProps } from '../lib/content'
@@ -39,7 +39,7 @@ export default function ContentPage(props: ContentProps) {
       </Head>
 
       <header className="container mx-auto max-w-xl pt-16 px-4">
-        <div className="text-5xl pb-2">{props.emoji}</div>
+        <div className="text-5xl pb-4">{props.emoji}</div>
         <h1 className="text-4xl font-extrabold">{props.title}</h1>
         <div className="text-xs">{datestring}</div>
       </header>
@@ -53,9 +53,11 @@ export default function ContentPage(props: ContentProps) {
 }
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
-  let paths = staticPaths().map((value: Array<string>) => {
-    return { params: { slug: value } }
-  })
+  let paths = Site.instance()
+    .staticPaths()
+    .map((value: Array<string>) => {
+      return { params: { slug: value } }
+    })
   return {
     paths: paths,
     fallback: false,
@@ -65,7 +67,9 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 export async function getStaticProps({
   params,
 }): Promise<GetStaticPropsResult<ContentProps>> {
-  let content = contentForStaticPath(params.slug as Array<string>)
+  let content = Site.instance().contentForStaticPath(
+    params.slug as Array<string>
+  )
   return {
     props: content.props,
   }

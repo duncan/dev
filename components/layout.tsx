@@ -47,7 +47,7 @@ export default function Layout({
           type="font/woff2"
         ></link>
       </Head>
-      <header className="container prose mx-auto max-w-xl pt-16 px-4">
+      <header className="container mx-auto max-w-xl pt-16 px-4">
         <Link href="/">
           <a>
             <Image
