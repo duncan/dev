@@ -1,3 +1,4 @@
+import path from 'path'
 import { Content, ContentProps } from '../lib/content'
 
 describe('Content', () => {
@@ -6,7 +7,8 @@ describe('Content', () => {
 
   describe('filename', () => {
     test('filename is set', () => {
-      expect(linkContent.filename).toBe('test-content/link.md')
+      let expected = path.resolve('test-content/link.md')
+      expect(linkContent.filename).toBe(expected)
     })
   })
 

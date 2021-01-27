@@ -16,19 +16,28 @@ export interface ContentCollectionProps {
 }
 
 export class Content {
+  mtime: Date
   slug: string
   filename: string
   text: string
   meta: {}
 
-  // we need the path to the file _and_ the slug of the content on the website
-
   constructor(filename: string, slug: string) {
-    this.filename = filename
+    this.filename = path.resolve(filename)
     this.slug = slug
+    this.load()
+  }
 
-    let rawText = fs.readFileSync(filename, 'utf8')
-
+  load() {
+    let thisMTime = fs.statSync(this.filename).mtime
+    if (
+      this.mtime != undefined &&
+      this.mtime.getTime() == thisMTime.getTime()
+    ) {
+      return
+    }
+    this.mtime = thisMTime
+    let rawText = fs.readFileSync(this.filename, 'utf8')
     let props = matter(rawText)
     this.meta = props.data
     this.text = props.content
@@ -59,6 +68,7 @@ export class Content {
   }
 
   get props(): ContentProps {
+    this.load()
     let props = {
       slug: this.slug,
       text: this.text,

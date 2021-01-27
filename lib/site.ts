@@ -1,9 +1,11 @@
 import glob from 'glob'
+import path from 'path'
 import { Content, ContentProps } from './content'
 import * as lodash from 'lodash'
 
 export class Site {
   private _dir: string
+
   contents: { [slug: string]: Content } = {}
 
   get dir() {
@@ -11,11 +13,11 @@ export class Site {
   }
 
   private constructor(dir = 'public') {
-    this._dir = dir
-    this.reload()
+    this._dir = path.resolve(dir)
+    this.load()
   }
 
-  reload() {
+  load() {
     glob.sync(`${this._dir}/**/*.md`).forEach((filename: string) => {
       let slug = filename.replace(/\.md$/, '').slice(this.dir.length + 1)
       if (!this.contents[slug]) {

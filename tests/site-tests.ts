@@ -1,32 +1,29 @@
+import path from 'path'
 import { Site } from '../lib/site'
 
 describe('Site', () => {
+  let testSite = Site.instance('test-content')
+
   describe('singleton', () => {
     test('same instance returned for same directory', () => {
-      expect(Site.instance('test-content')).toBe(Site.instance('test-content'))
-    })
-    test('different instances returned for different directories', () => {
-      expect(Site.instance('test-content/dir')).not.toBe(
-        Site.instance('test-content')
-      )
+      expect(testSite).toBe(Site.instance('test-content'))
     })
     test('instance has dir property', () => {
-      let site = Site.instance('test-content')
-      expect(site.dir).toBe('test-content')
+      let expectedDir = path.resolve('test-content')
+      expect(testSite.dir).toBe(expectedDir)
     })
   })
 
   describe('paths', () => {
     test('content paths', () => {
-      let paths = Site.instance('test-content').contentPaths()
+      let paths = testSite.contentPaths()
       expect(paths.length).toBeGreaterThan(0)
       expect(paths).toContain('link.md')
       expect(paths).toContain('dir/post.md')
     })
 
     test('static paths', () => {
-      let site = Site.instance('test-content')
-      let paths = site.staticPaths()
+      let paths = testSite.staticPaths()
       expect(paths).toContainEqual(['link'])
       expect(paths).toContainEqual(['dir', 'post'])
     })
@@ -34,9 +31,8 @@ describe('Site', () => {
 
   describe('content', () => {
     test('get content for static path', () => {
-      let site = Site.instance('test-content')
-      let content = site.contentForStaticPath(['dir', 'post'])
-      expect(content.filename).toEqual('test-content/dir/post.md')
+      //let site = Site.instance('test-content')
+      let content = testSite.contentForStaticPath(['dir', 'post'])
       expect(content.title).toEqual('Some post')
     })
   })
