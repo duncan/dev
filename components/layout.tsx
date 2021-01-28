@@ -46,6 +46,11 @@ export default function Layout({
           as="font"
           type="font/woff2"
         ></link>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          href="https://duncan.dev/feed.xml"
+        ></link>
       </Head>
       <header className="container mx-auto max-w-xl pt-16 px-4">
         <Link href="/">
