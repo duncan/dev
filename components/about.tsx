@@ -17,8 +17,8 @@ export default function About({}) {
           </a>
         </Link>
       </div>
-      <div className="flex pl-8">
-        <div className="flex items-center items-center justify-center text-gray-500 text-sm">
+      <div className="flex pl-6">
+        <div className="flex items-center items-center justify-center text-gray-500 text-sm pr-2">
           <div>
             <Link href="/">
               <a className="font-bold">Duncan Davidson</a>
