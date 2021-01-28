@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
+import About from './about'
 
 const name = 'Duncan Davidson'
 export const siteTitle = 'Site Title'
@@ -55,18 +56,14 @@ export default function Layout({
       <header className="container mx-auto max-w-xl pt-16 px-4">
         <Link href="/">
           <a>
-            <Image
-              src="/images/duncan.jpg"
-              alt="Photo of Duncan Davidson"
-              width={100}
-              height={100}
-              className="rounded-full"
-            />
+            <div className="text-lg font-bold text-red-700">duncan.dev</div>
           </a>
         </Link>
       </header>
       {children}
-      <footer className="container prose mx-auto max-w-xl py-16 px-4">
+      <footer className="container mx-auto max-w-xl py-16 px-4">
+        <About />
+
         {/* <Link href="/copyright"><a>copyright</a></Link>
       &bull;
       <Link href="/colophon"><a>colophon</a></Link> */}

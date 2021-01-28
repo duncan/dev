@@ -15,35 +15,18 @@ export default function Home(props: ContentCollectionProps) {
         <title>Duncan Davidson</title>
       </Head>
 
-      <header className="container mx-auto max-w-xl pt-16 px-4">
+      <header className="container mx-auto max-w-xl pt-12 px-4">
         <div className="text-5xl pb-4"></div>
         <h1 className="text-4xl font-extrabold">Duncan Davidson</h1>
         {/* <div className="text-xs">{datestring}</div> */}
       </header>
 
-      <article className="container prose mx-auto max-w-xl pt-6 px-4">
+      <section className="container prose mx-auto max-w-xl pt-6 px-4">
         <h2>
           Software developer, photographer, and author. American immigrant
           living in Berlin, Germany.
         </h2>
-        <p>
-          My{' '}
-          <Link href="/cv">
-            <a>curriculum vitae</a>
-          </Link>{' '}
-          tells the story of my professional career, so far. The short version
-          is in my{' '}
-          <Link href="/resume">
-            <a>resume</a>
-          </Link>
-          . And, of course, there’s also my{' '}
-          <a href="http://linkedin.com/in/duncandavidson ">LinkedIn profile</a>.
-          I probably spend too much time on{' '}
-          <a href="https://twitter.com/duncan">Twitter</a> and I try not to
-          spend much time at all on{' '}
-          <a href="http://facebook.com/duncandavidson">Facebook</a>.
-        </p>
-      </article>
+      </section>
       {/* <div className="container mx-auto max-w-xl pt-16 px-4">
         <h1 className="text-4xl font-extrabold">Recent i/o</h1>
       </div> */}

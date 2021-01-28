@@ -35,10 +35,9 @@ export default function ContentPage(props: ContentProps) {
     <Layout>
       <Head>
         <title>{props.title}</title>
-        <link rel="shortcut icon" href="/favicon-32.ico" />
       </Head>
 
-      <header className="container mx-auto max-w-xl pt-16 px-4">
+      <header className="container mx-auto max-w-xl pt-12 px-4">
         <div className="text-5xl pb-4">{props.emoji}</div>
         <h1 className="text-4xl font-extrabold">{props.title}</h1>
         <div className="text-xs">{datestring}</div>
@@ -47,7 +46,6 @@ export default function ContentPage(props: ContentProps) {
       <div className="container prose mx-auto max-w-xl px-4">
         <article dangerouslySetInnerHTML={{ __html: content }} />
       </div>
-      <footer></footer>
     </Layout>
   )
 }
