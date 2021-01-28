@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "ts-node scripts/feed.ts",
     "start": "next start",
-    "test": "jest"
+    "test": "jest",
+    "feed": "ts-node ./lib/feed.ts"
   },
   "prettier": {
     "semi": false,
@@ -24,6 +26,7 @@
     "react-dom": "17.0.1",
     "remark-html": "^13.0.1",
     "remark-parse": "^9.0.0",
+    "rss": "^1.2.2",
     "tailwindcss": "^2.0.2",
     "unified": "^9.2.0"
   },
@@ -36,6 +39,7 @@
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
 }
