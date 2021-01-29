@@ -16,7 +16,6 @@ export default function Layout({
   return (
     <>
       <Head>
-        <title>foo</title>
         <link
           rel="icon"
           href="/favicon-64.png"
@@ -56,7 +55,7 @@ export default function Layout({
       <header className="container mx-auto max-w-xl pt-16 px-4">
         <Link href="/">
           <a>
-            <div className="text-lg font-bold text-red-700">duncan.dev</div>
+            <div className="text-lg font-bold text-blue-500">duncan.dev</div>
           </a>
         </Link>
       </header>

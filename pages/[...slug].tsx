@@ -34,7 +34,7 @@ export default function ContentPage(props: ContentProps) {
   return (
     <Layout>
       <Head>
-        <title>{props.title}</title>
+        <title>{props.title} - Duncan Davidson</title>
       </Head>
 
       <header className="container mx-auto max-w-xl pt-12 px-4">
