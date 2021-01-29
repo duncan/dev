@@ -23,7 +23,7 @@ The worst part? After each interview, I re-did the exercises and found that I co
 
 How’d the third one go? Better.
 
-I did a bunch of exercises on [Exercism][exo] and [HackerRank][hr]. I found that I kind of like doing these kinds of problems. More importantly, I spent a bunch of time working on my attitude. I got myself to the point (for the most part, anyway) where I could go into it without focusing on the fact that I thought the entire exercise was pointless or useless. I still had a lot of performance anxiety and didn’t perform as well as I should have, but at least I didn’t bomb.
+I prepared by doing a bunch of exercises on [Exercism][exo] and [HackerRank][hr]. I found that I kind of like doing these kinds of problems. More importantly, I spent a bunch of time working on my attitude. I got myself to the point (for the most part, anyway) where I could go into it without focusing on the fact that I thought the entire exercise was pointless or useless. I still had a lot of performance anxiety and didn’t perform as well as I should have, but at least I didn’t bomb.
 
 [exo]: https://exercism.io
 [hr]: https://www.hackerrank.com
