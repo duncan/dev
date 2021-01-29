@@ -16,6 +16,12 @@ export function generate() {
   })
 
   site.blogItems(20).forEach((item: Content) => {
+    var title
+    if (item.emoji != '') {
+      title = `${item.emoji} ${item.title}`
+    } else {
+      title = item.title
+    }
     let content = unified()
       .use(markdown)
       .use(html)
@@ -23,7 +29,7 @@ export function generate() {
       .contents.toString()
 
     feed.item({
-      title: item.title,
+      title: title,
       guid: item.slug,
       url: `https://duncan.dev/${item.slug}`,
       date: item.date,
