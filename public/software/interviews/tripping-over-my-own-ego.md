@@ -2,7 +2,7 @@
 type: post
 title: Code interviews and ego fails
 date: 2021-01-28T17:00
-emoji: 🤦‍♂️
+emoji: 🤦
 ---
 
 I’ve had three code interviews in the last few months. In the first two, I did so badly that I lost any chance for the job, despite doing well on the other interviews. In other words, I bombed.

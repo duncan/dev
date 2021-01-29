@@ -1,6 +1,6 @@
 ---
 title: The myth of German order
-emoji: 🤦‍♂️
+emoji: 🤦
 date: 2021-01-19T12:00
 type: link
 ---
