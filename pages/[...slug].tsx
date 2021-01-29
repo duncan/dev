@@ -40,7 +40,7 @@ export default function ContentPage(props: ContentProps) {
       <header className="container mx-auto max-w-xl pt-12 px-4">
         <div className="text-5xl pb-4">{props.emoji}</div>
         <h1 className="text-4xl font-extrabold">{props.title}</h1>
-        <div className="text-xs">{datestring}</div>
+        <div className="text-xs pt-2">{datestring}</div>
       </header>
 
       <div className="container prose mx-auto max-w-xl px-4">

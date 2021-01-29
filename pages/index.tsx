@@ -64,7 +64,7 @@ export default function Home(props: ContentCollectionProps) {
                 </h1>
               </Link>
               <Link href={content.slug}>
-                <div className="text-xs cursor-pointer">{datestring}</div>
+                <div className="text-xs cursor-pointer pt-2">{datestring}</div>
               </Link>
             </header>
             <div
