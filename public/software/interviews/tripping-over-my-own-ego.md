@@ -7,7 +7,7 @@ emoji: 🤦
 
 I’ve had three code interviews in the last few months. In the first two, I did so badly that I lost any chance for the job, despite doing well on the other interviews. In other words, I bombed.
 
-_“Seriously?”_ you might ask. _“You’ve been doing this how long, and you had a hard time with some code interviews?“_
+_“Seriously?”_ you might ask. _“You’ve been doing this how long, and you had a hard time with some code interviews?”_
 
 Sadly, I’m embarrassed to admit; it seems yes.
 
