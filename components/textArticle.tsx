@@ -12,7 +12,7 @@ export default function TextArticle({
 }) {
   return (
     <>
-      <article className="container mx-auto max-w-xl pt-16 px-4">
+      <article className="container mx-auto max-w-xl pb-8 pt-16 px-4">
         <header>
           <Link href={content.slug}>
             <div className="text-5xl pb-2 cursor-pointer">{content.emoji}</div>

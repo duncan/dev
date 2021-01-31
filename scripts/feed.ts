@@ -17,7 +17,7 @@ export function generate() {
 
   site.latestContent(20).forEach((item: Content) => {
     var title
-    if (item.emoji != '') {
+    if (item.emoji) {
       title = `${item.emoji} ${item.title}`
     } else {
       title = item.title

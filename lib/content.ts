@@ -66,7 +66,13 @@ export class Content {
   }
 
   get emoji(): string {
-    return this.meta['emoji']
+    if (this.meta['emoji']) {
+      return this.meta['emoji']
+    } else if (this.type == 'photo') {
+      return '📷'
+    } else {
+      return null
+    }
   }
 
   get date(): string {

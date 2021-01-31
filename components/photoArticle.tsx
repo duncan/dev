@@ -25,7 +25,7 @@ export default function PhotoArticle({
   //console.log(`W ${width}`)
   return (
     <>
-      <div className="container mx-auto max-w-2xl px-4 pt-8 pb-2 items-center">
+      <div className="container mx-auto max-w-2xl px-4 pt-16 pb-2 items-center">
         <Image
           src={content.photoHref}
           alt="Photo of Duncan Davidson"
@@ -35,12 +35,8 @@ export default function PhotoArticle({
           quality="85"
         />
       </div>
-      <article className="container mx-auto max-w-xl  px-4">
+      <article className="container mx-auto max-w-xl pb-8 px-4">
         <header>
-          <Link href={content.slug}>
-            <div className="text-5xl pb-2 cursor-pointer">{content.emoji}</div>
-          </Link>
-
           <Link href={content.slug}>
             <h1 className="text-2xl font-bold cursor-pointer">
               {content.title}
