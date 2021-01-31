@@ -28,20 +28,16 @@ export function generate() {
       .processSync(item.text)
       .contents.toString()
 
-    if (item.type == 'photo') {
-      let base = 'https://duncan.dev/_next/image'
-      let url = encodeURI(item.photoHref)
-      content = `<img src="${base}?url=${url}&w=600&q=75"><br>` + content
+    if (item.type != 'photo') {
+      feed.item({
+        title: title,
+        guid: item.slug,
+        url: `https://duncan.dev/${item.slug}`,
+        date: item.date,
+        description: content,
+        author: `Duncan Davidson`,
+      })
     }
-
-    feed.item({
-      title: title,
-      guid: item.slug,
-      url: `https://duncan.dev/${item.slug}`,
-      date: item.date,
-      description: content,
-      author: `Duncan Davidson`,
-    })
   })
 
   let data = feed.xml({ indent: true })
