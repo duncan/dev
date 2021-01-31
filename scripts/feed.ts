@@ -28,6 +28,12 @@ export function generate() {
       .processSync(item.text)
       .contents.toString()
 
+    if (item.type == 'photo') {
+      let base = 'https://duncan.dev/_next/image'
+      let url = encodeURI(item.photoHref)
+      content = `<img src="${base}?url=${url}&w=600&q=75"><br>` + content
+    }
+
     feed.item({
       title: title,
       guid: item.slug,
