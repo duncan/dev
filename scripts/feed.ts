@@ -15,7 +15,7 @@ export function generate() {
     feed_url: 'https://duncan.dev/feed.xml',
   })
 
-  site.blogItems(20).forEach((item: Content) => {
+  site.latestContent(20).forEach((item: Content) => {
     var title
     if (item.emoji != '') {
       title = `${item.emoji} ${item.title}`

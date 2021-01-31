@@ -48,13 +48,29 @@ export class Site {
     return this.contents[slug]
   }
 
-  blogItems(n = 10): Array<Content> {
+  latestContent(n = 10): Array<Content> {
+    return lodash
+      .chain(Object.values(this.contents))
+      .filter((o) => {
+        return o.type == 'link' || o.type == 'post' || o.type == 'photo'
+      })
+      .sortBy([
+        (o) => {
+          return o.date
+        },
+      ])
+      .reverse()
+      .slice(0, n)
+      .value()
+  }
+
+  async blogItems(n = 10): Promise<Array<Content>> {
     // select all items that are of type link or post
 
     return lodash
       .chain(Object.values(this.contents))
       .filter((o) => {
-        return o.type == 'link' || o.type == 'post'
+        return o.type == 'link' || o.type == 'post' || o.type == 'photo'
       })
       .sortBy([
         (o) => {

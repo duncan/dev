@@ -52,7 +52,7 @@ export default function Layout({
           href="https://duncan.dev/feed.xml"
         ></link>
       </Head>
-      <header className="container mx-auto max-w-xl pt-16 px-4">
+      <header className="container mx-auto max-w-xl pt-8 px-4">
         <Link href="/">
           <a>
             <div className="text-lg font-bold text-blue-500">duncan.dev</div>

@@ -1,14 +1,18 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
+import sharp from 'sharp'
 
 export interface ContentProps {
   slug: string
   text: string
+  type: string
   meta: {}
   title?: string
   date?: string
   emoji?: string
+  photoHref?: string
+  photoMeta?: {}
 }
 
 export interface ContentCollectionProps {
@@ -21,6 +25,8 @@ export class Content {
   filename: string
   text: string
   meta: {}
+  photoHref: string
+  photoMeta: {}
 
   constructor(filename: string, slug: string) {
     this.filename = path.resolve(filename)
@@ -67,22 +73,39 @@ export class Content {
     return this.meta['date']
   }
 
-  get props(): ContentProps {
+  async props(): Promise<ContentProps> {
     this.load()
     let props = {
       slug: this.slug,
       text: this.text,
       meta: this.meta,
+      type: this.type,
     }
 
-    if (this.title != undefined) {
+    if (this.title) {
       props['title'] = this.title
     }
-    if (this.date != undefined) {
+    if (this.date) {
       props['date'] = this.date
     }
-    if (this.emoji != undefined) {
+    if (this.emoji) {
       props['emoji'] = this.emoji
+    }
+
+    if (this.meta['photo']) {
+      props['photoHref'] = path.resolve(
+        path.dirname(`/${this.slug}`),
+        this.meta['photo']
+      )
+      let photoPath = path.resolve(
+        path.dirname(this.filename),
+        this.meta['photo']
+      )
+      let photoMeta = await sharp(photoPath).metadata()
+      props['photoMeta'] = {
+        width: photoMeta.width,
+        height: photoMeta.height,
+      }
     }
 
     return props

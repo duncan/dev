@@ -4,6 +4,10 @@ import { Content, ContentProps } from '../lib/content'
 describe('Content', () => {
   let linkContent = new Content('test-content/link.md', '/link')
   let noMetaContent = new Content('test-content/no-meta.md', '/no-meta')
+  let photoContent = new Content(
+    'public/ellada/santorini/evening-light.md',
+    '/ellada/santorini/evening-light'
+  )
 
   describe('filename', () => {
     test('filename is set', () => {
@@ -54,9 +58,15 @@ describe('Content', () => {
     })
   })
 
+  describe('photo', () => {
+    test('resolves href for photo', () => {
+      expect(photoContent.photoHref).toBe('/ellada/santorini/evening-light.jpg')
+    })
+  })
+
   describe('props', () => {
-    test('props from link.md', () => {
-      let props = linkContent.props
+    test('props from link.md', async () => {
+      let props = await linkContent.props()
       expect(props.slug).toBe('/link')
       expect(props.title).toBe('Link title')
       expect(props.text).toContain('Text [Linked text][link]')
@@ -67,8 +77,8 @@ describe('Content', () => {
       expect(props.meta['type']).toBe('link')
     })
 
-    test('props from no-meta.md', () => {
-      let props = noMetaContent.props
+    test('props from no-meta.md', async () => {
+      let props = await noMetaContent.props()
       expect(props.meta).toEqual({})
       expect(props.slug).toBe('/no-meta')
       expect(props.text).toContain('This is some markdown')

@@ -1,51 +1,33 @@
 import { Site } from '../lib/site'
 import { GetStaticPathsResult, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
-import { Content, ContentProps } from '../lib/content'
+import { ContentProps } from '../lib/content'
 import Layout from '../components/layout'
+import TextArticle from '../components/textArticle'
+import PhotoArticle from '../components/photoArticle'
+import LinkArticle from '../components/linkArticle'
 
-import unified from 'unified'
-import markdown from 'remark-parse'
-import html from 'remark-html'
+function renderContent(props: ContentProps) {
+  switch (props.type) {
+    case 'link': {
+      return LinkArticle({ content: props, home: false })
+    }
+    case 'photo': {
+      return PhotoArticle({ content: props, home: false })
+    }
+    default: {
+      return TextArticle({ content: props, home: false })
+    }
+  }
+}
 
 export default function ContentPage(props: ContentProps) {
-  let content = unified()
-    .use(markdown)
-    .use(html)
-    .processSync(props.text)
-    .contents.toString()
-
-  var datestring = ''
-
-  if (props.date) {
-    let date = new Date(props.date)
-    datestring =
-      date.toLocaleString('en-gb', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      }) +
-      ' • ' +
-      date.toLocaleTimeString('en-gb', {
-        hour: '2-digit',
-        minute: '2-digit',
-      })
-  }
   return (
     <Layout>
       <Head>
         <title>{props.title} - Duncan Davidson</title>
       </Head>
-
-      <header className="container mx-auto max-w-xl pt-12 px-4">
-        <div className="text-5xl pb-4">{props.emoji}</div>
-        <h1 className="text-4xl font-extrabold">{props.title}</h1>
-        <div className="text-xs pt-2">{datestring}</div>
-      </header>
-
-      <div className="container prose mx-auto max-w-xl px-4">
-        <article dangerouslySetInnerHTML={{ __html: content }} />
-      </div>
+      {renderContent(props)}
     </Layout>
   )
 }
@@ -68,7 +50,8 @@ export async function getStaticProps({
   let content = Site.instance().contentForStaticPath(
     params.slug as Array<string>
   )
+  let props = await content.props()
   return {
-    props: content.props,
+    props: props,
   }
 }
