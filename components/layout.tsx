@@ -51,6 +51,12 @@ export default function Layout({
           type="application/rss+xml"
           href="https://duncan.dev/feed.xml"
         ></link>
+        <script
+          async
+          defer
+          data-domain="duncan.dev"
+          src="https://plausible.io/js/plausible.js"
+        ></script>
       </Head>
       <header className="container mx-auto max-w-xl pt-8 px-4">
         <Link href="/">
