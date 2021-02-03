@@ -66,11 +66,21 @@ export class Site {
 
   frontPageContent(n = 10): Array<Content> {
     var items = this.latestContent(n)
+
+    // float first post to top of page
+    let firstPostIndex = lodash.findIndex(items, (o: Content) => {
+      return o.type === 'post'
+    })
+    if (firstPostIndex) {
+      let firstPostItem = items.splice(firstPostIndex, 1)
+      items = lodash.concat(firstPostItem, items)
+    }
+
+    // float first photo to top of page (even before first post)
     let firstPhotoIndex = lodash.findIndex(items, (o: Content) => {
       return o.type === 'photo'
     })
     if (firstPhotoIndex) {
-      console.log(firstPhotoIndex)
       let firstPhotoItem = items.splice(firstPhotoIndex, 1)
       items = lodash.concat(firstPhotoItem, items)
     }
