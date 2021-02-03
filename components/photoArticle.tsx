@@ -28,7 +28,7 @@ export default function PhotoArticle({
       <div className="container mx-auto max-w-2xl px-4 pt-16 pb-2 items-center">
         <Image
           src={content.photoHref}
-          alt="Photo of Duncan Davidson"
+          alt="{content.title}"
           width={width}
           height={height}
           className="rounded-xl"
