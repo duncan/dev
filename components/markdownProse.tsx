@@ -1,3 +1,7 @@
+import React from 'react'
+import ReactMarkdown from 'react-markdown'
+import { render } from 'react-dom'
+
 import unified from 'unified'
 import markdown from 'remark-parse'
 import html from 'remark-html'
@@ -9,10 +13,7 @@ function markdownToHTML(text: string): string {
 export default function MarkdownProse({ text }: { text: string }) {
   return (
     <>
-      <div
-        className="prose pt-4"
-        dangerouslySetInnerHTML={{ __html: markdownToHTML(text) }}
-      />
+      <ReactMarkdown className="prose pt-4">{text}</ReactMarkdown>
     </>
   )
 }
