@@ -2,7 +2,7 @@
 title: Resume
 ---
 
-<span class="text-xs">This is the short version. See [Duncan’s curriculum vitae][cv] for the long version.</span>
+_This is the short version. See [Duncan’s curriculum vitae][cv] for the long version._
 
 **James Duncan Davidson is a seasoned technology leader with a non-traditional career path guided by deep interests in technology, architecture, and art.** He has created and delivered software platforms that millions of developers have used, written books that have helped a generation of Mac developers, and has advised and guided startups at many different phases
 
