@@ -66,41 +66,33 @@ The highlight of Duncan’s professional photography career is undoubtedly servi
 
 This definitive book about Ruby on Rails by [Dave Thomas][dave] and [David Heinemeier Hansson][dhh] was first published by [Pragmatic Bookshelf][prag] in 2005. After that, Rails moved so fast that a slew of editions followed, and Dave Thomas enlisted a group of co-authors, including Duncan, to contribute.
 
-**2nd Edition: December 2006** was the first edition that Duncan’s material focusing on deploying Rails applications appeared, along with contributions from Leon Breedt, Mike Clark, [Justin Gehtland][geht], and Andreas Schwarz.
-<br><span class="text-xs">ISBN: 978-0977616633</span>
+**2nd Edition: December 2006** was the first edition that Duncan’s material focusing on deploying Rails applications appeared, along with contributions from Leon Breedt, Mike Clark, [Justin Gehtland][geht], and Andreas Schwarz. (ISBN: 978-0977616633)
 
-**3rd Edition: April 2009** was updated for Rails version 2 with [Sam Ruby][samr] taking over as the lead author of the book.
-<br><span class="text-xs">ISBN: 978-1934356166</span>
+**3rd Edition: April 2009** was updated for Rails version 2 with [Sam Ruby][samr] taking over as the lead author of the book. (ISBN: 978-1934356166)
 
-**4th Edition: March 2011** was updated for Rails version 3.
-<br><span class="text-xs">ISBN: 978-1934356548</span>
+**4th Edition: March 2011** was updated for Rails version 3. (ISBN: 978-1934356548)
 
 After the 4th edition, state-of-the-art Rails deployment had evolved enough that an entire rewrite of Duncan’s contributed material was necessary, and he dropped off the author roster for future revisions.
 
 ### Mac OS X Panther Hacks
 
-Co-authored with [Rael Dornfest][rael] and published by [O’Reilly Media][ora] in 2004, this book brought together a collection of 100 tips and tricks to help Mac OS X users get the most from their operating system.
-<br><span class="text-xs">ISBN: 978-0596007188</span>
+Co-authored with [Rael Dornfest][rael] and published by [O’Reilly Media][ora] in 2004, this book brought together a collection of 100 tips and tricks to help Mac OS X users get the most from their operating system. (ISBN: 978-0596007188)
 
 ### Cocoa in a Nutshell
 
-Co-authored with [Micheal Beam][mb] and published by [O’Reilly Media][ora], this book was a definitive reference for the Cocoa APIs that shipped with Mac OS X Panther.
-<br><span class="text-xs">ISBN: 978-0596004620</span>
+Co-authored with [Micheal Beam][mb] and published by [O’Reilly Media][ora], this book was a definitive reference for the Cocoa APIs that shipped with Mac OS X Panther. (ISBN: 978-0596004620)
 
 ### Running Mac OS X
 
 Published by [O’Reilly Media][ora], this book series helped give power users the knowledge they needed to work better and faster with their operating system.
 
-**Running Mac OS X Panther, published 2003** focused on Mac OS X Panther, the second major update to Mac OS X — arguably the release where Mac OS X finished the transition from Mac OS 9.
-<br><span class="text-xs">ISBN: 978-0596005009</span>
+**Running Mac OS X Panther, published 2003** focused on Mac OS X Panther, the second major update to Mac OS X — arguably the release where Mac OS X finished the transition from Mac OS 9. (ISBN: 978-0596005009)
 
-**Running Mac OS X Tiger, published 2005** added [Jason Deraleau][deraleau] to the author roster for the book and updated the material for a new release of Mac OS X.
-<br><span class="text-xs">ISBN: 978-0596009137</span>
+**Running Mac OS X Tiger, published 2005** added [Jason Deraleau][deraleau] to the author roster for the book and updated the material for a new release of Mac OS X. (ISBN: 978-0596009137)
 
 ### Learning Cocoa with Objective-C
 
-Published in September 2002 by [O’Reilly Media][ora] and edited by [Chuck Toporek][ct], this was Ducan’s rewrite of Apple’s examples and documentation into a cohesive book that became a staple for developers learning Objective-C on Apple’s platforms for years.
-<br><span class="text-xs">ISBN: 978-0596003012</span>
+Published in September 2002 by [O’Reilly Media][ora] and edited by [Chuck Toporek][ct], this was Ducan’s rewrite of Apple’s examples and documentation into a cohesive book that became a staple for developers learning Objective-C on Apple’s platforms for years. (ISBN: 978-0596003012)
 
 After a decade of Mac OS X updates and the introduction of iOS along with the app stores, the book needed a significant rewrite. The 3rd edition, headed up by [Paris Buttfield-Addison][parisba] and [Jonathon Manning][jm], was published in 2012. A 4th edition followed in 2014 with [Tim Nugent][tn] joining the author roster.
 
