@@ -64,25 +64,18 @@ export class Site {
       .value()
   }
 
-  async blogItems(n = 10): Promise<Array<Content>> {
-    // select all items that are of type link or post
+  frontPageContent(n = 10): Array<Content> {
+    var items = this.latestContent(n)
+    let firstPhotoIndex = lodash.findIndex(items, (o: Content) => {
+      return o.type === 'photo'
+    })
+    if (firstPhotoIndex) {
+      console.log(firstPhotoIndex)
+      let firstPhotoItem = items.splice(firstPhotoIndex, 1)
+      items = lodash.concat(firstPhotoItem, items)
+    }
 
-    return lodash
-      .chain(Object.values(this.contents))
-      .filter((o) => {
-        return o.type == 'link' || o.type == 'post' || o.type == 'photo'
-      })
-      .sortBy([
-        (o) => {
-          return o.date
-        },
-      ])
-      .reverse()
-      .slice(0, n)
-      .value()
-
-    // return most recent n
-    //return []
+    return items
   }
 
   private static sites: { [dir: string]: Site } = {}
