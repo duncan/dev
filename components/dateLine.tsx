@@ -16,10 +16,20 @@ function displayDateTime(date: string): string {
   )
 }
 
-export default function DateLine({ date }: { date: string }) {
+export default function DateLine({
+  date,
+  linked,
+}: {
+  date: string
+  linked?: boolean
+}) {
+  let classes = ['text-xs']
+  if (linked) {
+    classes.push('cursor-pointer')
+  }
   return (
     <>
-      <div className="text-xs">{displayDateTime(date)}</div>
+      <div className={classes.join(' ')}>{displayDateTime(date)}</div>
     </>
   )
 }

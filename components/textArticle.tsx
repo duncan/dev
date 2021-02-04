@@ -21,7 +21,11 @@ function titleDiv(content: ContentProps, linked = false): ReactElement {
 }
 
 function dateLineDiv(content: ContentProps, linked = false): ReactElement {
-  return content.date ? <DateLine date={content.date}></DateLine> : <></>
+  return content.date ? (
+    <DateLine date={content.date} linked={linked}></DateLine>
+  ) : (
+    <></>
+  )
 }
 
 export default function TextArticle({
