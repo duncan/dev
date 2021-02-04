@@ -7,6 +7,42 @@ import TextArticle from '../components/textArticle'
 import PhotoArticle from '../components/photoArticle'
 import LinkArticle from '../components/linkArticle'
 
+function renderMetadata(props: ContentProps) {
+  let ogUrl = `https://duncan.dev/${props.slug}`
+  let ogTitle = props.title
+  var ogImage = 'https://duncan.dev/images/og-image.jpg'
+  var twitterImage = 'https://duncan.dev/images/duncan.jpg'
+  var twitterCard = 'summary'
+
+  if (props.ogImageHref) {
+    ogImage = 'https://duncan.dev' + props.ogImageHref
+    twitterImage = 'https://duncan.dev' + props.ogImageHref
+    twitterCard = 'summary_large_image'
+  }
+
+  return (
+    <Head>
+      <title>{props.title} - Duncan Davidson</title>
+      <meta property="og:type" content="article"></meta>
+      <meta property="og:url" content={ogUrl}></meta>
+      <meta property="og:title" content={ogTitle}></meta>
+      <meta property="og:description" content={props.ogDescription}></meta>
+      <meta property="og:image" content={ogImage}></meta>
+      <meta property="og:image:width" content="1200"></meta>
+      <meta property="og:image:height" content="630"></meta>
+      <meta property="og:site_name" content="duncan.dev"></meta>
+
+      <meta property="twitter:card" content={twitterCard}></meta>
+      <meta property="twitter:url" content={ogUrl}></meta>
+      <meta property="twitter:title" content={ogTitle}></meta>
+      <meta property="twitter:description" content={props.ogDescription}></meta>
+      <meta property="twitter:image" content={twitterImage}></meta>
+      <meta property="twitter:site" content="@duncan"></meta>
+      <meta property="twitter:creator" content="@duncan"></meta>
+    </Head>
+  )
+}
+
 function renderContent(props: ContentProps) {
   switch (props.type) {
     case 'link': {
@@ -24,9 +60,7 @@ function renderContent(props: ContentProps) {
 export default function ContentPage(props: ContentProps) {
   return (
     <Layout>
-      <Head>
-        <title>{props.title} - Duncan Davidson</title>
-      </Head>
+      {renderMetadata(props)}
       {renderContent(props)}
     </Layout>
   )

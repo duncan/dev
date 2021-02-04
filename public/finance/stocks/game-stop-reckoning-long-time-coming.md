@@ -3,6 +3,7 @@ title: Eternal Septemer arrives on Wall Street?
 date: 2021-02-01T12:00
 type: link
 emoji: 📈
+description: It’s no suprise that gleeful online horders are turning the market upside down.
 ---
 
 There are so many hot takes out there about the Game Stock (GME) drama that is currently playing out. Many of them focus on explaining what the hell is going on. Some wring their hands about what it all means. Kevin Roose has a different take in the New York Times, saying that [it shouldn’t come as a surprise that gleeful online hordes are turning the market upside down.][link]

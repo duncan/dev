@@ -3,6 +3,7 @@ date: 2021-01-25T23:45
 title: Curating ideas during a pandemic
 type: link
 emoji: 💡
+description: Katerina and I have had it better than most, but it still takes a lot to hold it together during this pandemic.
 ---
 
 Katerina Biliouri on how [curating ideas for speakers during a pandemic][link] helped her deal with the world falling apart these last twelve months:

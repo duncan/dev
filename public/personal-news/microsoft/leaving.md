@@ -3,6 +3,7 @@ date: 2021-02-03T16:00
 emoji: 👋
 title: Leaving Microsoft
 type: post
+description: After over five years at Microsoft, February 28th is my last day.
 ---
 
 When Wunderlist was acquired by Microsoft, I don’t think I had any idea that I’d stay at the company for more than a couple of years. Indeed, I figured I’d serve out the holding period on my unvested shares and then move on. Mostly, I thought it was a fantastic irony that I was working for the company that was once the “Evil Empire.” A company that I helped battle when I was working at Sun Microsystems two decades ago.

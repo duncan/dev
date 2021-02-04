@@ -3,6 +3,7 @@ date: 2021-01-27T09:30
 type: link
 title: Europe’s vaccine shortage
 emoji: 💉
+description: Europe was feeling pretty good about its vaccine policy until the start of the new year.
 ---
 
 Europe was feeling pretty good about its vaccine policy for COVID-19. But now, not so much. In fact, [Europe is looking for a way out of a vaccine fiasco][dw]. It’s falling behind many other regions in the world, including the US and UK.

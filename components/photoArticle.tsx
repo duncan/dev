@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import { ContentProps } from '../lib/content'
 import MarkdownProse from './markdownProse'
 import DateLine from './dateLine'

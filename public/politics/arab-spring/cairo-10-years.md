@@ -3,6 +3,7 @@ title: 10 years ago in Cairo
 date: 2021-01-25T23:00
 type: link
 emoji: ✊
+description: Zeneyp Tufekci’s memories of the Arab Spring.
 ---
 
 It’s the tenth anniversary of the uprising in Cairo, part of the Arab Spring. [Zeynep Tufekci wrote about it in her Substack newsletter][link]:

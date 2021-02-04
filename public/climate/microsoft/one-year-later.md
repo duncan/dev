@@ -3,6 +3,7 @@ date: 2021-02-03T10:30
 type: link
 emoji: 🚀
 title: Microsoft’s climate moon shot, one year later
+description: Brad Smith’s report on Microsoft’s committment to being carbon negative by 2030.
 ---
 
 It’s hard to believe that it’s been a year since Microsoft announced their commitment to being carbon negative by 2030. Since then, the company has reduced its emissions by 6% and purchased the removal of 1.3 million metric tons of carbon. While this is a tremendous early win, the big problems remain, as [Brad Smith discusses in a progress report on Microsoft‘s climate efforts][link].

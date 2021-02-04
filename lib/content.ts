@@ -6,6 +6,7 @@ import sharp from 'sharp'
 export interface ContentProps {
   slug: string
   text: string
+  ogDescription?: string
   type: string
   meta: {}
   title?: string
@@ -13,6 +14,7 @@ export interface ContentProps {
   emoji?: string
   photoHref?: string
   photoMeta?: {}
+  ogImageHref?: string
 }
 
 export interface ContentCollectionProps {
@@ -112,6 +114,18 @@ export class Content {
         width: photoMeta.width,
         height: photoMeta.height,
       }
+    }
+
+    props['ogDescription'] = this.title
+    if (this.meta['description']) {
+      props['ogDescription'] = this.meta['description']
+    }
+
+    if (this.meta['og-image']) {
+      props['ogImageHref'] = path.resolve(
+        path.dirname(`/${this.slug}`),
+        this.meta['og-image']
+      )
     }
 
     return props

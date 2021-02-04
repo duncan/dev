@@ -3,6 +3,7 @@ title: Today’s Brownie
 date: 2021-01-25T09:00
 emoji: 📷
 type: link
+description: Photography’s real power comes from the fact that anybody can do it.
 ---
 
 Om Malik’s latest is on why the [iPhone is today’s Brownie camera][link]:

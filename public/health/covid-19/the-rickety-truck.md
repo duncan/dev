@@ -3,6 +3,7 @@ type: link
 title: In a truck going down a mountainside
 date: 2021-01-23T11:00
 emoji: 🦠
+description: A metaphor to describe the current state of what might happen this spring and summer in Germany.
 ---
 
 [German Virologist Christian Drosten is quite apprehensive][link] about what might happen this spring and summer. The metaphor he uses is that we’re in a rickety truck driving down a steep mountain:

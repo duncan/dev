@@ -3,6 +3,7 @@ title: Fauci unleashed
 date: 2021-01-22T13:00
 type: link
 emoji: 😅
+description: Watching Dr. Fauci’s recovery as the new administration takes charge is a joy.
 ---
 
 One of the joys of the last few days has been watching [Dr. Anthony Fauci’s recovery as the new administration takes charge][link]:

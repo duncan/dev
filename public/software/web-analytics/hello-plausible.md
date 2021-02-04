@@ -3,6 +3,7 @@ date: 2021-02-01T21:00
 type: link
 emoji: 🕵️
 title: Using Plausible analytics
+description: Plausible bills itself as a lightweight and open-source tool that’s privacy minded.
 ---
 
 Web analytics tools have long needed a reboot. We shouldn’t have to tie understanding how people are using our websites to surveillance capitalism. Even if you don’t mind feeding that particular beast, Google Analytics has become a beast to use.
