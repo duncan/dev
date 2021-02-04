@@ -10,25 +10,23 @@ import LinkArticle from '../components/linkArticle'
 
 export default function Home(props: ContentCollectionProps) {
   return (
-    <Layout home>
-      <Head>
-        <title>Duncan Davidson</title>
-      </Head>
-
-      {props.collection.map((content) => {
-        switch (content.type) {
-          case 'link': {
-            return LinkArticle({ content: content, home: true })
+    <>
+      <Layout home>
+        {props.collection.map((content) => {
+          switch (content.type) {
+            case 'link': {
+              return LinkArticle({ content: content, home: true })
+            }
+            case 'photo': {
+              return PhotoArticle({ content: content, home: true })
+            }
+            default: {
+              return TextArticle({ content: content, home: true })
+            }
           }
-          case 'photo': {
-            return PhotoArticle({ content: content, home: true })
-          }
-          default: {
-            return TextArticle({ content: content, home: true })
-          }
-        }
-      })}
-    </Layout>
+        })}
+      </Layout>
+    </>
   )
 }
 

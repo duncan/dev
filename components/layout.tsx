@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import About from './about'
 
 const name = 'Duncan Davidson'
@@ -16,6 +15,41 @@ export default function Layout({
   return (
     <>
       <Head>
+        <title>Duncan Davidson</title>
+        <meta name="title" content="Duncan Davidson"></meta>
+        <meta
+          name="description"
+          content="Software developer, photographer, and author. American immigrant living in Berlin, Germany."
+        ></meta>
+
+        <meta property=":locale" content="en_US"></meta>
+        <meta property="og:type" content="website"></meta>
+        <meta property="og:url" content="https://duncan.dev/"></meta>
+        <meta property="og:title" content="Duncan Davidson"></meta>
+        <meta
+          property="og:description"
+          content="Software developer, photographer, and author. American immigrant living in Berlin, Germany."
+        ></meta>
+        <meta
+          property="og:image"
+          content="https://duncan.dev/images/og-image.jpg"
+        ></meta>
+        <meta property="og:image:width" content="1200"></meta>
+        <meta property="og:image:height" content="630"></meta>
+
+        <meta property="twitter:card" content="summary"></meta>
+        <meta property="twitter:url" content="https://duncan.dev/"></meta>
+        <meta property="twitter:title" content="Duncan Davidson"></meta>
+        <meta
+          property="twitter:description"
+          content="Software developer, photographer, and author. American immigrant living in Berlin, Germany."
+        ></meta>
+        <meta
+          property="twitter:image"
+          content="https://duncan.dev/images/duncan.jpg"
+        ></meta>
+        <meta property="twitter:site" content="@duncan"></meta>
+        <meta property="twitter:creator" content="@duncan"></meta>
         <link
           rel="icon"
           href="/favicon-64.png"
