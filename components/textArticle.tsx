@@ -36,25 +36,26 @@ export default function TextArticle({
   home?: boolean
 }) {
   return (
-    <>
-      <article className="container mx-auto max-w-xl pb-8 pt-16 px-4">
-        <header>
-          {home ? (
-            <>
-              <Link href={content.slug}>{emojiDiv(content, true)}</Link>
-              <Link href={content.slug}>{titleDiv(content, true)}</Link>
-              <Link href={content.slug}>{dateLineDiv(content, true)}</Link>
-            </>
-          ) : (
-            <>
-              {emojiDiv(content)}
-              {titleDiv(content)}
-              {dateLineDiv(content)}
-            </>
-          )}
-        </header>
-        <MarkdownProse text={content.text}></MarkdownProse>
-      </article>
-    </>
+    <article
+      className="container mx-auto max-w-xl pb-8 pt-16 px-4"
+      key={content.slug}
+    >
+      <header>
+        {home ? (
+          <>
+            <Link href={content.slug}>{emojiDiv(content, true)}</Link>
+            <Link href={content.slug}>{titleDiv(content, true)}</Link>
+            <Link href={content.slug}>{dateLineDiv(content, true)}</Link>
+          </>
+        ) : (
+          <>
+            {emojiDiv(content)}
+            {titleDiv(content)}
+            {dateLineDiv(content)}
+          </>
+        )}
+      </header>
+      <MarkdownProse text={content.text}></MarkdownProse>
+    </article>
   )
 }

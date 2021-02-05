@@ -25,7 +25,7 @@ export default function PhotoArticle({
 
   //console.log(`W ${width}`)
   return (
-    <>
+    <article key={content.slug}>
       <div className="container mx-auto max-w-2xl px-4 pt-16 pb-2 items-center">
         <Image
           src={content.photoHref}
@@ -36,7 +36,7 @@ export default function PhotoArticle({
           quality="85"
         />
       </div>
-      <article className="container mx-auto max-w-xl pb-8 px-4">
+      <div className="container mx-auto max-w-xl pb-8 px-4">
         <header>
           <Link href={content.slug}>
             <h1 className="text-2xl font-bold cursor-pointer">
@@ -48,7 +48,7 @@ export default function PhotoArticle({
           </Link>
         </header>
         <MarkdownProse text={content.text}></MarkdownProse>
-      </article>
-    </>
+      </div>
+    </article>
   )
 }
