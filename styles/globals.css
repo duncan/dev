@@ -8,8 +8,8 @@
     font-weight: 200 900;
     font-style: normal;
     font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Roman.otf.latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF;
+    src: url('/fonts/SourceSans3VF-Roman.otf.subset.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+20AC, U+2000-206F;
   }
 
   @font-face {
@@ -17,26 +17,8 @@
     font-weight: 200 900;
     font-style: normal;
     font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Roman.otf.latin-ext-a.woff2') format('woff2');
-    unicode-range: U+0100-017F;
-  }
-
-  @font-face {
-    font-family: 'Source Sans Variable';
-    font-weight: 200 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Roman.otf.latin-ext-b.woff2') format('woff2');
-    unicode-range: U+0180-024F;
-  }
-
-  @font-face {
-    font-family: 'Source Sans Variable';
-    font-weight: 200 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Roman.otf.latin-rest.woff2') format('woff2');
-    unicode-range: U+0259-03C0, U+1E00-1EFF, U+2000-FB02;
+    src: url('/fonts/SourceSans3VF-Roman.otf.latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F;
   }
 
   @font-face {
@@ -53,19 +35,8 @@
     font-weight: 200 900;
     font-style: normal;
     font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Roman.otf.greek-ext.woff2') format('woff2');
-    unicode-range: U+1F00-1FFF;
-  }
-
-  /* */
-
-  @font-face {
-    font-family: 'Source Sans Variable';
-    font-weight: 200 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Italic.otf.latin.woff2') format('woff2');
-    unicode-range: U+0000-00FF;
+    src: url('/fonts/SourceSans3VF-Roman.otf.woff2') format('woff2');
+    unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
   }
 
   @font-face {
@@ -73,9 +44,8 @@
     font-weight: 200 900;
     font-style: italic;
     font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Italic.otf.latin-ext-a.woff2')
-      format('woff2');
-    unicode-range: U+0100-017F;
+    src: url('/fonts/SourceSans3VF-Italic.otf.subset.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+20AC, U+2000-206F;
   }
 
   @font-face {
@@ -83,18 +53,8 @@
     font-weight: 200 900;
     font-style: italic;
     font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Italic.otf.latin-ext-b.woff2')
-      format('woff2');
-    unicode-range: U+0180-024F;
-  }
-
-  @font-face {
-    font-family: 'Source Sans Variable';
-    font-weight: 200 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Italic.otf.latin-rest.woff2') format('woff2');
-    unicode-range: U+0259-03C0, U+1E00-1EFF, U+2000-FB02;
+    src: url('/fonts/SourceSans3VF-Italic.otf.latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F;
   }
 
   @font-face {
@@ -111,10 +71,11 @@
     font-weight: 200 900;
     font-style: italic;
     font-stretch: normal;
-    src: url('/fonts/SourceSans3VF-Italic.otf.greek-ext.woff2') format('woff2');
-    unicode-range: U+1F00-1FFF;
+    src: url('/fonts/SourceSans3VF-Italic.otf.woff2') format('woff2');
+    unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
   }
 }
+
 @media (prefers-color-scheme: dark) {
   html,
   body {

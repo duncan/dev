@@ -35,15 +35,17 @@ export default function Layout({
         ></link>
         <link
           rel="preload"
-          href="/fonts/SourceSans3VF-Roman.otf.latin.woff2"
+          href="/fonts/SourceSans3VF-Roman.otf.subset.woff2"
           as="font"
           type="font/woff2"
+          crossOrigin="anonymous"
         ></link>
         <link
           rel="preload"
-          href="/fonts/SourceSans3VF-Italic.otf.latin.woff2"
+          href="/fonts/SourceSans3VF-Italic.otf.subset.woff2"
           as="font"
           type="font/woff2"
+          crossOrigin="anonymous"
         ></link>
         <link
           rel="alternate"
