@@ -17,10 +17,6 @@ export default function LinkArticle({
       key={content.slug}
     >
       <header>
-        {/* <Link href={content.slug}>
-            <div className="text-3xl pb-1 cursor-pointer">{content.emoji}</div>
-          </Link> */}
-
         <Link href={content.slug}>
           <h1 className="text-2xl font-bold cursor-pointer">
             {content.title}{' '}
