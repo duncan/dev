@@ -5,10 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "ts-node scripts/feed.ts",
+    "postbuild": "ts-node scripts/feed.ts; ts-node scripts/sitemap.ts",
     "start": "next start",
     "test": "jest",
-    "feed": "ts-node ./lib/feed.ts"
+    "feed": "ts-node scripts/feed.ts",
+    "sitemap": "ts-node scripts/sitemap.ts"
   },
   "prettier": {
     "semi": false,
@@ -31,7 +32,8 @@
     "rss": "^1.2.2",
     "sharp": "^0.27.1",
     "tailwindcss": "^2.0.2",
-    "unified": "^9.2.0"
+    "unified": "^9.2.0",
+    "xml": "^1.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.9",

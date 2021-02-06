@@ -51,31 +51,5 @@ export default function About({}) {
         </div>
       </div>
     </div>
-
-    // <div className="flex-none">
-    //   <div className="flex">
-    //     <Link href="/">
-    //       <a>
-    //         <Image
-    //           src="/images/duncan.jpg"
-    //           alt="Photo of Duncan Davidson"
-    //           width={100}
-    //           height={100}
-    //           className="w-100 h-100 rounded-full"
-    //         />
-    //       </a>
-    //     </Link>
-    //   </div>
-    //   <div className="flex-none pl-8">
-    //     <div>Duncan Davidson</div>
-    //     <div>
-    //       Software developer, photographer, and author. American immigrant
-    //       living in Berlin, Germany.
-    //     </div>
-    //     <p>
-
-    //     </p>
-    //   </div>
-    // </div>
   )
 }
