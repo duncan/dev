@@ -76,6 +76,15 @@
   }
 }
 
+.prose pre {
+  background-color: #333;
+  line-height: 1.4;
+}
+
+.prose pre code {
+  font-size: 0.8rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html,
   body {
@@ -90,7 +99,9 @@
   .prose h2,
   .prose h3,
   .prose strong,
-  .prose a {
+  .prose a,
+  .prose li,
+  .prose code {
     @apply text-gray-300;
   }
 }

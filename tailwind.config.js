@@ -12,10 +12,12 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-
             p: {
               fontWeight: '350',
             },
+            code: {
+              fontWeight: '300',
+            }
           },
         },
       },
