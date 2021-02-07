@@ -3,7 +3,6 @@ import { Site } from '../lib/site'
 import xml from 'xml'
 import fs from 'fs'
 
-//export function generate() {
 let contents = Site.instance().contents as { [slug: string]: Content }
 
 let urls = [
@@ -25,9 +24,5 @@ let data = xml(
   },
   { indent: true }
 )
-console.log(data)
 
 fs.writeFileSync('./public/sitemap.xml', data)
-//}
-
-//generate()
