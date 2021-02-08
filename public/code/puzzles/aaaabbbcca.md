@@ -6,33 +6,33 @@ title: The case of aaaabbbcca
 description: Implicit in a recent pointer to a code puzzle was the fact that a test-driven approach would be perfect.
 ---
 
-[Allen Holub retweeted][aht] a [code puzzle that Alexey Grigorev posted][agt]. Alexey claimed that most candidates can’t solve the following within a 25 minute screening interview:
+[Allen Holub retweeted][aht] a [code puzzle that Alexey Grigorev posted][agt] which Alexey claimed that most candidates couldn’t solve the following within a 25-minute screening interview:
 
 ```
 Input: "aaaabbbcca"
 Output: [("a", 4), ("b", 3), ("c", 2), ("a", 1)]
 ```
 
-My first thought was that this should be easy: a quick matter of counting up the number of times each letter occurred in the string. Then, I saw that final `a` character and realized that something slightly more sophisticated was needed. It took me about 10 minutes (yes, I timed myself) to hack out the following solution in IRB:
+My first thought was that this should be easy: a quick matter of counting up the number of times each letter occurred in the string. Then, I saw that final `a` character and realized that something a little more sophisticated was needed. It took me about 10 minutes (yes, I timed myself) to hack out the following solution in Ruby using IRB:
 
 ```ruby
-'aaaabbbcca'.chars.reduce([]) do |a, c|
-  if b = a.last and b[0] == c
-    b[1] = b[1] + 1
+'aaaabbbcca'.chars.reduce([]) do |accum, char|
+  if last = accum.last and last[0] == char
+    last[1] = last[1] + 1
   else
-    a << [c, 1]
+    accum << [char, 1]
   end
-  a
+  accum
 end
 ```
 
-This made the following output, which is close enough even though it’s in Ruby’s array of array output format:
+This produced the following output, which is close enough even though it’s in Ruby’s array of array output format:
 
 ```
 [['a', 4], ['b', 3], ['c', 2], ['a', 1]]
 ```
 
-[Based on my recent interview experience][ego], I’m really not sure I could have been able to do it within Alexey’s 25 minute screening. Indeed, I’d have to be in a reasonable frame of mind to have a shot and not totally flub it up.
+[Based on my recent interview experience][ego], I’m really not sure I could have been able to do it within Alexey’s 25 minute screening. Indeed, I’d have to be in a reasonable frame of mind to have a shot and not totally flub it up due to performance paralysis.
 
 ## Other solutions
 
@@ -48,13 +48,13 @@ which returns:
 ["aaaa", "bbb", "cc", "a"]
 ```
 
-To return the same format mine, you could use the following as the `map` function:
+To return the same format mine, you can use the following as the `map` function:
 
 ```ruby
-.map { |i| [i[1], i[0].size] }
+.map { |item| [item[1], item[0].size] }
 ```
 
-Vítězslav Ackermann Ferko solved it the [same way in JavaScript][vat]:
+Vítězslav Ackermann Ferko [used the same approach in JavaScript][vat]:
 
 ```js
 'aaaabbbcca'.match(/((.)\2*)/g).map((v) => [v[0], v.length])
@@ -70,11 +70,11 @@ $ echo 'aaaabbbcca' | fold -w 1 | uniq -c
  1 a
 ```
 
-Love it! 💥
+This one wins the prize! 💥
 
 ## Let’s be test-driven, ok?
 
-Implicit (to me at least) in Allen’s pointer to the problem is that this is the kind of thing that would be great for a test-driven approach. So, instead of hacking it out in IRB, I really should have written a test first:
+Implicit (to me at least) in Allen’s pointer to the problem is that this is the kind of thing that would be great for a test-driven approach. So, instead of hacking it out in IRB, I could have written a test first:
 
 ```ruby
 def test_simple
@@ -89,13 +89,13 @@ You might think that setting up a test-driven approach is overkill for a code pu
 #!/usr/bin/env ruby
 
 def solve(input)
-  input.chars.reduce([]) do |a, c|
-    if b = a.last and b[0] == c
-      b[1] = b[1] + 1
+  input.chars.reduce([]) do |accum, char|
+    if last = accum.last and last[0] == char
+      last[1] = last[1] + 1
     else
-      a << [c, 1]
+      accum << [char, 1]
     end
-    a
+    accum
   end
 end
 
