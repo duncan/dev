@@ -16,6 +16,25 @@ Output: [("a", 4), ("b", 3), ("c", 2), ("a", 1)]
 My first thought was that this should be easy: a quick matter of counting up the number of times each letter occurred in the string. Then, I saw that final `a` character and realized that something a little more sophisticated was needed. It took me about 10 minutes (yes, I timed myself) to hack out the following solution in Ruby using IRB:
 
 ```ruby
+'aaaabbbcca'.chars.reduce([]) do |a, c|
+  if b = a.last and b[0] == c
+    b[1] = b[1] + 1
+  else
+    a << [c, 1]
+  end
+  a
+end
+```
+
+This produced the following output, which is close enough even though it’s in Ruby’s array of array output format:
+
+```
+[['a', 4], ['b', 3], ['c', 2], ['a', 1]]
+```
+
+Of course, those one-letter variable names are only good for a few minutes. They really need to be cleaned up into something more readible. Here we go:
+
+```ruby
 'aaaabbbcca'.chars.reduce([]) do |accum, char|
   if last = accum.last and last[0] == char
     last[1] = last[1] + 1
@@ -24,12 +43,6 @@ My first thought was that this should be easy: a quick matter of counting up the
   end
   accum
 end
-```
-
-This produced the following output, which is close enough even though it’s in Ruby’s array of array output format:
-
-```
-[['a', 4], ['b', 3], ['c', 2], ['a', 1]]
 ```
 
 [Based on my recent interview experience][ego], I’m really not sure I could have been able to do it within Alexey’s 25 minute screening. Indeed, I’d have to be in a reasonable frame of mind to have a shot and not totally flub it up due to performance paralysis.
@@ -109,7 +122,7 @@ class Tests < Test::Unit::TestCase
 end
 ```
 
-I started using this approach in the last code interview I did recently, and it out really worked nicely. It certainly helped keep my thinking a little bit more structured during the process.
+I started using this all-in-one test-first approach in the last code interview I did recently, and it out really worked nicely. It certainly helped keep my thinking a little bit more structured during the process.
 
 [aht]: https://twitter.com/allenholub/status/1357115515672555520
 [agt]: https://twitter.com/Al_Grigor/status/1357028887209902088
