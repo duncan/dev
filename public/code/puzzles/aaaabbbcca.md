@@ -8,9 +8,9 @@ description: Implicit in a recent pointer to a code puzzle was the fact that a t
 
 [Allen Holub retweeted][aht] a [code puzzle that Alexey Grigorev posted][agt] which Alexey claimed that most candidates couldn’t solve the following within a 25-minute screening interview:
 
-```
-Input: "aaaabbbcca"
-Output: [("a", 4), ("b", 3), ("c", 2), ("a", 1)]
+```js
+Input: 'aaaabbbcca'
+Output: [('a', 4), ('b', 3), ('c', 2), ('a', 1)]
 ```
 
 My first thought was that this should be easy: a quick matter of counting up the number of times each letter occurred in the string. Then, I saw that final `a` character and realized that something a little more sophisticated was needed. It took me about 10 minutes (yes, I timed myself) to hack out the following solution in Ruby using IRB:
@@ -28,7 +28,7 @@ end
 
 This produced the following output, which is close enough even though it’s in Ruby’s array of array output format:
 
-```
+```ruby
 [['a', 4], ['b', 3], ['c', 2], ['a', 1]]
 ```
 
@@ -57,7 +57,7 @@ A few other solutions stood out in the threads of these discussions. One I quite
 
 which returns:
 
-```
+```json
 ["aaaa", "bbb", "cc", "a"]
 ```
 
@@ -123,6 +123,27 @@ end
 ```
 
 I started using this all-in-one test-first approach in the last code interview I did recently, and it out really worked nicely. It certainly helped keep my thinking a little bit more structured during the process.
+
+Of course, if we _really_ wanted to take the original instructions literally, we could have using a test-first approach and just returned the string asked for:
+
+```ruby
+#!/usr/bin/env ruby
+
+def solve(input)
+  "[('a', 4), ('b', 3), ('c', 2), ('a', 1)]"
+end
+
+require 'test/unit'
+
+class Tests < Test::Unit::TestCase
+  def test_simple
+    expected = "[('a', 4), ('b', 3), ('c', 2), ('a', 1)]"
+    assert_equal expected, solve('aaaabbbcca')
+  end
+end
+```
+
+You’d just need the right _je nai sais quo_ expression to go along with presenting this solution. Maybe one day, I’d be in a good frame of mind to do that. 🤣
 
 [aht]: https://twitter.com/allenholub/status/1357115515672555520
 [agt]: https://twitter.com/Al_Grigor/status/1357028887209902088

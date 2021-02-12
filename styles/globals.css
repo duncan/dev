@@ -74,15 +74,93 @@
     src: url('/fonts/SourceSans3VF-Italic.otf.woff2') format('woff2');
     unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
   }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.subset.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+20AC, U+2000-206F;
+  }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F;
+  }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.greek.woff2') format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.otf.woff2') format('woff2');
+    unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.subset.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+20AC, U+2000-206F;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.greek.woff2') format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.woff2') format('woff2');
+    unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
+  }
 }
 
 .prose pre {
-  background-color: #333;
+  background-color: #444;
   line-height: 1.4;
 }
 
 .prose pre code {
   font-size: 0.8rem;
+  font-weight: 350;
+  font-variant-ligatures: contextual-alt-values;
+}
+
+.prose pre code .hljs-keyword {
+  font-weight: 500;
 }
 
 @media (prefers-color-scheme: dark) {

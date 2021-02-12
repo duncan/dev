@@ -3,6 +3,7 @@ task default: %i[pyftsubset]
 
 ITALIC = 'SourceSans3VF-Italic.otf.woff2'
 ROMAN = 'SourceSans3VF-Roman.otf.woff2'
+CODE = ''
 
 task :pyftsubset do
   unless File.exist? '/opt/homebrew/bin/pyftsubset'
@@ -10,7 +11,11 @@ task :pyftsubset do
   end
 end
 
-%w[SourceSans3VF-Italic.otf.woff2 SourceSans3VF-Roman.otf.woff2].each do |font|
+%w[
+  SourceSans3VF-Italic.otf.woff2
+  SourceSans3VF-Roman.otf.woff2
+  FiraCode-VF.woff2
+].each do |font|
   puts font
   {
     'subset' => 'U+0000-00FF,U+20AC,U+2000-20CF',

@@ -17,7 +17,7 @@ module.exports = {
             },
             code: {
               fontWeight: '300',
-            }
+            },
           },
         },
       },
@@ -38,7 +38,17 @@ module.exports = {
           "Segoe UI Emoji",
           "Segoe UI Symbol",
           "Noto Color Emoji"
-        ]
+        ],
+        mono: [
+          'Fira Code',
+          'ui-monospace',
+          'SFMono-Regular',
+          'Menlo',
+          'Monaco',
+          'Consolas',
+          "Liberation Mono",
+          "Courier New",
+          'monospace']
       },
     },
   },
