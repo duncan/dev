@@ -4,20 +4,7 @@ import Image from 'next/image'
 export default function About({}) {
   return (
     <div className="flex">
-      <div className="flex-none w-100 h-100">
-        <Link href="/">
-          <a>
-            <Image
-              src="/images/duncan.jpg"
-              alt="Photo of Duncan Davidson"
-              width={100}
-              height={100}
-              className="rounded-full"
-            />
-          </a>
-        </Link>
-      </div>
-      <div className="flex pl-6">
+      <div className="flex">
         <div className="flex items-center items-center justify-center text-gray-500 text-sm pr-2">
           <div>
             <Link href="/">
@@ -49,6 +36,19 @@ export default function About({}) {
             .
           </div>
         </div>
+      </div>
+      <div className="flex-none pl-8 w-100 h-100">
+        <Link href="/">
+          <a>
+            <Image
+              src="/images/duncan.jpg"
+              alt="Photo of Duncan Davidson"
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
+          </a>
+        </Link>
       </div>
     </div>
   )

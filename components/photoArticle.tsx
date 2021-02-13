@@ -26,7 +26,7 @@ export default function PhotoArticle({
   //console.log(`W ${width}`)
   return (
     <article key={content.slug}>
-      <div className="container mx-auto max-w-2xl px-4 pt-16 pb-2 items-center">
+      <div className="container mx-auto max-w-2xl px-4 pb-2 items-center">
         <Image
           src={content.photoHref}
           alt="{content.title}"
@@ -37,7 +37,7 @@ export default function PhotoArticle({
           layout="responsive"
         />
       </div>
-      <div className="container mx-auto max-w-xl pb-8 px-4">
+      <div className="container mx-auto max-w-xl pt-4 pb-4 px-4">
         <header>
           <Link href={content.slug}>
             <h1 className="text-2xl font-bold cursor-pointer">

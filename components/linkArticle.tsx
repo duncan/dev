@@ -13,7 +13,7 @@ export default function LinkArticle({
 }) {
   return (
     <article
-      className="container mx-auto max-w-xl pt-16 px-4"
+      className="container mx-auto max-w-xl pb-4 px-4"
       key={content.slug}
     >
       <header>

@@ -59,7 +59,7 @@ export default function Layout({
           src="https://plausible.io/js/plausible.js"
         ></script>
       </Head>
-      <header className="container mx-auto max-w-xl pt-8 px-4">
+      <header className="container mx-auto max-w-xl pt-8 pb-8 px-4">
         <Link href="/">
           <a>
             <div className="text-lg font-bold text-blue-500">duncan.dev</div>

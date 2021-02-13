@@ -183,3 +183,8 @@
     @apply text-gray-300;
   }
 }
+
+article + article {
+  @apply mt-16;
+  @apply pt-16;
+}

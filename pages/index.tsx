@@ -49,7 +49,7 @@ export default function Home(props: ContentCollectionProps) {
           <meta property="twitter:site" content="@duncan"></meta>
           <meta property="twitter:creator" content="@duncan"></meta>
         </Head>
-        {props.collection.map((content) => {
+        {props.collection.map((content, index) => {
           switch (content.type) {
             case 'link': {
               return LinkArticle({ content: content, home: true })
