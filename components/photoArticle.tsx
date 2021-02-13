@@ -33,7 +33,8 @@ export default function PhotoArticle({
           width={width}
           height={height}
           className="rounded-xl"
-          quality="85"
+          quality="60"
+          layout="responsive"
         />
       </div>
       <div className="container mx-auto max-w-xl pb-8 px-4">
