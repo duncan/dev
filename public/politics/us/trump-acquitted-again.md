@@ -2,7 +2,7 @@
 date: 2021-02-13T22:00
 title: Entirely predictable, yet sad
 emoji: 🙈
-description: Trump’s second impeachment ends with acquittal.
+description: I’d have a lot more sympathy for McConnell’s argument if he was backing up that speech by actually doing something to bring some other process to bear.
 type: post
 ---
 
