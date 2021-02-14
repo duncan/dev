@@ -5,6 +5,12 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
+    // fontSize: {
+    //   sm: ['14px', '20px'],
+    //   base: ['16px', '24px'],
+    //   lg: ['20px', '28px'],
+    //   xl: ['24px', '32px'],
+    // },
     extend: {
       // screens: {
       //   'dark-mode': { raw: '(prefers-color-scheme: dark)' }
@@ -13,7 +19,7 @@ module.exports = {
         DEFAULT: {
           css: {
             p: {
-              fontWeight: '350',
+              fontWeight: '300',
             },
             code: {
               fontWeight: '300',

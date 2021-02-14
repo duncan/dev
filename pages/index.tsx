@@ -49,19 +49,34 @@ export default function Home(props: ContentCollectionProps) {
           <meta property="twitter:site" content="@duncan"></meta>
           <meta property="twitter:creator" content="@duncan"></meta>
         </Head>
-        {props.collection.map((content, index) => {
-          switch (content.type) {
-            case 'link': {
-              return LinkArticle({ content: content, home: true })
+        {props.collection
+          .map((content, index) => {
+            switch (content.type) {
+              case 'link': {
+                return LinkArticle({ content: content, home: true })
+              }
+              case 'photo': {
+                return PhotoArticle({ content: content, home: true })
+              }
+              default: {
+                return TextArticle({ content: content, home: true })
+              }
             }
-            case 'photo': {
-              return PhotoArticle({ content: content, home: true })
+          })
+          .map((content, index) => {
+            if (index == 0) {
+              return <>{content}</>
+            } else {
+              return (
+                <>
+                  <div className="container mx-auto max-w-xl pt-8 pb-12 px-4 text-center text-2xl">
+                    ◼︎
+                  </div>
+                  {content}
+                </>
+              )
             }
-            default: {
-              return TextArticle({ content: content, home: true })
-            }
-          }
-        })}
+          })}
       </Layout>
     </>
   )

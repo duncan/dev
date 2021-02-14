@@ -148,6 +148,10 @@
   }
 }
 
+.prose p {
+  font-size: 15px;
+}
+
 .prose pre {
   background-color: #444;
   line-height: 1.4;
