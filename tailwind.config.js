@@ -23,7 +23,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
-          'Source Sans Variable',
+          //'Source Sans Variable',
           "ui-sans-serif",
           "system-ui",
           "-apple-system",
@@ -40,7 +40,7 @@ module.exports = {
           "Noto Color Emoji"
         ],
         mono: [
-          'Fira Code',
+          //'Fira Code',
           'ui-monospace',
           'SFMono-Regular',
           'Menlo',

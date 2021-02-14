@@ -34,20 +34,6 @@ export default function Layout({
           sizes="16x16"
         ></link>
         <link
-          rel="preload"
-          href="/fonts/SourceSans3VF-Roman.otf.subset.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        ></link>
-        <link
-          rel="preload"
-          href="/fonts/SourceSans3VF-Italic.otf.subset.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        ></link>
-        <link
           rel="alternate"
           type="application/rss+xml"
           href="https://duncan.dev/feed.xml"
