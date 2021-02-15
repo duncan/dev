@@ -23,7 +23,7 @@ export default function DateLine({
   date: string
   linked?: boolean
 }) {
-  let classes = ['text-xs']
+  let classes = ['text-xs', 'pt-1']
   if (linked) {
     classes.push('cursor-pointer')
   }

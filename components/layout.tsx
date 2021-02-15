@@ -48,7 +48,7 @@ export default function Layout({
       <header className="container mx-auto max-w-xl pt-8 pb-8 px-4">
         <Link href="/">
           <a>
-            <div className="text-lg font-bold text-blue-500">duncan.dev</div>
+            <div className="text-lg font-bold text-gray-500">duncan.dev</div>
           </a>
         </Link>
       </header>

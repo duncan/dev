@@ -69,7 +69,7 @@ export default function Home(props: ContentCollectionProps) {
             } else {
               return (
                 <>
-                  <div className="container mx-auto max-w-xl pt-8 pb-12 px-4 text-center text-2xl">
+                  <div className="container mx-auto max-w-xl pt-8 pb-12 px-4 text-center text-2xl text-gray-300">
                     ◼︎
                   </div>
                   {content}

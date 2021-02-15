@@ -157,6 +157,10 @@
   line-height: 1.4;
 }
 
+.prose a {
+  font-weight: 700;
+}
+
 .prose pre code {
   font-size: 0.8rem;
   font-weight: 350;
