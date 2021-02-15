@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-function displayDateTime(date: string): string {
+export function displayDateTime(date: string): string {
   let d = new Date(date)
   return (
     d.toLocaleString('en-gb', {
@@ -23,7 +23,7 @@ export default function DateLine({
   date: string
   linked?: boolean
 }) {
-  let classes = ['text-xs', 'pt-1']
+  let classes = ['text-xs', 'pt-1', 'font-light']
   if (linked) {
     classes.push('cursor-pointer')
   }

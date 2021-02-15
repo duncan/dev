@@ -2,8 +2,9 @@ import Link from 'next/link'
 import { ContentProps } from '../lib/content'
 import MarkdownProse from './markdownProse'
 import DateLine from './dateLine'
+import { displayDateTime } from './dateLine'
 
-export default function LinkArticle({
+export default function Summary({
   content,
   home,
 }: {
@@ -17,16 +18,15 @@ export default function LinkArticle({
     >
       <header>
         <Link href={content.slug}>
-          <h1 className="text-2xl font-bold cursor-pointer">
-            {content.title}{' '}
-            <span className="text-2xl cursor-pointer">{content.emoji}</span>{' '}
-          </h1>
-        </Link>
-        <Link href={content.slug}>
-          <DateLine date={content.date}></DateLine>
+          <p className="cursor-pointer pb-2">
+            <span className="font-bold">{content.title} </span>
+            <span className="cursor-pointer">{content.emoji}</span> <br></br>
+            <span className="font-light text-sm">
+              {content.meta['description']}
+            </span>
+          </p>
         </Link>
       </header>
-      <MarkdownProse text={content.text}></MarkdownProse>
     </article>
   )
 }
