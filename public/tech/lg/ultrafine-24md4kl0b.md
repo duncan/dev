@@ -16,4 +16,8 @@ So, I did the next best thing. I picked up the [LG 24" UltraFine 4K display with
 
 In just a few minutes of use, I’m pretty satisfied with it. More than I expected, actually. The screen is big enough for serious multitasking, yet small enough that it lets my desk breathe a bit. The color is gorgeous for photo and video editing. And the simple one-plug display and charge capability is great to have a non-Apple device.
 
+My one complaint might be the way it wiggles on its stand. There’s a little bit of rotational play there. However, the display comes with a VESA mount plate, so that’s pretty easy to fix later and put it on something more flexible to boot if I find the wiggle too annoying.
+
+Verdict: A lovely display that pairs great with the Apple Silicon 13" MacBook Pro.
+
 [lg]: https://www.lg.com/us/monitors/lg-24MD4KL-B-4k-uhd-led-monitor
