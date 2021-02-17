@@ -12,6 +12,8 @@ For what it’s worth, according to [Wikipedia], the original script in Japanese
 
 Bing’s translation? “All of your bases were cats.” Priceless.
 
+(via [jwz])
+
 [link]: https://youtu.be/jQE66WA2s-A
 [jwz]: https://www.jwz.org/blog/2021/02/all-your-base-is-20/
 [wikipedia]: https://en.wikipedia.org/wiki/All_your_base_are_belong_to_us
