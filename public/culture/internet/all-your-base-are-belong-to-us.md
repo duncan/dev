@@ -8,7 +8,7 @@ emoji: 👾
 
 It’s been twenty years since [the music video for “All Your Base Are Belong to Us“][link] arrived. I had to explain this to soooo many people. And, it occasionally still pops up in my brain.
 
-For what it’s worth, according to [Wikipedia], the original script in Japanese was: きみたちの基地きちは、全すべて CATS がいただいた。 A decent translation is “CATS has taken all of your bases.” For kicks, I used Google’s translation service and got: “All of your bases were received by CATS.”
+For what it’s worth, according to [Wikipedia], the original Zero Wing game script in Japanese was: きみたちの基地きちは、全すべて CATS がいただいた。 A decent translation is “CATS has taken all of your bases.” For kicks, I used Google’s translation service and got: “All of your bases were received by CATS.”
 
 Bing’s translation? “All of your bases were cats.” Priceless.
 
