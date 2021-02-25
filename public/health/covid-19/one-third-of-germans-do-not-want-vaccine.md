@@ -3,7 +3,7 @@ date: 2021-02-26T00:00
 type: link
 emoji: 💉
 title: One third of Germans don’t want vaccine
-description: adsf
+description: Increadibly, a high number of Germans don’t want to be vaccinated, and a sizable number are picky about which vaccine they get.
 ---
 
 From the _you have to be kidding me department:_ [34 percent of Germans said they do not want to be vaccinated at all.][link]
