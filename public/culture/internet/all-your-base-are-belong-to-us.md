@@ -2,7 +2,7 @@
 date: 2021-02-17T11:30
 title: All your base are belong to us
 type: link
-description: Twenty years ago, the music video that propelled “All Your Base” into a full on meme arrived.
+description: Twenty years ago, the music video that propelled “All Your Base” into a full on meme arrived. It’s a forever earworm in my brain.
 emoji: 👾
 ---
 

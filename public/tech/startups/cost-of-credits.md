@@ -3,7 +3,7 @@ date: 2021-02-26T12:00
 type: post
 emoji: 🚀
 title: The cost of startup cloud credits
-description: Credits are tempting and who doesn’t like free? They do, however, come with a cost that might hurt later.
+description: Credits are tempting and who doesn’t like free? They do, however, come with a cost that might hurt later if you’re not paying attention up front.
 ---
 
 During my two and a half years working at Microsoft for Startups, one topic came up more than any other during the first conversation with a startup: credits. It’s no wonder. Many cloud providers are generous with their offers of credits. If you know the right people to talk to, getting five or even six figures worth of credit isn’t too much of a problem.

@@ -3,7 +3,7 @@ date: 2021-02-14T14:00
 type: link
 emoji: 🧑‍💻
 title: Spotify goes Work From Anywhere (WFA)
-description: Spotify joins the remote work movement that’s sweeping the tech industry.
+description: Spotify joins the remote work from anywhere movement that’s sweeping through the tech industry. There’s not a better time for it.
 ---
 
 The distributed remote work movement keeps getting traction, this time with [Spotify joining the chorus allowing their employees to choose their geographic location][link]:

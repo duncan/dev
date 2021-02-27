@@ -3,7 +3,7 @@ date: 2021-02-19T12:00
 type: link
 title: Ready to go direct
 emoji: 🛍
-description: Benedict Evans writes about the inflection point where consumers and brands are ready to go direct.
+description: Benedict Evans writes about the inflection point where consumers and brands are ready to go direct with platforms like Shopify.
 ---
 
 While discussing Shopify’s recent earnings announcement, Benedict Evans talks about [the trend of both consumers and brands being ready to go direct][link]:

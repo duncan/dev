@@ -3,7 +3,7 @@ title: Kristina Lustig got the demotion she wanted
 date: 2021-02-17T16:30
 type: link
 emoji: 👩‍💻
-description: Sometimes the best move on the career ladder is to change ladders.
+description: Sometimes the best move on the career ladder is to change ladders. This is the story of one engineer’s journey at Stack Overflow.
 ---
 
 Kristina Lustig used to be Stack Overflow’s director of design, but [left her job a year ago and started a new one as an associate software developer][link]. Luckily, she was able to do it without leaving the company.

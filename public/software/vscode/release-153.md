@@ -2,7 +2,7 @@
 date: 2021-02-05T10:00
 title: Visual Studio Code 1.53 is out, without final Apple Silicon support
 emoji: 🧑‍💻
-description: The latest VSCode is out, but Apple Silicon is still only supported in the Insider’s build.
+description: The latest VSCode is out, but Apple Silicon is still only supported in the Insider’s build. Hopefully, next months stable release will support the new architecture.
 type: link
 ---
 

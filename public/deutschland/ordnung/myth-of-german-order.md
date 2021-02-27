@@ -3,7 +3,7 @@ title: The myth of German order
 emoji: 🤦
 date: 2021-01-19T12:00
 type: link
-description: Germany isn’t nearly as orderly as its international reputation suggests.
+description: Germany isn’t nearly as orderly as its international reputation suggests. In fact, it’s actually kind of chaotic in my experience here.
 ---
 
 One of the most surprising things I found after moving to Germany was that it’s not nearly as orderly as its international reputation suggests. [Maurice Frank digs into the myth of German order at Berliner Zeitung][link]:

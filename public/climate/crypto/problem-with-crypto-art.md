@@ -3,7 +3,7 @@ date: 2021-02-20T23:00
 type: link
 emoji: 🎨
 title: The problem with crypto art
-description:
+description: Crypto art is an interesting use of the blockchain to create scarcity around digital goods, but it’s a disaster for the climate.
 ---
 
 French artist [Joanie Lemercier put a hiatus on releasing crypto art][link]. The reason: the climate impact it has.

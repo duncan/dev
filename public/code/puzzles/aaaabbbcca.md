@@ -3,7 +3,7 @@ date: 2021-02-07T20:00
 type: post
 emoji: 🧩
 title: The case of aaaabbbcca
-description: Implicit in a recent pointer to a code puzzle was the fact that a test-driven approach would be perfect.
+description: Implicit in a recent pointer to a code puzzle was the fact that a test-driven approach would be perfect. So, I dove in.
 ---
 
 [Allen Holub retweeted][aht] a [code puzzle that Alexey Grigorev posted][agt] which Alexey claimed that most candidates couldn’t solve the following within a 25-minute screening interview:

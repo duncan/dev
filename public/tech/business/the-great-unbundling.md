@@ -2,7 +2,7 @@
 date: 2021-02-14T20:00
 type: link
 title: The great unbundling
-description: Benedict Evans looks at what it means as the tech industry enters its second 50 years.
+description: Benedict Evans looks at what it means as the tech industry enters its second 50 years and starts to figure how what happens next.
 emoji: 💥
 ---
 

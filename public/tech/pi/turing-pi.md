@@ -2,7 +2,7 @@
 date: 2021-02-12T19:00
 title: A seven node compute cluster in a box
 emoji: 🤯
-description: The Turning Pi allows you to create a seven node cluster in a box.
+description: The Turning Pi allows you to create a seven node cluster in a box. I so may end up with one of these at some point soon.
 type: link
 ---
 

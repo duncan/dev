@@ -2,7 +2,7 @@
 title: Klarna launches bank accounts in Germany
 date: 2021-02-14T11:30
 emoji: 💶
-description: Swedish fintech Klarna moves beyond buy-now, pay later.
+description: Swedish fintech Klarna moves beyond buy-now, pay later and launches first-class banking in Germany, joining N26 and others.
 type: link
 ---
 
