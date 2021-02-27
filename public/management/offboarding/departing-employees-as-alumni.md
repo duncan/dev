@@ -6,7 +6,7 @@ title: Turn departing employees into loyal alumni
 description: Perfectly timed for my own offboarding, HBR discusses how having a good offboarding process is important.
 ---
 
-Since I’m right in the middle of an offboarding process, the timing of the current [Harvard Business Review’s article on offboarding][link] couldn’t be more appropriate.
+Since I’m right in the middle of an offboarding process, the timing of the current [Harvard Business Review’s article on offboarding][link] couldn’t be more appropriate. Alison Dachner and Erin Makarius make the argument that a good offboarding process is essential.
 
 > “Companies strive to create an outstanding experience when someone enters the organization,” says Mike Quinn, senior vice president for integration at the chemicals company Synthomer. “Similarly, when somebody is exiting the organization, even under trying circumstances, you want to be sure that the process and experience reflect the overall culture of the organization.”
 
