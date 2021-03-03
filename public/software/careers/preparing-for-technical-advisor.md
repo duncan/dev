@@ -2,7 +2,7 @@
 date: 2021-03-03T12:00
 title: Preparing for my next role
 emoji: 🧑‍💻
-description:
+description: Now that I’ve wrapped up my time at Microsoft, my attention is shifting towards my next job and getting ready for it.
 type: post
 ---
 
