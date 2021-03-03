@@ -43,10 +43,21 @@ Obviously, with a couple of weeks to go before I start, I’m still knee-deep in
 - [The Great Mental Models, Vol 1][tgmm], by Shane Parrish et al.
 - [Radical Candor][rc] by Kim Scott.
 
-Several of these books aren’t about technical topics, and I’ve read many of them in the past. A good review, however, is something that I’m doing to get ready. Any other suggestions? Please don’t hesitate to send them along.
+Several of these books aren’t about technical topics, and I’ve read many of them in the past. A good review, however, is something that I’m doing to get ready. Here are a few other suggestions from folks:
+
+- [The Art of Leadership][al], by Michael Lopp
+- [Drive][dr], by Daniel Pink
+- [Creativity, Inc.][ci], by Ed Catmull
+- [The Culture Code][cc], by Daniel Coyle
+- [Predictably Irrational][pi], by Dan Ariely
+- [The Upside of Irrationality][ui], also by Dan Ariely
+- [Accelerate][aa], by Nicole Forsgren, et al.
+- [The Customer Driven Playbook][cdp], by Travis Lowdermilk and Jessica Rich
+
+Thanks [Bill Dudney][bd], [Larry Wright][lw], [Ian McDonald][im], and [Mat Velloso][mv] (again!) for those. Any other suggestions? Please don’t hesitate to send them along.
 
 [^1]: I know I’m being vague as to who I’ll be working for next — all in good time, dear readers. All in good time.
-[^2]: You can get a good sense of Mat’s opinions and take on life through his [Twitter feed][mvt].
+[^2]: You can get a good sense of Mat’s opinions and take on life through his [Twitter feed][mvt]. He often brightens my day with a quip or observation.
 
 [mv]: https://www.matvelloso.com
 [mvt]: https://twitter.com/matvelloso
@@ -62,3 +73,14 @@ Several of these books aren’t about technical topics, and I’ve read many of 
 [rc]: https://www.radicalcandor.com
 [fs]: https://fs.blog
 [tgmm]: https://fs.blog/tgmm/
+[al]: https://learning.oreilly.com/library/view/the-art-of/9781492045687/
+[dr]: https://en.wikipedia.org/wiki/Drive:_The_Surprising_Truth_About_What_Motivates_Us
+[ci]: https://www.creativityincbook.com
+[bd]: https://twitter.com/bdudney
+[lw]: https://twitter.com/larrywright
+[im]: https://twitter.com/imcdnzl
+[cc]: http://danielcoyle.com/the-culture-code/
+[pi]: https://danariely.com/books/predictably-irrational/
+[ui]: https://danariely.com/books/the-upside-of-irrationality/
+[aa]: https://itrevolution.com/book/accelerate/
+[cdp]: https://learning.oreilly.com/library/view/the-customer-driven-playbook/9781491981269/
