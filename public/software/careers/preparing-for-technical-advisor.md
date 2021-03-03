@@ -8,7 +8,7 @@ type: post
 
 Now that I’ve wrapped up my time at Microsoft, my attention is shifting towards my next job, where I’ll be working as a Technical Advisor to a CEO.[^1] I had the job title in my previous role at Microsoft for Startups, but the scope of that role was for a small team, not a company.
 
-My job description for the new role starts with:
+The description for the new job starts with:
 
 > You’ll work directly with the CEO and senior leaders to deep dive into some of the company’s most interesting technical challenges and bring perspective. You’ll connect the dots, ask hard questions of the teams, and point out great ideas and flawed designs.
 
