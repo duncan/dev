@@ -224,7 +224,9 @@
   .prose strong,
   .prose a,
   .prose li,
-  .prose code {
+  .prose code,
+  .prose blockquote,
+  .prose blockquote p {
     @apply text-gray-300;
   }
 }
