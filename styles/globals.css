@@ -148,7 +148,8 @@
   }
 }
 
-.prose p {
+.prose p,
+.prose li {
   font-size: 15px;
 }
 
@@ -159,6 +160,42 @@
 
 .prose a {
   font-weight: 700;
+}
+
+.prose blockquote p {
+  font-weight: 300;
+  color: #374151;
+}
+
+.prose li {
+  font-weight: 300;
+  color: #374151;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.prose sup.fn a {
+  text-decoration: none;
+  padding-left: 1px;
+}
+
+.prose .footnote:first-of-type {
+  margin-top: 3em;
+}
+
+.prose .footnote p:first-child {
+  margin-top: 0;
+}
+.prose .footnote p:last-child {
+  margin-top: 0;
+}
+
+.prose .footnote p {
+  @apply text-xs font-light;
+}
+
+.prose .footnote .label {
+  @apply font-bold;
 }
 
 .prose pre code {
