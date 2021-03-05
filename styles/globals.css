@@ -148,9 +148,12 @@
   }
 }
 
+html {
+  font-variant-ligatures: common-ligatures normal discretionary-ligatures;
+}
+
 .prose p,
 .prose li {
-  font-size: 15px;
 }
 
 .prose pre {
@@ -159,16 +162,29 @@
 }
 
 .prose a {
-  font-weight: 700;
+  font-weight: 550;
+  text-decoration: none;
+  /* text-underline-offset: 2px; */
 }
 
+/* .prose a:after {
+  position: relative;
+  content: '\FEFF°';
+  margin-left: 0.1em;
+  top: -0.1em;
+  color: #933;
+  font-weight: 500;
+  font-feature-settings: 'caps';
+  font-variant-numeric: normal;
+} */
+
 .prose blockquote p {
-  font-weight: 300;
+  font-weight: 350;
   color: #374151;
 }
 
 .prose li {
-  font-weight: 300;
+  font-weight: 350;
   color: #374151;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -211,7 +227,7 @@
 @media (prefers-color-scheme: dark) {
   html,
   body {
-    background-color: #222;
+    background-color: #333;
   }
   p,
   div,
@@ -228,5 +244,8 @@
   .prose blockquote,
   .prose blockquote p {
     @apply text-gray-300;
+  }
+  .text-gray-500 {
+    color: #ccc;
   }
 }
