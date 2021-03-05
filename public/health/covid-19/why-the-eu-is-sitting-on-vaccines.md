@@ -1,7 +1,7 @@
 ---
 date: 2021-03-03T18:00
 title: Why is Europe is sitting on millions of unused COVID-19 vaccines?
-description:
+description: While other countries have had their time in the idiot spotlight, it seems it’s the EU’s turn to be a bunch of dolts.
 emoji: 💉
 type: link
 ---
