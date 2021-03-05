@@ -13,9 +13,9 @@ export default function FootnoteDefinition({
   let id = `fndef-${identifier}`
   return (
     <div id={id} className="footnote flex">
-      <div className="w-6">
-        <p className="label w-6">
-          <a href={href}>{label}:</a>
+      <div className="w-5">
+        <p className="label w-5">
+          <a href={href}>{label}</a>
         </p>
       </div>
       <div className="text w-auto pr-8">{children}</div>
