@@ -21,9 +21,7 @@ export default function Summary({
           <p className="cursor-pointer pb-2">
             <span className="font-bold">{content.title} </span>
             <span className="cursor-pointer">{content.emoji}</span> <br></br>
-            <span className="font-light text-sm">
-              {content.meta['description']}
-            </span>
+            <span className="font-light">{content.meta['description']}</span>
           </p>
         </Link>
       </header>
