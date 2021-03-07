@@ -28,8 +28,8 @@ function renderMetadata(props: ContentProps) {
       <meta property="og:title" content={ogTitle}></meta>
       <meta property="og:description" content={props.ogDescription}></meta>
       <meta property="og:image" content={ogImage}></meta>
-      <meta property="og:image:width" content="600"></meta>
-      <meta property="og:image:height" content="600"></meta>
+      {/* <meta property="og:image:width" content="600"></meta>
+      <meta property="og:image:height" content="600"></meta> */}
       <meta property="og:site_name" content="duncan.dev"></meta>
 
       <meta property="twitter:card" content={twitterCard}></meta>
