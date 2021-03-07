@@ -1,14 +1,22 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { Site } from '../lib/site'
-import { Content, ContentCollectionProps } from '../lib/content'
+import { Content, ContentProps, ContentCollectionProps } from '../lib/content'
 import { GetStaticPropsResult } from 'next'
 import Layout from '../components/layout'
+import Image from 'next/image'
+import Summary from '../components/summary'
 import TextArticle from '../components/textArticle'
 import PhotoArticle from '../components/photoArticle'
 import LinkArticle from '../components/linkArticle'
 
-export default function Home(props: ContentCollectionProps) {
+interface FrontPageProps {
+  photos: Array<ContentProps>
+  links: Array<ContentProps>
+  posts: Array<ContentProps>
+}
+
+export default function Home(props: FrontPageProps) {
   return (
     <>
       <Layout home>
@@ -47,45 +55,100 @@ export default function Home(props: ContentCollectionProps) {
           <meta property="twitter:site" content="@duncan"></meta>
           <meta property="twitter:creator" content="@duncan"></meta>
         </Head>
-        {props.collection
-          .map((content, index) => {
-            switch (content.type) {
-              case 'link': {
-                return LinkArticle({ content: content, home: true })
-              }
-              case 'photo': {
-                return PhotoArticle({ content: content, home: true })
-              }
-              default: {
-                return TextArticle({ content: content, home: true })
-              }
-            }
-          })
-          .map((content, index) => {
-            if (index == 0) {
-              return <>{content}</>
-            } else {
-              return (
-                <>
-                  <div className="container mx-auto max-w-xl pt-8 pb-12 px-4 text-center text-2xl text-gray-300">
-                    ◼︎
-                  </div>
-                  {content}
-                </>
-              )
-            }
+
+        <div className="container mx-auto max-w-xl flex mb-4 pr-4 pl-4 md:pr-0 md:pl-0">
+          {props.photos.map((photo, index) => {
+            return (
+              <div className="w-1/4 p-1 pb-4">
+                <Link href={photo.slug}>
+                  <a>
+                    <Image
+                      src={photo.photoHref}
+                      alt="{photo.title}"
+                      width={140}
+                      height={140}
+                      className="rounded-xl"
+                      quality="60"
+                      layout="responsive"
+                    />
+                  </a>
+                </Link>
+              </div>
+            )
           })}
+        </div>
+
+        <div className="container mx-auto max-w-xl pb-4 flex flex-wrap mb-4">
+          <div className="w-full md:w-2/3 pr-4 pl-4 md:pr-3">
+            <h1 className="pb-4 font-thin">Posts:</h1>
+            {props.posts.map((content, index) => {
+              // return Summary({ content: content, home: true })
+              return (
+                <Link href={content.slug}>
+                  <p className="cursor-pointer pb-8 md:pb-12 text-lg">
+                    <span className="font-bold text-xl">{content.title} </span>
+                    <span className="cursor-pointer text-xl pl-1">
+                      {content.emoji}
+                    </span>{' '}
+                    <br></br>
+                    <span className="font-light">
+                      {content.meta['description']}
+                    </span>
+                  </p>
+                </Link>
+              )
+            })}
+          </div>
+          <div className="w-full md:w-1/3 pr-4 pl-4 md:pl-3">
+            <h1 className="pb-4 font-thin">Links:</h1>
+            {props.links.map((content, index) => {
+              return (
+                <Link href={content.slug}>
+                  <p className="cursor-pointer pb-8">
+                    {/* <span className="cursor-pointer pr-1">{content.emoji}</span>{' '} */}
+                    <span className="font-bold">{content.title} </span>
+                    <br></br>
+                    <span className="font-light text-sm">
+                      {content.meta['description']}
+                    </span>
+                  </p>
+                </Link>
+              )
+            })}
+          </div>
+        </div>
       </Layout>
     </>
   )
 }
 
 export async function getStaticProps({}): Promise<
-  GetStaticPropsResult<ContentCollectionProps>
+  GetStaticPropsResult<FrontPageProps>
 > {
-  let propsCollection = await Promise.all(
+  let postsCollection = await Promise.all(
     Site.instance()
-      .frontPageContent(10)
+      .contentOfType('post')
+      .slice(0, 7)
+      .map((o: Content) => {
+        let props = o.props()
+        return props
+      })
+  )
+
+  let linksCollection = await Promise.all(
+    Site.instance()
+      .contentOfType('link')
+      .slice(0, 5)
+      .map((o: Content) => {
+        let props = o.props()
+        return props
+      })
+  )
+
+  let photoCollection = await Promise.all(
+    Site.instance()
+      .contentOfType('photo')
+      .slice(0, 4)
       .map((o: Content) => {
         let props = o.props()
         return props
@@ -93,6 +156,10 @@ export async function getStaticProps({}): Promise<
   )
 
   return {
-    props: { collection: propsCollection },
+    props: {
+      photos: photoCollection,
+      links: linksCollection,
+      posts: postsCollection,
+    },
   }
 }
