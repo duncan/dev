@@ -32,8 +32,6 @@ export default function Home(props: ContentCollectionProps) {
             property="og:image"
             content="https://duncan.dev/images/duncan.jpg"
           ></meta>
-          {/* <meta property="og:image:width" content="1200"></meta>
-          <meta property="og:image:height" content="630"></meta> */}
 
           <meta property="twitter:card" content="summary"></meta>
           <meta property="twitter:url" content="https://duncan.dev/"></meta>
