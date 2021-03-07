@@ -30,7 +30,7 @@ export default function Home(props: ContentCollectionProps) {
           ></meta>
           <meta
             property="og:image"
-            content="https://duncan.dev/images/og-image.jpg"
+            content="https://duncan.dev/images/duncan.jpg"
           ></meta>
           <meta property="og:image:width" content="1200"></meta>
           <meta property="og:image:height" content="630"></meta>

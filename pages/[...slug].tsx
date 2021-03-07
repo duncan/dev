@@ -10,7 +10,7 @@ import LinkArticle from '../components/linkArticle'
 function renderMetadata(props: ContentProps) {
   let ogUrl = `https://duncan.dev/${props.slug}`
   let ogTitle = props.title
-  var ogImage = 'https://duncan.dev/images/og-image.jpg'
+  var ogImage = 'https://duncan.dev/images/duncan.jpg'
   var twitterImage = 'https://duncan.dev/images/duncan.jpg'
   var twitterCard = 'summary'
 
