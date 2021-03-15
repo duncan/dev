@@ -23,7 +23,7 @@ Want to join us? Check out the [Shopify careers page][c].
 Oh, and to pre-empt the inevitable question: My family and I will remain in Europe thanks to Shopify being [digital by default][dbd].
 
 [^1]: You might find Simon Sinek’s book to be somewhat more approachable than Carse’s.
-[^2]: Check out Simon’s most excellent [Napkin Math newsletter][nm]!
+[^2]: Check out Simon’s most excellent [Napkin Math newsletter][npk]!
 
 [shop]: https://shopify.com
 [htw]: /software/careers/how-do-i-work-best
@@ -38,4 +38,4 @@ Oh, and to pre-empt the inevitable question: My family and I will remain in Euro
 [fig]: https://en.wikipedia.org/wiki/Finite_and_Infinite_Games
 [tig]: https://en.wikipedia.org/wiki/The_Infinite_Game
 [c]: https://www.shopify.com/careers/search
-[nm]: https://sirupsen.com/napkin/
+[npk]: https://sirupsen.com/napkin/
