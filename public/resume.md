@@ -10,7 +10,7 @@ _This is the short version. See [Duncan’s curriculum vitae][cv] for the long v
 
 ### Shopify
 
-**March 2021 - Present: Technical Advisor, Office of the CEO**, responsible for expanding the CEO’s attention and bandwidth on the company’s technical capabilities.
+**March 2021 - Present: Technical Advisor, Office of the CEO**
 
 ### Microsoft for Startups
 

@@ -22,7 +22,7 @@ Looking forward, Duncan plans to remain active in technology and software develo
 
 ### Shopify
 
-**March 2021 - Present: Technical Advisor, Office of the CEO**, responsible for expanding the CEO’s attention and bandwidth on technical capabilities.
+**March 2021 - Present: Technical Advisor, Office of the CEO**
 
 ### Microsoft
 
