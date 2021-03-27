@@ -8,6 +8,10 @@ _This is the short version. See [Duncan’s curriculum vitae][cv] for the long v
 
 ## Recent Professional History
 
+### Shopify
+
+**March 2021 - Present: Technical Advisor, Office of the CEO**, responsible for expanding the CEO’s attention and bandwidth on the company’s technical capabilities.
+
 ### Microsoft for Startups
 
 **January 2020 - February 2021: Principal Technical Advisor**, responsible for charting, identifying, and researching challenges in the startup landscape for Microsoft.
