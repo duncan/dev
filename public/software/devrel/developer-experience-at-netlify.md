@@ -3,7 +3,7 @@ type: link
 title: How Netlify does developer advocacy
 emoji: 🧑‍💻
 date: 2021-02-04T10:30
-description: Sarah Drasner on how her organization and Netflify works.
+description: Sarah Drasner on how her organization and Netflify works. I think that she’s got an excellent model of how a developer releations organization can work.
 ---
 
 The definition of a developer advocate and what they do depends a lot on the company, its needs, and its leadership values. An excellent template, in my opinion, is [how Netlify has approached developer advocacy][link]:

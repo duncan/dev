@@ -3,7 +3,7 @@ date: 2021-02-04T13:00
 title: Keep breathing
 emoji: 😷
 type: link
-description: Bryan Jones photographed the 7AM shift change at the Univeristy of Utah Hospital’s Medical Intensive Care Unit.
+description: Bryan Jones photographed the 7AM shift change at the Univeristy of Utah Hospital’s Medical Intensive Care Unit and the impact of COVID-19 there.
 ---
 
 My dear friend and photographer Bryan Jones joined Stephan Dark to document [the 7AM shift change at the Univeristy of Utah Hospital’s Medical Intensive Care Unit][link] in Salt Lake City.

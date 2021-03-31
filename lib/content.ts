@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import sharp from 'sharp'
+//import sharp from 'sharp'
 
 export interface ContentProps {
   slug: string
@@ -109,10 +109,10 @@ export class Content {
         path.dirname(this.filename),
         this.meta['photo']
       )
-      let photoMeta = await sharp(photoPath).metadata()
+      //let photoMeta = await sharp(photoPath).metadata()
       props['photoMeta'] = {
-        width: photoMeta.width,
-        height: photoMeta.height,
+        width: 600, //photoMeta.width,
+        height: 600, //photoMeta.height,
       }
     }
 

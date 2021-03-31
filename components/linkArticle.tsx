@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { ContentProps } from '../lib/content'
 import MarkdownProse from './markdownProse'
 import DateLine from './dateLine'
-import { getStaticProps } from '../pages/[...slug]'
 
 export default function LinkArticle({
   content,
@@ -13,14 +12,10 @@ export default function LinkArticle({
 }) {
   return (
     <article
-      className="container mx-auto max-w-xl pt-16 px-4"
+      className="container mx-auto max-w-xl pb-4 px-4"
       key={content.slug}
     >
       <header>
-        {/* <Link href={content.slug}>
-            <div className="text-3xl pb-1 cursor-pointer">{content.emoji}</div>
-          </Link> */}
-
         <Link href={content.slug}>
           <h1 className="text-2xl font-bold cursor-pointer">
             {content.title}{' '}

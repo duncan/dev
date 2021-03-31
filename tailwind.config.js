@@ -5,6 +5,14 @@ module.exports = {
   ],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
+    // fontSize: {
+    //   xs: ['12px', '16px'],
+    //   sm: ['14px', '20px'],
+    //   base: ['16px', '24px'],
+    //   lg: ['20px', '28px'],
+    //   xl: ['24px', '32px'],
+    //   2xl: ['', ''],
+    // },
     extend: {
       // screens: {
       //   'dark-mode': { raw: '(prefers-color-scheme: dark)' }
@@ -12,9 +20,11 @@ module.exports = {
       typography: {
         DEFAULT: {
           css: {
-
             p: {
               fontWeight: '350',
+            },
+            code: {
+              fontWeight: '300',
             },
           },
         },
@@ -36,7 +46,17 @@ module.exports = {
           "Segoe UI Emoji",
           "Segoe UI Symbol",
           "Noto Color Emoji"
-        ]
+        ],
+        mono: [
+          //'Fira Code',
+          'ui-monospace',
+          'SFMono-Regular',
+          'Menlo',
+          'Monaco',
+          'Consolas',
+          "Liberation Mono",
+          "Courier New",
+          'monospace']
       },
     },
   },

@@ -48,6 +48,21 @@ export class Site {
     return this.contents[slug]
   }
 
+  contentOfType(type: string): Array<Content> {
+    return lodash
+      .chain(Object.values(this.contents))
+      .filter((o) => {
+        return o.type == type
+      })
+      .sortBy([
+        (o) => {
+          return o.date
+        },
+      ])
+      .reverse()
+      .value()
+  }
+
   latestContent(n = 10): Array<Content> {
     return lodash
       .chain(Object.values(this.contents))

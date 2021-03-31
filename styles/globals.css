@@ -74,12 +74,160 @@
     src: url('/fonts/SourceSans3VF-Italic.otf.woff2') format('woff2');
     unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
   }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.subset.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+20AC, U+2000-206F;
+  }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F;
+  }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.greek.woff2') format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+
+  @font-face {
+    font-family: 'Cascadia Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/CascadiaCode.otf.woff2') format('woff2');
+    unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.subset.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+20AC, U+2000-206F;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-024F;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.greek.woff2') format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+
+  @font-face {
+    font-family: 'Fira Code';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('/fonts/FiraCode-VF.woff2') format('woff2');
+    unicode-range: U+0250-036F, U+0360-1FFF, U+2070-FFFF;
+  }
+}
+
+html {
+  font-variant-ligatures: common-ligatures normal discretionary-ligatures;
+}
+
+.prose p,
+.prose li {
+}
+
+.prose pre {
+  background-color: #444;
+  line-height: 1.4;
+}
+
+.prose a {
+  font-weight: 550;
+  text-decoration: none;
+  /* text-underline-offset: 2px; */
+}
+
+/* .prose a:after {
+  position: relative;
+  content: '\FEFF°';
+  margin-left: 0.1em;
+  top: -0.1em;
+  color: #933;
+  font-weight: 500;
+  font-feature-settings: 'caps';
+  font-variant-numeric: normal;
+} */
+
+.prose blockquote p {
+  font-weight: 350;
+  color: #374151;
+}
+
+.prose li {
+  font-weight: 350;
+  color: #374151;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.prose sup.fn a {
+  text-decoration: none;
+  padding-left: 1px;
+}
+
+.prose .footnote:first-of-type {
+  margin-top: 3em;
+}
+
+.prose .footnote p:first-child {
+  margin-top: 0;
+}
+.prose .footnote p:last-child {
+  margin-top: 0;
+}
+
+.prose .footnote p {
+  @apply text-xs font-light;
+}
+
+.prose .footnote .label {
+  @apply font-bold;
+}
+
+.prose pre code {
+  font-size: 0.8rem;
+  font-weight: 350;
+  font-variant-ligatures: contextual-alt-values;
+}
+
+.prose pre code .hljs-keyword {
+  font-weight: 500;
 }
 
 @media (prefers-color-scheme: dark) {
   html,
   body {
-    background-color: #222;
+    background-color: #333;
   }
   p,
   div,
@@ -90,7 +238,14 @@
   .prose h2,
   .prose h3,
   .prose strong,
-  .prose a {
+  .prose a,
+  .prose li,
+  .prose code,
+  .prose blockquote,
+  .prose blockquote p {
     @apply text-gray-300;
+  }
+  .text-gray-500 {
+    color: #ccc;
   }
 }

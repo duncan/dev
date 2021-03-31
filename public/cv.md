@@ -12,11 +12,17 @@ After leaving JavaSoft, he dove deep into the Apple ecosystem. He helped a gener
 
 He also parlayed a lifelong passion as a photographer into a second career documenting events for [TED Conferences][ted], [O’Reilly Media][ora], [Apple’s WWDC][aapl], and [Salesforce][sfe]. His work has appeared in the [New York Times][nyt], [BBC][bbc], and other major international news outlets. He also helped found [Luma Labs][luma], a small business based in Portland, Oregon, that sells camera straps and accessories to photographers worldwide.
 
-During the 2010s, Duncan moved to Berlin and helped Wunderlist launch a significant rewrite of their application backend. He then assisted the company’s acquisition and integration by [Microsoft][ms]. After the acquisition and integration were complete, he has spent the last few years helping out startups worldwide as a CTO in Residence for [Microsoft for Startups][mfs].
+During the 2010s, Duncan moved to Berlin and helped Wunderlist launch a significant rewrite of their application backend. He then assisted the company’s acquisition and integration by [Microsoft][ms]. After the acquisition and integration were complete, he has spent two and a half years helping out startups worldwide as a CTO in Residence for [Microsoft for Startups][mfs].
 
-Looking forward to 2021 and beyond, Duncan plans to remain active in technology and software development for at least another decade or two. He will continue making photographs as an amateur for the rest of his life.
+In March 2021, Duncan joined the Office of the CEO at [Shopify][shop], working with Tobi Lütke to help guide the technical direction of the company.
+
+Looking forward, Duncan plans to remain active in technology and software development for at least another decade or two. He will continue making photographs as an amateur for the rest of his life.
 
 ## Professional History
+
+### Shopify
+
+**March 2021 - Present: Technical Advisor, Office of the CEO**
 
 ### Microsoft
 
@@ -177,3 +183,4 @@ Before university, Duncan attended [Union High School][uhs] in Tulsa, Oklahoma, 
 [dhh]: https://dhh.dk
 [geht]: https://www.linkedin.com/in/justingehtland/
 [samr]: http://www.intertwingly.net/blog/
+[shop]: https://shopify.com

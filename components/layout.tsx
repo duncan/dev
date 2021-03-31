@@ -34,20 +34,6 @@ export default function Layout({
           sizes="16x16"
         ></link>
         <link
-          rel="preload"
-          href="/fonts/SourceSans3VF-Roman.otf.subset.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        ></link>
-        <link
-          rel="preload"
-          href="/fonts/SourceSans3VF-Italic.otf.subset.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        ></link>
-        <link
           rel="alternate"
           type="application/rss+xml"
           href="https://duncan.dev/feed.xml"
@@ -59,20 +45,39 @@ export default function Layout({
           src="https://plausible.io/js/plausible.js"
         ></script>
       </Head>
-      <header className="container mx-auto max-w-xl pt-8 px-4">
+      <header className="flex container mx-auto max-w-xl pt-8 pb-8 px-4">
         <Link href="/">
           <a>
-            <div className="text-lg font-bold text-blue-500">duncan.dev</div>
+            <div className="text-lg font-bold text-gray-500">duncan.dev</div>
           </a>
         </Link>
+        <div className="flex-none items-right">
+          <Link href="/posts">
+            <a>
+              <div className="inline text-lg font-thin text-gray-500 pl-4">
+                posts
+              </div>
+            </a>
+          </Link>
+          <Link href="/photos">
+            <a>
+              <div className="inline text-lg font-thin text-gray-500 pl-2">
+                photos
+              </div>
+            </a>
+          </Link>
+          <Link href="/links">
+            <a>
+              <div className="inline text-lg font-thin text-gray-500 pl-2">
+                links
+              </div>
+            </a>
+          </Link>
+        </div>
       </header>
       {children}
       <footer className="container mx-auto max-w-xl py-16 px-4">
         <About />
-
-        {/* <Link href="/copyright"><a>copyright</a></Link>
-      &bull;
-      <Link href="/colophon"><a>colophon</a></Link> */}
       </footer>
     </>
   )

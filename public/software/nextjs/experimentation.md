@@ -3,7 +3,7 @@ date: 2021-01-31T10:00
 title: Now building with Next.js
 emoji: 🧑‍🏫
 type: post
-description: I’ve rebuilt my website with Next.js and found it to be more interesting than I expected.
+description: I’ve rebuilt my website with Next.js and found it to be more interesting than I expected. Much more interesting.
 ---
 
 One of my New Year’s resolutions was to dig a bit deeper into [React][rjs]. It’s part of a personal project to rehabilitate my negative bias about the JavaScript ecosystem and to dig deeper into the details that I find really interesting. Also, I’ve been watching the [Next.js framework][nextjs] for a while. Now that it [supports static website generation][next-ssg], I decided it was time to dive in re-build my [duncan.dev][d] site using it, which you’re reading now.
