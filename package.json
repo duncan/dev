@@ -31,7 +31,6 @@
     "remark-html": "^13.0.1",
     "remark-parse": "^9.0.0",
     "rss": "^1.2.2",
-    "sharp": "^0.28.0",
     "tailwindcss": "^2.0.2",
     "xml": "^1.0.1"
   },
