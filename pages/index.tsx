@@ -87,11 +87,11 @@ export default function Home(props: FrontPageProps) {
                 <Link href={content.slug}>
                   <p className="cursor-pointer pb-8 md:pb-12 text-lg">
                     <span className="font-bold text-xl">{content.title} </span>
-                    <span className="cursor-pointer text-xl pl-1">
+                    <span className="cursor-pointer text-xl  pl-1">
                       {content.emoji}
                     </span>{' '}
                     <br></br>
-                    <span className="font-light">
+                    <span className="font-normal text-base">
                       {content.meta['description']}
                     </span>
                   </p>
@@ -108,7 +108,7 @@ export default function Home(props: FrontPageProps) {
                     {/* <span className="cursor-pointer pr-1">{content.emoji}</span>{' '} */}
                     <span className="font-bold">{content.title} </span>
                     <br></br>
-                    <span className="font-light text-sm">
+                    <span className="font-normal text-sm">
                       {content.meta['description']}
                     </span>
                   </p>

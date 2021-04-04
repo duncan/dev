@@ -1,8 +1,5 @@
 module.exports = {
-  purge: [
-    './pages/**/*.{js,tsx,md}',
-    './components/**/*.{js,tsx}'
-  ],
+  purge: ['./pages/**/*.{js,tsx,md}', './components/**/*.{js,tsx}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     // fontSize: {
@@ -13,6 +10,17 @@ module.exports = {
     //   xl: ['24px', '32px'],
     //   2xl: ['', ''],
     // },
+    fontWeight: {
+      hairline: 100,
+      thin: 200,
+      light: 300,
+      normal: 350,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
+      black: 900,
+    },
     extend: {
       // screens: {
       //   'dark-mode': { raw: '(prefers-color-scheme: dark)' }
@@ -32,20 +40,20 @@ module.exports = {
       fontFamily: {
         sans: [
           'Source Sans Variable',
-          "ui-sans-serif",
-          "system-ui",
-          "-apple-system",
-          "BlinkMacSystemFont",
-          "Segoe UI",
-          "Roboto",
-          "Helvetica Neue",
-          "Arial",
-          "Noto Sans",
-          "sans-serif",
-          "Apple Color Emoji",
-          "Segoe UI Emoji",
-          "Segoe UI Symbol",
-          "Noto Color Emoji"
+          'ui-sans-serif',
+          'system-ui',
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Helvetica Neue',
+          'Arial',
+          'Noto Sans',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol',
+          'Noto Color Emoji',
         ],
         mono: [
           //'Fira Code',
@@ -54,16 +62,15 @@ module.exports = {
           'Menlo',
           'Monaco',
           'Consolas',
-          "Liberation Mono",
-          "Courier New",
-          'monospace']
+          'Liberation Mono',
+          'Courier New',
+          'monospace',
+        ],
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
