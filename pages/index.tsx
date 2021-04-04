@@ -56,7 +56,7 @@ export default function Home(props: FrontPageProps) {
           <meta property="twitter:creator" content="@duncan"></meta>
         </Head>
 
-        <div className="container mx-auto max-w-xl flex mb-4 pr-4 pl-4 md:pr-0 md:pl-0">
+        {/* <div className="container mx-auto max-w-xl flex mb-4 pr-4 pl-4 md:pr-0 md:pl-0">
           {props.photos.map((photo, index) => {
             return (
               <div className="w-1/4 p-1 pb-4">
@@ -76,7 +76,7 @@ export default function Home(props: FrontPageProps) {
               </div>
             )
           })}
-        </div>
+        </div> */}
 
         <div className="container mx-auto max-w-xl pb-4 flex flex-wrap mb-4">
           <div className="w-full md:w-2/3 pr-4 pl-4 md:pr-3">
@@ -87,11 +87,11 @@ export default function Home(props: FrontPageProps) {
                 <Link href={content.slug}>
                   <p className="cursor-pointer pb-8 md:pb-12 text-lg">
                     <span className="font-bold text-xl">{content.title} </span>
-                    <span className="cursor-pointer text-xl pl-1">
+                    <span className="cursor-pointer text-xl  pl-1">
                       {content.emoji}
                     </span>{' '}
                     <br></br>
-                    <span className="font-light">
+                    <span className="font-normal text-base">
                       {content.meta['description']}
                     </span>
                   </p>
@@ -108,7 +108,7 @@ export default function Home(props: FrontPageProps) {
                     {/* <span className="cursor-pointer pr-1">{content.emoji}</span>{' '} */}
                     <span className="font-bold">{content.title} </span>
                     <br></br>
-                    <span className="font-light text-sm">
+                    <span className="font-normal text-sm">
                       {content.meta['description']}
                     </span>
                   </p>
