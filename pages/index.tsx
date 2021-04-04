@@ -56,7 +56,7 @@ export default function Home(props: FrontPageProps) {
           <meta property="twitter:creator" content="@duncan"></meta>
         </Head>
 
-        <div className="container mx-auto max-w-xl flex mb-4 pr-4 pl-4 md:pr-0 md:pl-0">
+        {/* <div className="container mx-auto max-w-xl flex mb-4 pr-4 pl-4 md:pr-0 md:pl-0">
           {props.photos.map((photo, index) => {
             return (
               <div className="w-1/4 p-1 pb-4">
@@ -76,7 +76,7 @@ export default function Home(props: FrontPageProps) {
               </div>
             )
           })}
-        </div>
+        </div> */}
 
         <div className="container mx-auto max-w-xl pb-4 flex flex-wrap mb-4">
           <div className="w-full md:w-2/3 pr-4 pl-4 md:pr-3">
