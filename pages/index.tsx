@@ -56,27 +56,21 @@ export default function Home(props: FrontPageProps) {
           <meta property="twitter:creator" content="@duncan"></meta>
         </Head>
 
-        {/* <div className="container mx-auto max-w-xl flex mb-4 pr-4 pl-4 md:pr-0 md:pl-0">
-          {props.photos.map((photo, index) => {
-            return (
-              <div className="w-1/4 p-1 pb-4">
-                <Link href={photo.slug}>
-                  <a>
-                    <Image
-                      src={photo.photoHref}
-                      alt="{photo.title}"
-                      width={140}
-                      height={140}
-                      className="rounded-xl"
-                      quality="60"
-                      layout="responsive"
-                    />
-                  </a>
-                </Link>
-              </div>
-            )
-          })}
-        </div> */}
+        <article key={props.photos[0].slug}>
+          <div className="container mx-auto max-w-2xl px-4 pb-12 items-center cursor-pointer">
+            <Link href={props.photos[0].slug}>
+              <Image
+                src={props.photos[0].photoHref}
+                alt="{props.photos[0].title}"
+                width="600"
+                height="600"
+                className="rounded-xl"
+                quality="60"
+                layout="responsive"
+              />
+            </Link>
+          </div>
+        </article>
 
         <div className="container mx-auto max-w-xl pb-4 flex flex-wrap mb-4">
           <div className="w-full md:w-2/3 pr-4 pl-4 md:pr-3">
@@ -85,16 +79,15 @@ export default function Home(props: FrontPageProps) {
               // return Summary({ content: content, home: true })
               return (
                 <Link href={content.slug}>
-                  <p className="cursor-pointer pb-8 md:pb-12 text-lg">
+                  <div className="cursor-pointer pb-8 md:pb-12 text-lg">
                     <span className="font-bold text-xl">{content.title} </span>
                     <span className="cursor-pointer text-xl  pl-1">
                       {content.emoji}
                     </span>{' '}
-                    <br></br>
-                    <span className="font-normal text-base">
-                      {content.meta['description']}
-                    </span>
-                  </p>
+                    <div className="prose">
+                      <p>{content.meta['description']}</p>
+                    </div>
+                  </div>
                 </Link>
               )
             })}
@@ -104,14 +97,13 @@ export default function Home(props: FrontPageProps) {
             {props.links.map((content, index) => {
               return (
                 <Link href={content.slug}>
-                  <p className="cursor-pointer pb-8">
+                  <div className="cursor-pointer pb-8">
                     {/* <span className="cursor-pointer pr-1">{content.emoji}</span>{' '} */}
                     <span className="font-bold">{content.title} </span>
-                    <br></br>
-                    <span className="font-normal text-sm">
-                      {content.meta['description']}
-                    </span>
-                  </p>
+                    <div className="prose text-sm pt-1">
+                      <p>{content.meta['description']}</p>
+                    </div>
+                  </div>
                 </Link>
               )
             })}
