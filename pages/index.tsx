@@ -4,11 +4,10 @@ import { Site } from '../lib/site'
 import { Content, ContentProps, ContentCollectionProps } from '../lib/content'
 import { GetStaticPropsResult } from 'next'
 import Layout from '../components/layout'
-import Image from 'next/image'
-import Summary from '../components/summary'
-import TextArticle from '../components/textArticle'
-import PhotoArticle from '../components/photoArticle'
-import LinkArticle from '../components/linkArticle'
+
+const myLoader = ({ src, width, quality }) => {
+  return `${src}?w=${width}&q=${quality || 75}`
+}
 
 interface FrontPageProps {
   photos: Array<ContentProps>
@@ -59,14 +58,11 @@ export default function Home(props: FrontPageProps) {
         <article key={props.photos[0].slug}>
           <div className="container mx-auto max-w-2xl px-4 pb-12 items-center cursor-pointer">
             <Link href={props.photos[0].slug}>
-              <Image
+              <img
                 src={props.photos[0].photoHref}
-                alt="{props.photos[0].title}"
-                width="600"
-                height="600"
+                alt={props.photos[0].title}
+                width="100%"
                 className="rounded-xl"
-                quality="60"
-                layout="responsive"
               />
             </Link>
           </div>

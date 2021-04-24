@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 export default function About({}) {
   return (
@@ -40,11 +39,11 @@ export default function About({}) {
       <div className="flex-none pl-8 w-100 h-100">
         <Link href="/">
           <a>
-            <Image
-              src="/images/duncan.jpg"
+            <img
+              src="/images/duncan-200.jpg"
               alt="Photo of Duncan Davidson"
-              width={100}
-              height={100}
+              width="100"
+              height="100"
               className="rounded-full"
             />
           </a>

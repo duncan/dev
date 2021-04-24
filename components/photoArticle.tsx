@@ -2,7 +2,6 @@ import Link from 'next/link'
 import { ContentProps } from '../lib/content'
 import MarkdownProse from './markdownProse'
 import DateLine from './dateLine'
-import Image from 'next/image'
 
 export default function PhotoArticle({
   content,
@@ -26,14 +25,11 @@ export default function PhotoArticle({
   return (
     <article key={content.slug}>
       <div className="container mx-auto max-w-2xl px-4 pb-2 items-center">
-        <Image
+        <img
           src={content.photoHref}
-          alt="{content.title}"
-          width={width}
-          height={height}
+          alt={content.title}
+          width="100%"
           className="rounded-xl"
-          quality="60"
-          layout="responsive"
         />
       </div>
       <div className="container mx-auto max-w-xl pt-4 pb-4 px-4">
