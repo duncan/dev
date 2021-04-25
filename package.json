@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "ts-node scripts/feed.ts; ts-node scripts/sitemap.ts",
-    "cloudflare": "next build; ts-node scripts/feed.ts; ts-node scripts/sitemap.ts",
+    "cloudflare": "next build; next export; ts-node scripts/feed.ts; ts-node scripts/sitemap.ts",
     "start": "next start",
     "test": "jest",
     "feed": "ts-node scripts/feed.ts",
