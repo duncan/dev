@@ -16,7 +16,7 @@ export default function CodeBlock({ photoId }: { photoId: string }) {
       <source media="(min-width: 600px)" srcSet={`${xlurl} 2x, ${mdurl} 1x`} />
       <source media="(min-width: 400px)" srcSet={`${lgurl} 2x, ${smurl} 1x`} />
       <source media="(min-width: 300px)" srcSet={`${mdurl} 2x, ${xsurl} 1x`} />
-      <img src={mdurl} className="rounded-xl" />
+      <img src={mdurl} className="rounded-xl" width="100%" />
     </picture>
   )
 }
