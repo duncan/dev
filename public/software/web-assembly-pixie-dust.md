@@ -1,5 +1,5 @@
 ---
-title: Is WebAssembly magic pixie dust
+title: Is WebAssembly magic pixie dust?
 emoji: 🪄
 description: Can you really replace JavaScript with Wasm and watch things get instantly faster? Like everything, it depends.
 date: 2021-04-21T10:30
