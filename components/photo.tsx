@@ -3,8 +3,6 @@ import React from 'react'
 const urlBase = 'https://res.cloudinary.com/duncandavidson/image/upload'
 
 export default function CodeBlock({ photoId }: { photoId: string }) {
-  console.log(photoId)
-
   let xlurl = `${urlBase}/w_1200/${photoId}`
   let lgurl = `${urlBase}/w_800/${photoId}`
   let mdurl = `${urlBase}/w_600/${photoId}`

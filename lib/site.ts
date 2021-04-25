@@ -6,7 +6,10 @@ import * as lodash from 'lodash'
 export class Site {
   private _dir: string
 
-  contents: { [slug: string]: Content } = {}
+  public links: { [slug: string]: Content } = {}
+  public posts: { [slug: string]: Content } = {}
+  public photos: { [slug: string]: Content } = {}
+  public pages: { [slug: string]: Content } = {}
 
   get dir() {
     return this._dir
@@ -17,55 +20,57 @@ export class Site {
     this.load()
   }
 
-  load() {
-    glob.sync(`${this._dir}/**/*.md`).forEach((filename: string) => {
-      let slug = filename.replace(/\.md$/, '').slice(this.dir.length + 1)
-      if (!this.contents[slug]) {
-        this.contents[slug] = new Content(filename, slug)
+  loadInto(
+    dirname: String,
+    collection: { [slug: string]: Content },
+    prefix = ''
+  ) {
+    glob.sync(`${dirname}/**/*.md`).forEach((filename: string) => {
+      let slug =
+        prefix + filename.replace(/\.md$/, '').slice(dirname.length + 1)
+      if (!collection[slug]) {
+        collection[slug] = new Content(filename, slug)
       } else {
         // reload content
       }
     })
   }
 
-  contentPaths(): Array<string> {
-    return Object.keys(this.contents).map((slug: string) => {
-      return slug + '.md'
-    })
+  load() {
+    this.loadInto(this._dir, this.pages)
+    this.loadInto('content/links', this.links, 'link/')
+    this.loadInto('content/posts', this.posts, 'post/')
+    this.loadInto('content/photos', this.photos, 'photo/')
   }
 
-  staticPaths(): Array<Array<string>> {
-    // static paths are an Array<string> in Next.js
-    return Object.keys(this.contents).map((slug: string) => {
-      return slug.split('/')
-    })
-  }
-
-  contentForStaticPath(staticPath: Array<string>): Content {
-    let slug = staticPath.join('/')
-    // need to address eventual possible situation of being asked
-    // for a slug that has been made after content was loaded
-    return this.contents[slug]
-  }
-
-  contentOfType(type: string): Array<Content> {
+  latest(collection: { [slug: string]: Content }, n = 10): Array<Content> {
     return lodash
-      .chain(Object.values(this.contents))
-      .filter((o) => {
-        return o.type == type
-      })
+      .chain(Object.values(collection))
       .sortBy([
         (o) => {
           return o.date
         },
       ])
       .reverse()
+      .slice(0, n)
       .value()
+  }
+
+  latestPhotos(n = 10): Array<Content> {
+    return this.latest(this.photos, n)
+  }
+
+  latestPosts(n = 10): Array<Content> {
+    return this.latest(this.posts, n)
+  }
+
+  latestLinks(n = 10): Array<Content> {
+    return this.latest(this.links, n)
   }
 
   latestContent(n = 10): Array<Content> {
     return lodash
-      .chain(Object.values(this.contents))
+      .chain(Object.values(this.pages))
       .filter((o) => {
         return o.type == 'link' || o.type == 'post' || o.type == 'photo'
       })
@@ -77,30 +82,6 @@ export class Site {
       .reverse()
       .slice(0, n)
       .value()
-  }
-
-  frontPageContent(n = 10): Array<Content> {
-    var items = this.latestContent(n)
-
-    // float first post to top of page
-    let firstPostIndex = lodash.findIndex(items, (o: Content) => {
-      return o.type === 'post'
-    })
-    if (firstPostIndex) {
-      let firstPostItem = items.splice(firstPostIndex, 1)
-      items = lodash.concat(firstPostItem, items)
-    }
-
-    // float first photo to top of page (even before first post)
-    let firstPhotoIndex = lodash.findIndex(items, (o: Content) => {
-      return o.type === 'photo'
-    })
-    if (firstPhotoIndex) {
-      let firstPhotoItem = items.splice(firstPhotoIndex, 1)
-      items = lodash.concat(firstPhotoItem, items)
-    }
-
-    return items
   }
 
   private static sites: { [dir: string]: Site } = {}

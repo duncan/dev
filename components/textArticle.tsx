@@ -43,9 +43,15 @@ export default function TextArticle({
       <header>
         {home ? (
           <>
-            <Link href={content.slug}>{emojiDiv(content, true)}</Link>
-            <Link href={content.slug}>{titleDiv(content, true)}</Link>
-            <Link href={content.slug}>{dateLineDiv(content, true)}</Link>
+            <Link href={content.slug}>
+              <a>{emojiDiv(content, true)}</a>
+            </Link>
+            <Link href={content.slug}>
+              <a>{titleDiv(content, true)}</a>
+            </Link>
+            <Link href={content.slug}>
+              <a>{dateLineDiv(content, true)}</a>
+            </Link>
           </>
         ) : (
           <>

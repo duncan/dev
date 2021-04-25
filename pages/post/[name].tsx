@@ -1,9 +1,9 @@
-import { Site } from '../lib/site'
+import { Site } from '../../lib/site'
 import { GetStaticPathsResult, GetStaticPropsResult } from 'next'
 import Head from 'next/head'
-import { ContentProps } from '../lib/content'
-import Layout from '../components/layout'
-import TextArticle from '../components/textArticle'
+import { ContentProps } from '../../lib/content'
+import Layout from '../../components/layout'
+import TextArticle from '../../components/textArticle'
 
 function renderMetadata(props: ContentProps) {
   let ogUrl = `https://duncan.dev/${props.slug}`
@@ -44,8 +44,8 @@ export default function ContentPage(props: ContentProps) {
 }
 
 export async function getStaticPaths(): Promise<GetStaticPathsResult> {
-  let paths = Object.keys(Site.instance().pages).map((slug: string) => {
-    return { params: { slug: slug.split('/') } }
+  let paths = Object.keys(Site.instance().posts).map((slug: string) => {
+    return { params: { name: slug.split('/').pop() } }
   })
   return {
     paths: paths,
@@ -56,7 +56,8 @@ export async function getStaticPaths(): Promise<GetStaticPathsResult> {
 export async function getStaticProps({
   params,
 }): Promise<GetStaticPropsResult<ContentProps>> {
-  let content = Site.instance().pages[params.slug.join('/')]
+  let slug = 'post/' + params.name
+  let content = Site.instance().posts[slug]
   let props = await content.props()
   return {
     props: props,

@@ -9,7 +9,13 @@ export default function LinksPage(props: ContentCollectionProps) {
   return (
     <Layout>
       {props.collection.map((content, index) => {
-        return Summary({ content: content, home: true })
+        return (
+          <Link href={'/link/' + content.slug}>
+            <a>
+              <Summary content={content} home={true} />
+            </a>
+          </Link>
+        )
       })}
     </Layout>
   )
@@ -20,7 +26,7 @@ export async function getStaticProps({}): Promise<
 > {
   let propsCollection = await Promise.all(
     Site.instance()
-      .contentOfType('link')
+      .latestLinks(100)
       .map((o: Content) => {
         let props = o.props()
         return props

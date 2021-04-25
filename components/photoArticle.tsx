@@ -19,14 +19,8 @@ export default function PhotoArticle({
       </div>
       <div className="container mx-auto max-w-xl pt-4 pb-4 px-4">
         <header>
-          <Link href={content.slug}>
-            <h1 className="text-2xl font-bold cursor-pointer">
-              {content.title}
-            </h1>
-          </Link>
-          <Link href={content.slug}>
-            <DateLine date={content.date}></DateLine>
-          </Link>
+          <h1 className="text-2xl font-bold">{content.title}</h1>
+          <DateLine date={content.date}></DateLine>
         </header>
         <MarkdownProse text={content.text}></MarkdownProse>
       </div>

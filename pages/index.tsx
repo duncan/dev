@@ -58,9 +58,11 @@ export default function Home(props: FrontPageProps) {
 
         <article key={props.photos[0].slug}>
           <Link href={props.photos[0].slug}>
-            <div className="container mx-auto max-w-2xl px-4 pb-12 items-center cursor-pointer">
-              <Photo photoId={props.photos[0].meta['photoId']} />
-            </div>
+            <a>
+              <div className="container mx-auto max-w-2xl px-4 pb-12 items-center">
+                <Photo photoId={props.photos[0].meta['photoId']} />
+              </div>
+            </a>
           </Link>
         </article>
 
@@ -70,15 +72,19 @@ export default function Home(props: FrontPageProps) {
             {props.posts.map((content, index) => {
               return (
                 <Link href={content.slug}>
-                  <div className="cursor-pointer pb-8 md:pb-12 text-lg">
-                    <span className="font-bold text-xl">{content.title} </span>
-                    <span className="cursor-pointer text-xl  pl-1">
-                      {content.emoji}
-                    </span>{' '}
-                    <div className="prose">
-                      <p>{content.meta['description']}</p>
+                  <a>
+                    <div className="cursor-pointer pb-8 md:pb-12 text-lg">
+                      <span className="font-bold text-xl">
+                        {content.title}{' '}
+                      </span>
+                      <span className="cursor-pointer text-xl  pl-1">
+                        {content.emoji}
+                      </span>{' '}
+                      <div className="prose">
+                        <p>{content.meta['description']}</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </Link>
               )
             })}
@@ -88,13 +94,15 @@ export default function Home(props: FrontPageProps) {
             {props.links.map((content, index) => {
               return (
                 <Link href={content.slug}>
-                  <div className="cursor-pointer pb-8">
-                    {/* <span className="cursor-pointer pr-1">{content.emoji}</span>{' '} */}
-                    <span className="font-bold">{content.title} </span>
-                    <div className="prose text-sm pt-1">
-                      <p>{content.meta['description']}</p>
+                  <a>
+                    <div className="cursor-pointer pb-8">
+                      {/* <span className="cursor-pointer pr-1">{content.emoji}</span>{' '} */}
+                      <span className="font-bold">{content.title} </span>
+                      <div className="prose text-sm pt-1">
+                        <p>{content.meta['description']}</p>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </Link>
               )
             })}
@@ -110,8 +118,7 @@ export async function getStaticProps({}): Promise<
 > {
   let postsCollection = await Promise.all(
     Site.instance()
-      .contentOfType('post')
-      .slice(0, 7)
+      .latestPosts(7)
       .map((o: Content) => {
         let props = o.props()
         return props
@@ -120,8 +127,7 @@ export async function getStaticProps({}): Promise<
 
   let linksCollection = await Promise.all(
     Site.instance()
-      .contentOfType('link')
-      .slice(0, 5)
+      .latestLinks(6)
       .map((o: Content) => {
         let props = o.props()
         return props
@@ -130,8 +136,7 @@ export async function getStaticProps({}): Promise<
 
   let photoCollection = await Promise.all(
     Site.instance()
-      .contentOfType('photo')
-      .slice(0, 4)
+      .latestPhotos(1)
       .map((o: Content) => {
         let props = o.props()
         return props

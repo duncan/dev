@@ -21,7 +21,7 @@ export async function getStaticProps({}): Promise<
 > {
   let propsCollection = await Promise.all(
     Site.instance()
-      .contentOfType('post')
+      .latestPosts(100)
       .map((o: Content) => {
         let props = o.props()
         return props

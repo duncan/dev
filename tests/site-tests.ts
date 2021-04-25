@@ -14,28 +14,28 @@ describe('Site', () => {
     })
   })
 
-  describe('paths', () => {
-    test('content paths', () => {
-      let paths = testSite.contentPaths()
-      expect(paths.length).toBeGreaterThan(0)
-      expect(paths).toContain('link.md')
-      expect(paths).toContain('dir/post.md')
-    })
+  // describe('paths', () => {
+  //   test('content paths', () => {
+  //     let paths = testSite.contentPaths()
+  //     expect(paths.length).toBeGreaterThan(0)
+  //     expect(paths).toContain('link.md')
+  //     expect(paths).toContain('dir/post.md')
+  //   })
 
-    test('static paths', () => {
-      let paths = testSite.staticPaths()
-      expect(paths).toContainEqual(['link'])
-      expect(paths).toContainEqual(['dir', 'post'])
-    })
-  })
+  //   test('static paths', () => {
+  //     let paths = testSite.staticPaths()
+  //     expect(paths).toContainEqual(['link'])
+  //     expect(paths).toContainEqual(['dir', 'post'])
+  //   })
+  // })
 
-  describe('content', () => {
-    test('get content for static path', () => {
-      //let site = Site.instance('test-content')
-      let content = testSite.contentForStaticPath(['dir', 'post'])
-      expect(content.title).toEqual('Some post')
-    })
-  })
+  // describe('content', () => {
+  //   test('get content for static path', () => {
+  //     //let site = Site.instance('test-content')
+  //     let content = testSite.contentForStaticPath(['dir', 'post'])
+  //     expect(content.title).toEqual('Some post')
+  //   })
+  // })
 
   // describe('content', () => {
   //   test('get content for static path', () => {

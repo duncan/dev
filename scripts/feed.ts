@@ -15,7 +15,16 @@ export function generate() {
     feed_url: 'https://duncan.dev/feed.xml',
   })
 
-  site.latestContent(20).forEach((item: Content) => {
+  let content: Content[] = []
+  content = content.concat(site.latestPosts(5))
+  content = content.concat(site.latestPhotos(5))
+  content = content.concat(site.latestLinks(5))
+
+  content = content.filter((o) => Date.parse(o.date) > Date.parse('2021-04-25'))
+
+  console.log(content)
+
+  content.forEach((item: Content) => {
     var title
     if (item.emoji) {
       title = `${item.emoji} ${item.title}`
