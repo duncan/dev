@@ -12,20 +12,6 @@ export default function PhotoArticle({
   content: ContentProps
   home?: boolean
 }) {
-  /*
-  ratio= width / height
-  */
-
-  // const cloudinary = new Cloudinary({
-  //   cloud: { cloudName: 'duncandavidson' },
-  //   url: { secure: true },
-  // })
-
-  // let img = cloudinary.image('photos/evening-light_id3b4w')
-  // //img.resize(Resize.scale().width(600).height(600))
-  // let imgURL = img.toURL()
-
-  //console.log(`W ${width}`)
   return (
     <article key={content.slug}>
       <div className="container mx-auto max-w-2xl px-4 pb-2 items-center">

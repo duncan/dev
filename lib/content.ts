@@ -104,7 +104,6 @@ export class Content {
     if (this.meta['description']) {
       props['ogDescription'] = this.meta['description']
     }
-    console.log(props)
     return props
   }
 }
