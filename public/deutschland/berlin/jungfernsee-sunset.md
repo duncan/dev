@@ -2,8 +2,7 @@
 date: 2021-02-21T23:00
 type: photo
 title: Sunset at Jungfernsee
-photo: jungfernsee-sunset.jpg
-og-image: jungfernsee-sunset-social.jpg
+photoId: photos/jungfernsee-sunset_k2lwcu
 description: The Jungfernsee (”Virgin Lake”) on the border of Potsdam and Berlin.
 ---
 

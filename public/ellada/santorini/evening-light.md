@@ -1,7 +1,7 @@
 ---
 title: Santorini evening light
 date: 2021-01-29T20:15
-photo: evening-light.jpg
+photoId: photos/evening-light_id3b4w
 type: photo
 og-image: evening-light-social.jpg
 description: Olive brances and evening sunshine on Santorini, Greece.

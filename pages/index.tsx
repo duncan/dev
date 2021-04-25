@@ -4,6 +4,7 @@ import { Site } from '../lib/site'
 import { Content, ContentProps, ContentCollectionProps } from '../lib/content'
 import { GetStaticPropsResult } from 'next'
 import Layout from '../components/layout'
+import { Image } from 'cloudinary-react'
 
 const myLoader = ({ src, width, quality }) => {
   return `${src}?w=${width}&q=${quality || 75}`
@@ -58,10 +59,11 @@ export default function Home(props: FrontPageProps) {
         <article key={props.photos[0].slug}>
           <div className="container mx-auto max-w-2xl px-4 pb-12 items-center cursor-pointer">
             <Link href={props.photos[0].slug}>
-              <img
-                src={props.photos[0].photoHref}
-                alt={props.photos[0].title}
-                width="100%"
+              <Image
+                cloudName="duncandavidson"
+                publicId={props.photos[0].meta['photoId']}
+                width="1200"
+                crop="fill"
                 className="rounded-xl"
               />
             </Link>
@@ -72,7 +74,6 @@ export default function Home(props: FrontPageProps) {
           <div className="w-full md:w-2/3 pr-4 pl-4 md:pr-3">
             <h1 className="pb-4 font-thin">Posts:</h1>
             {props.posts.map((content, index) => {
-              // return Summary({ content: content, home: true })
               return (
                 <Link href={content.slug}>
                   <div className="cursor-pointer pb-8 md:pb-12 text-lg">

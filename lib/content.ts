@@ -12,9 +12,7 @@ export interface ContentProps {
   title?: string
   date?: string
   emoji?: string
-  photoHref?: string
-  photoMeta?: {}
-  ogImageHref?: string
+  photoId?: string
 }
 
 export interface ContentCollectionProps {
@@ -27,8 +25,7 @@ export class Content {
   filename: string
   text: string
   meta: {}
-  photoHref: string
-  photoMeta: {}
+  photoId: string
 
   constructor(filename: string, slug: string) {
     this.filename = path.resolve(filename)
@@ -99,35 +96,15 @@ export class Content {
     if (this.emoji) {
       props['emoji'] = this.emoji
     }
-
-    if (this.meta['photo']) {
-      props['photoHref'] = path.resolve(
-        path.dirname(`/${this.slug}`),
-        this.meta['photo']
-      )
-      let photoPath = path.resolve(
-        path.dirname(this.filename),
-        this.meta['photo']
-      )
-      //let photoMeta = await sharp(photoPath).metadata()
-      props['photoMeta'] = {
-        width: 600, //photoMeta.width,
-        height: 600, //photoMeta.height,
-      }
+    if (this.photoId) {
+      props['photoId'] = this.photoId
     }
 
     props['ogDescription'] = this.title
     if (this.meta['description']) {
       props['ogDescription'] = this.meta['description']
     }
-
-    if (this.meta['og-image']) {
-      props['ogImageHref'] = path.resolve(
-        path.dirname(`/${this.slug}`),
-        this.meta['og-image']
-      )
-    }
-
+    console.log(props)
     return props
   }
 }

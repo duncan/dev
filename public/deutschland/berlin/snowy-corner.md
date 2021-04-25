@@ -2,7 +2,7 @@
 date: 2021-02-14T10:00
 title: Frosted Mauerweg
 type: photo
-photo: snowy-corner.jpg
+photoId: photos/snowy-corner_i6isgc
 og-image: snowy-corner-social.jpg
 description:
 emoji: ❄️

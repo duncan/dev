@@ -2,7 +2,7 @@
 date: 2021-02-02T15:00
 title: Oberschulzentrum Wedding (OSW)
 type: photo
-photo: oberschulzentrum-wedding.jpg
+photoId: photos/oberschulzentrum-wedding_ecg8hd
 og-image: oberschulzentrum-wedding-social.jpg
 description: Not far from where I live in Berlin, there’s an abandoned school building that always catches my eye.
 ---

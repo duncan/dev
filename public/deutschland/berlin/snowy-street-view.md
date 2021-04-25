@@ -2,7 +2,7 @@
 date: 2021-02-12T21:00
 title: Lockdown snow
 type: photo
-photo: snowy-street-view.jpg
+photoId: photos/snowy-street-view_ss4sco
 og-image: snowy-street-view-social.jpg
 description: Snow has arrived with a vengance in Berlin, but since we’re in lockdown, it doesn’t matter much.
 emoji: ❄️

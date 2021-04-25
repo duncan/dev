@@ -1,7 +1,9 @@
+import React, { Component } from 'react'
 import Link from 'next/link'
 import { ContentProps } from '../lib/content'
 import MarkdownProse from './markdownProse'
 import DateLine from './dateLine'
+import { Image } from 'cloudinary-react'
 
 export default function PhotoArticle({
   content,
@@ -10,25 +12,28 @@ export default function PhotoArticle({
   content: ContentProps
   home?: boolean
 }) {
-  let ratio = content.photoMeta['width'] / content.photoMeta['height']
-  var width, height
-  if (ratio == 1) {
-    width = 600
-    height = 600
-  }
-
   /*
   ratio= width / height
-*/
+  */
+
+  // const cloudinary = new Cloudinary({
+  //   cloud: { cloudName: 'duncandavidson' },
+  //   url: { secure: true },
+  // })
+
+  // let img = cloudinary.image('photos/evening-light_id3b4w')
+  // //img.resize(Resize.scale().width(600).height(600))
+  // let imgURL = img.toURL()
 
   //console.log(`W ${width}`)
   return (
     <article key={content.slug}>
       <div className="container mx-auto max-w-2xl px-4 pb-2 items-center">
-        <img
-          src={content.photoHref}
-          alt={content.title}
-          width="100%"
+        <Image
+          cloudName="duncandavidson"
+          publicId={content.meta['photoId']}
+          width="1200"
+          crop="fill"
           className="rounded-xl"
         />
       </div>
