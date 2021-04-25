@@ -57,11 +57,11 @@ export default function Home(props: FrontPageProps) {
         </Head>
 
         <article key={props.photos[0].slug}>
-          <div className="container mx-auto max-w-2xl px-4 pb-12 items-center cursor-pointer">
-            <Link href={props.photos[0].slug}>
+          <Link href={props.photos[0].slug}>
+            <div className="container mx-auto max-w-2xl px-4 pb-12 items-center cursor-pointer">
               <Photo photoId={props.photos[0].meta['photoId']} />
-            </Link>
-          </div>
+            </div>
+          </Link>
         </article>
 
         <div className="container mx-auto max-w-xl pb-4 flex flex-wrap mb-4">
