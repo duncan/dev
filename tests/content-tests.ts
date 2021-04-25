@@ -58,12 +58,6 @@ describe('Content', () => {
     })
   })
 
-  describe('photo', () => {
-    test('resolves href for photo', () => {
-      expect(photoContent.photoHref).toBe('/ellada/santorini/evening-light.jpg')
-    })
-  })
-
   describe('props', () => {
     test('props from link.md', async () => {
       let props = await linkContent.props()

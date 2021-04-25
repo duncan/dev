@@ -14,12 +14,6 @@ function renderMetadata(props: ContentProps) {
   var twitterImage = 'https://duncan.dev/images/duncan.jpg'
   var twitterCard = 'summary'
 
-  if (props.ogImageHref) {
-    ogImage = 'https://duncan.dev' + props.ogImageHref
-    twitterImage = 'https://duncan.dev' + props.ogImageHref
-    twitterCard = 'summary_large_image'
-  }
-
   return (
     <Head>
       <title>{props.title} - Duncan Davidson</title>
