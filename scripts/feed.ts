@@ -41,7 +41,7 @@ export function generate() {
   })
 
   let data = feed.xml({ indent: true })
-  fs.writeFileSync('./public/feed.xml', data)
+  fs.writeFileSync('./out/feed.xml', data)
 }
 
 generate()

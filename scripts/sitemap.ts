@@ -25,4 +25,4 @@ let data = xml(
   { indent: true }
 )
 
-fs.writeFileSync('./public/sitemap.xml', data)
+fs.writeFileSync('./out/sitemap.xml', data)
