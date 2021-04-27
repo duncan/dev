@@ -22,8 +22,6 @@ export function generate() {
 
   content = content.filter((o) => Date.parse(o.date) > Date.parse('2021-04-25'))
 
-  console.log(content)
-
   content.forEach((item: Content) => {
     var title
     if (item.emoji) {
