@@ -8,7 +8,11 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <!-- Cloudflare Web Analytics for duncan.dev --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "5a4a2059347340ddbf35592f251f6051"}'></script><!-- End Cloudflare Web Analytics -->
+          <script
+            defer
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token": "5a4a2059347340ddbf35592f251f6051"}'
+          ></script>
         </body>
       </Html>
     )
